@@ -40,10 +40,11 @@ Un élément invalide est ignoré par l'app (les autres restent utilisés) ; un 
 node valider.mjs
 ```
 
-La même vérification tourne automatiquement sur GitHub à chaque modification (onglet **Actions**) : une croix rouge signale une erreur à corriger.
+La même vérification tourne automatiquement sur GitHub à chaque modification (onglet **Actions**), et **le site n'est publié que si elle réussit** : une croix rouge signale une erreur à corriger, et en attendant les téléphones gardent la version précédente.
 
 ## Bon à savoir
 
+- Le site est publié par le workflow `.github/workflows/publier.yml` (source Pages : « GitHub Actions ») : tout le dépôt sauf `.github`, `valider.mjs` et ce README.
 - Après publication, compte quelques minutes pour GitHub Pages, puis jusqu'à 12 h pour que les téléphones voient le changement.
 - Retirer un contenu ne casse rien : ceux déjà affichés ou gardés en favoris restent lisibles.
 - Les faits doivent être vérifiés : l'app les présente comme vrais.
