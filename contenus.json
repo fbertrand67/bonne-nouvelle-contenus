@@ -103,6 +103,226 @@
       },
       "from": "2027-01-01",
       "until": "2027-01-02"
+    },
+    {
+      "id": "r-010",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : prends une photo de quelque chose de beau que tu croises aujourd'hui.",
+        "en": "Today's challenge: take a photo of something beautiful you come across today.",
+        "es": "Reto del día: haz una foto de algo bonito que encuentres hoy.",
+        "de": "Challenge des Tages: Fotografiere etwas Schönes, das dir heute begegnet."
+      }
+    },
+    {
+      "id": "r-011",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : dis merci à quelqu'un que tu ne remercies jamais d'habitude.",
+        "en": "Today's challenge: thank someone you never usually thank.",
+        "es": "Reto del día: da las gracias a alguien a quien normalmente nunca se las das.",
+        "de": "Challenge des Tages: Bedanke dich bei jemandem, dem du sonst nie dankst."
+      }
+    },
+    {
+      "id": "r-012",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : mange un repas sans écran, en savourant chaque bouchée.",
+        "en": "Today's challenge: eat one meal without a screen, savoring every bite.",
+        "es": "Reto del día: come una comida sin pantallas, saboreando cada bocado.",
+        "de": "Challenge des Tages: Iss eine Mahlzeit ohne Bildschirm und genieße jeden Bissen."
+      }
+    },
+    {
+      "id": "r-013",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écoute une chanson que tu adorais il y a dix ans.",
+        "en": "Today's challenge: listen to a song you loved ten years ago.",
+        "es": "Reto del día: escucha una canción que te encantaba hace diez años.",
+        "de": "Challenge des Tages: Hör ein Lied, das du vor zehn Jahren geliebt hast."
+      }
+    },
+    {
+      "id": "r-014",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écris trois qualités que tu apprécies chez toi.",
+        "en": "Today's challenge: write down three qualities you like about yourself.",
+        "es": "Reto del día: escribe tres cualidades que aprecias de ti.",
+        "de": "Challenge des Tages: Schreib drei Eigenschaften auf, die du an dir magst."
+      }
+    },
+    {
+      "id": "r-015",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : prends l'escalier au lieu de l'ascenseur toute la journée.",
+        "en": "Today's challenge: take the stairs instead of the lift all day.",
+        "es": "Reto del día: usa las escaleras en lugar del ascensor todo el día.",
+        "de": "Challenge des Tages: Nimm den ganzen Tag die Treppe statt des Aufzugs."
+      }
+    },
+    {
+      "id": "r-016",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : souris à trois inconnus.",
+        "en": "Today's challenge: smile at three strangers.",
+        "es": "Reto del día: sonríe a tres desconocidos.",
+        "de": "Challenge des Tages: Lächle drei Fremde an."
+      }
+    },
+    {
+      "id": "r-017",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : fais une pause de 5 minutes pour regarder le ciel.",
+        "en": "Today's challenge: take a 5-minute break to look at the sky.",
+        "es": "Reto del día: haz una pausa de 5 minutos para mirar el cielo.",
+        "de": "Challenge des Tages: Mach 5 Minuten Pause und schau in den Himmel."
+      }
+    },
+    {
+      "id": "r-018",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : supprime 20 photos inutiles de ton téléphone.",
+        "en": "Today's challenge: delete 20 useless photos from your phone.",
+        "es": "Reto del día: borra 20 fotos inútiles de tu teléfono.",
+        "de": "Challenge des Tages: Lösch 20 überflüssige Fotos von deinem Handy."
+      }
+    },
+    {
+      "id": "r-019",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : prépare ce soir tes affaires pour demain matin.",
+        "en": "Today's challenge: get your things ready tonight for tomorrow morning.",
+        "es": "Reto del día: deja preparadas esta noche tus cosas para mañana por la mañana.",
+        "de": "Challenge des Tages: Leg heute Abend schon alles für morgen früh bereit."
+      }
+    },
+    {
+      "id": "r-020",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : envoie un message à un ami juste pour prendre de ses nouvelles.",
+        "en": "Today's challenge: text a friend just to see how they're doing.",
+        "es": "Reto del día: escribe a un amigo solo para saber cómo está.",
+        "de": "Challenge des Tages: Schreib einem Freund, nur um zu fragen, wie es ihm geht."
+      }
+    },
+    {
+      "id": "r-021",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : lis 10 pages d'un livre.",
+        "en": "Today's challenge: read 10 pages of a book.",
+        "es": "Reto del día: lee 10 páginas de un libro.",
+        "de": "Challenge des Tages: Lies 10 Seiten in einem Buch."
+      }
+    },
+    {
+      "id": "r-022",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : fais 10 respirations profondes avant de commencer ta journée.",
+        "en": "Today's challenge: take 10 deep breaths before starting your day.",
+        "es": "Reto del día: haz 10 respiraciones profundas antes de empezar el día.",
+        "de": "Challenge des Tages: Atme zehnmal tief durch, bevor dein Tag beginnt."
+      }
+    },
+    {
+      "id": "r-023",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : aide quelqu'un sans qu'il te le demande.",
+        "en": "Today's challenge: help someone without being asked.",
+        "es": "Reto del día: ayuda a alguien sin que te lo pida.",
+        "de": "Challenge des Tages: Hilf jemandem, ohne dass er dich darum bittet."
+      }
+    },
+    {
+      "id": "r-024",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : cuisine quelque chose que tu n'as jamais préparé.",
+        "en": "Today's challenge: cook something you've never made before.",
+        "es": "Reto del día: cocina algo que nunca hayas preparado.",
+        "de": "Challenge des Tages: Koch etwas, das du noch nie zubereitet hast."
+      }
+    },
+    {
+      "id": "r-025",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : passe une heure sans regarder tes réseaux sociaux.",
+        "en": "Today's challenge: spend one hour without checking social media.",
+        "es": "Reto del día: pasa una hora sin mirar tus redes sociales.",
+        "de": "Challenge des Tages: Verbring eine Stunde ohne soziale Medien."
+      }
+    },
+    {
+      "id": "r-026",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : note une petite victoire de ta journée avant de dormir.",
+        "en": "Today's challenge: write down one small win from your day before bed.",
+        "es": "Reto del día: apunta una pequeña victoria del día antes de dormir.",
+        "de": "Challenge des Tages: Notiere vor dem Schlafen einen kleinen Erfolg des Tages."
+      }
+    },
+    {
+      "id": "r-027",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : arrose une plante, ou offre-t'en une.",
+        "en": "Today's challenge: water a plant, or treat yourself to one.",
+        "es": "Reto del día: riega una planta, o regálate una.",
+        "de": "Challenge des Tages: Gieß eine Pflanze oder schenk dir eine."
+      }
+    },
+    {
+      "id": "r-028",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : danse sur ta chanson préférée, même seul dans ta cuisine.",
+        "en": "Today's challenge: dance to your favorite song, even alone in your kitchen.",
+        "es": "Reto del día: baila tu canción favorita, aunque sea solo en la cocina.",
+        "de": "Challenge des Tages: Tanz zu deinem Lieblingslied, auch allein in der Küche."
+      }
+    },
+    {
+      "id": "r-029",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : couche-toi 30 minutes plus tôt que d'habitude.",
+        "en": "Today's challenge: go to bed 30 minutes earlier than usual.",
+        "es": "Reto del día: acuéstate 30 minutos antes de lo habitual.",
+        "de": "Challenge des Tages: Geh 30 Minuten früher schlafen als sonst."
+      }
     }
   ]
 }
