@@ -7,6 +7,9 @@ const CATEGORIES = ['motivation', 'humour', 'bien-etre', 'developpement', 'curio
 const TYPES = ['quote', 'fact', 'challenge', 'actu'];
 const LANGS = ['fr', 'en', 'es', 'de'];
 const DAY = /^\d{4}-\d{2}-\d{2}$/;
+// Au-delà, l'app ignore le contenu (texte) ou la fin du fichier (nombre).
+const MAX_TEXT_LENGTH = 280;
+const MAX_ITEMS = 1000;
 
 const errors = [];
 let data;
@@ -19,6 +22,7 @@ try {
 
 if (data.version !== 1) errors.push('« version » doit valoir 1');
 if (!Array.isArray(data.items)) errors.push('« items » doit être une liste');
+else if (data.items.length > MAX_ITEMS) errors.push(`${data.items.length} contenus : ${MAX_ITEMS} au maximum`);
 
 const seen = new Set();
 (data.items ?? []).forEach((it, i) => {
@@ -30,6 +34,8 @@ const seen = new Set();
   if (!TYPES.includes(it?.type)) errors.push(`${where} : type inconnu « ${it?.type} » (attendu : ${TYPES.join(', ')})`);
   for (const l of LANGS) {
     if (typeof it?.text?.[l] !== 'string' || !it.text[l].trim()) errors.push(`${where} : texte « ${l} » manquant`);
+    else if (it.text[l].trim().length > MAX_TEXT_LENGTH)
+      errors.push(`${where} : texte « ${l} » trop long (${it.text[l].trim().length} caractères, ${MAX_TEXT_LENGTH} au maximum)`);
   }
   for (const k of ['from', 'until']) {
     if (it?.[k] !== undefined && !(typeof it[k] === 'string' && DAY.test(it[k]))) errors.push(`${where} : « ${k} » doit être au format AAAA-MM-JJ`);
