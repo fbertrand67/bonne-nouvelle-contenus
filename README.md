@@ -47,3 +47,8 @@ La même vérification tourne automatiquement sur GitHub à chaque modification 
 - Après publication, compte quelques minutes pour GitHub Pages, puis jusqu'à 12 h pour que les téléphones voient le changement.
 - Retirer un contenu ne casse rien : ceux déjà affichés ou gardés en favoris restent lisibles.
 - Les faits doivent être vérifiés : l'app les présente comme vrais.
+
+## Politique de confidentialité
+
+Les pages [`confidentialite.html`](confidentialite.html) (FR) et [`privacy.html`](privacy.html) (EN) sont la politique de confidentialité de l'app, ouverte depuis ses Réglages et indiquée dans la Play Console :
+`https://fbertrand67.github.io/bonne-nouvelle-contenus/confidentialite.html`
