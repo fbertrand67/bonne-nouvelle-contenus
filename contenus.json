@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "r-001",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les grandes choses ne sont jamais faites par une seule personne, mais par un groupe qui y croit.",
+        "en": "Great things are never done by one person, but by a team that believes in them.",
+        "es": "Las grandes cosas nunca las hace una sola persona, sino un equipo que cree en ellas.",
+        "de": "Große Dinge werden nie von einer einzelnen Person vollbracht, sondern von einem Team, das daran glaubt."
+      }
+    },
+    {
+      "id": "r-002",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ce matin, offre-toi trois respirations lentes avant d'ouvrir tes messages.",
+        "en": "This morning, give yourself three slow breaths before opening your messages.",
+        "es": "Esta mañana, regálate tres respiraciones lentas antes de abrir tus mensajes.",
+        "de": "Gönn dir heute Morgen drei langsame Atemzüge, bevor du deine Nachrichten öffnest."
+      }
+    },
+    {
+      "id": "r-003",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les loutres de mer se tiennent par la patte en dormant pour ne pas dériver.",
+        "en": "Sea otters hold paws while they sleep so they don't drift apart.",
+        "es": "Las nutrias marinas se toman de las patas mientras duermen para no separarse.",
+        "de": "Seeotter halten sich beim Schlafen an den Pfoten, um nicht auseinanderzutreiben."
+      }
+    },
+    {
+      "id": "r-004",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : laisse un mot gentil à quelqu'un, sur papier ou par message.",
+        "en": "Today's challenge: leave someone a kind note, on paper or by message.",
+        "es": "Reto del día: deja una nota amable a alguien, en papel o por mensaje.",
+        "de": "Challenge des Tages: Hinterlass jemandem eine nette Notiz, auf Papier oder per Nachricht."
+      }
+    },
+    {
+      "id": "r-005",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon talent caché ? Trouver la file d'attente la plus lente, à chaque fois.",
+        "en": "My hidden talent? Finding the slowest queue, every single time.",
+        "es": "¿Mi talento oculto? Encontrar la fila más lenta, siempre.",
+        "de": "Mein verstecktes Talent? Immer die langsamste Schlange zu finden."
+      }
+    },
+    {
+      "id": "r-006",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Tu n'as pas besoin de voir tout l'escalier, juste la première marche.",
+        "en": "You don't need to see the whole staircase, just the first step.",
+        "es": "No necesitas ver toda la escalera, solo el primer escalón.",
+        "de": "Du musst nicht die ganze Treppe sehen, nur die erste Stufe."
+      }
+    },
+    {
+      "id": "r-007",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les baleines à bosse de l'Atlantique Sud sont redevenues environ 25 000, presque autant qu'avant la chasse.",
+        "en": "South Atlantic humpback whales are back to around 25,000, nearly as many as before whaling.",
+        "es": "Las ballenas jorobadas del Atlántico Sur vuelven a ser unas 25.000, casi tantas como antes de la caza.",
+        "de": "Die Buckelwale im Südatlantik zählen wieder rund 25.000 Tiere, fast so viele wie vor dem Walfang."
+      }
+    },
+    {
+      "id": "r-noel-2026",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Joyeux Noël ! Le plus beau cadeau, c'est souvent le temps passé ensemble.",
+        "en": "Merry Christmas! The best gift is often the time spent together.",
+        "es": "¡Feliz Navidad! El mejor regalo suele ser el tiempo compartido.",
+        "de": "Frohe Weihnachten! Das schönste Geschenk ist oft die gemeinsame Zeit."
+      },
+      "from": "2026-12-24",
+      "until": "2026-12-26"
+    },
+    {
+      "id": "r-nouvel-an-2027",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Bonne année ! 365 nouvelles pages t'attendent : écris-en une belle aujourd'hui.",
+        "en": "Happy New Year! 365 new pages await you: write a beautiful one today.",
+        "es": "¡Feliz Año Nuevo! Te esperan 365 páginas nuevas: escribe hoy una bonita.",
+        "de": "Frohes neues Jahr! 365 neue Seiten warten auf dich: Schreib heute eine schöne."
+      },
+      "from": "2027-01-01",
+      "until": "2027-01-02"
+    }
+  ]
+}
