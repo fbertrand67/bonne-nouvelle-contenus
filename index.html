@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonne Nouvelle — une bonne nouvelle chaque matin</title>
+<meta name="description" content="Chaque matin, une bonne nouvelle à gratter et un jardin qui fleurit avec toi.">
+<meta property="og:title" content="Bonne Nouvelle">
+<meta property="og:description" content="Chaque matin, une bonne nouvelle à gratter et un jardin qui fleurit avec toi.">
+<meta property="og:image" content="https://bonne-nouvelle.caffeinsoft.com/icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #FBF8FF; --ink: #2A2340; --soft: #6B6485; --accent: #7C5CFF; --card: #FFFFFF; --line: #E7E1F5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14112A; --ink: #EDEAF7; --soft: #A9A3C2; --accent: #B39DFF; --card: #1E1A38; --line: #2F2A50; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 56px 20px 48px; text-align: center; }
+  .icon { width: 112px; height: 112px; border-radius: 26px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.2rem; line-height: 1.2; margin: 20px 0 6px; }
+  .tagline { color: var(--soft); font-size: 1.1rem; margin: 0 0 32px; }
+  ul { list-style: none; padding: 0; margin: 0 0 36px; text-align: left; display: grid; gap: 12px; }
+  li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; }
+  .store { display: inline-block; padding: 16px 28px; border-radius: 999px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: linear-gradient(135deg, #FFC861, #FF7A59); }
+  .store.soon { background: var(--line); color: var(--soft); }
+  footer { margin-top: 48px; font-size: .9rem; color: var(--soft); }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<!-- Passer data-published à "true" quand l'app est en production sur Google Play. -->
+<body data-published="false">
+<main>
+  <img class="icon" src="icon.png" alt="">
+  <h1>Bonne Nouvelle</h1>
+  <p class="tagline" data-i18n="tagline">Une bonne nouvelle chaque matin.</p>
+  <ul>
+    <li data-i18n="f1">☀️ Une citation, un fait étonnant, un mini-défi ou une actu positive, à gratter du bout du doigt.</li>
+    <li data-i18n="f2">✅ Une liste de tâches du jour, simple et sans pression.</li>
+    <li data-i18n="f3">🌸 Un jardin qui fleurit à chaque tâche terminée, sous un ciel qui suit l'heure.</li>
+  </ul>
+  <a class="store" id="store" href="https://play.google.com/store/apps/details?id=com.bonnenouvelle.bonne_nouvelle" data-i18n="store">Télécharger sur Google Play</a>
+  <footer>
+    <span data-i18n="free">Gratuite · français, anglais, espagnol, allemand</span><br>
+    <a href="confidentialite.html" id="privacy" data-i18n="privacy">Politique de confidentialité</a> · <a href="mailto:caffeinsoft@gmail.com">Contact</a>
+  </footer>
+</main>
+<script>
+  // Français par défaut, anglais pour les autres langues du navigateur.
+  var en = {
+    tagline: 'Good news, every morning.',
+    f1: '☀️ A quote, a surprising fact, a mini-challenge or a heart-warming story, revealed with a scratch of your finger.',
+    f2: '✅ A simple, pressure-free daily to-do list.',
+    f3: '🌸 A garden that blooms with every task you finish, under a sky that follows the time of day.',
+    store: 'Get it on Google Play',
+    soon: 'Coming soon on Google Play',
+    free: 'Free · English, French, Spanish, German',
+    privacy: 'Privacy policy'
+  };
+  var isFr = (navigator.language || 'fr').toLowerCase().indexOf('fr') === 0;
+  if (!isFr) {
+    document.documentElement.lang = 'en';
+    document.querySelectorAll('[data-i18n]').forEach(function (el) { el.textContent = en[el.dataset.i18n]; });
+    document.getElementById('privacy').href = 'privacy.html';
+  }
+  // Tant que l'app n'est pas publiée, la fiche Play renvoie une erreur : pas de lien.
+  if (document.body.dataset.published !== 'true') {
+    var store = document.getElementById('store');
+    store.removeAttribute('href');
+    store.classList.add('soon');
+    store.textContent = isFr ? 'Bientôt sur Google Play' : en.soon;
+  }
+</script>
+</body>
+</html>
