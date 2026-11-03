@@ -4,7 +4,7 @@ Ce dépôt contient les contenus **en ligne** de l'app Bonne Nouvelle : citation
 L'app les télécharge (au plus toutes les 12 h) et les ajoute à sa banque intégrée.
 **Modifier ce fichier suffit : pas besoin de republier l'app.**
 
-Adresse lue par l'app : `https://fbertrand67.github.io/bonne-nouvelle-contenus/contenus.json`
+Adresse lue par l'app : `https://bonne-nouvelle.caffeinsoft.com/contenus.json`
 
 ## Ajouter un contenu
 
@@ -52,4 +52,4 @@ La même vérification tourne automatiquement sur GitHub à chaque modification 
 ## Politique de confidentialité
 
 Les pages [`confidentialite.html`](confidentialite.html) (FR) et [`privacy.html`](privacy.html) (EN) sont la politique de confidentialité de l'app, ouverte depuis ses Réglages et indiquée dans la Play Console :
-`https://fbertrand67.github.io/bonne-nouvelle-contenus/confidentialite.html`
+`https://bonne-nouvelle.caffeinsoft.com/confidentialite.html`
