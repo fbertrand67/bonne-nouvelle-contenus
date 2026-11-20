@@ -68,17 +68,6 @@
       }
     },
     {
-      "id": "r-007",
-      "category": "planete",
-      "type": "fact",
-      "text": {
-        "fr": "Les baleines à bosse de l'Atlantique Sud sont redevenues environ 25 000, presque autant qu'avant la chasse.",
-        "en": "South Atlantic humpback whales are back to around 25,000, nearly as many as before whaling.",
-        "es": "Las ballenas jorobadas del Atlántico Sur vuelven a ser unas 25.000, casi tantas como antes de la caza.",
-        "de": "Die Buckelwale im Südatlantik zählen wieder rund 25.000 Tiere, fast so viele wie vor dem Walfang."
-      }
-    },
-    {
       "id": "r-noel-2026",
       "category": "bien-etre",
       "type": "quote",
@@ -113,17 +102,6 @@
         "en": "Today's challenge: take a photo of something beautiful you come across today.",
         "es": "Reto del día: haz una foto de algo bonito que encuentres hoy.",
         "de": "Challenge des Tages: Fotografiere etwas Schönes, das dir heute begegnet."
-      }
-    },
-    {
-      "id": "r-011",
-      "category": "defi",
-      "type": "challenge",
-      "text": {
-        "fr": "Défi du jour : dis merci à quelqu'un que tu ne remercies jamais d'habitude.",
-        "en": "Today's challenge: thank someone you never usually thank.",
-        "es": "Reto del día: da las gracias a alguien a quien normalmente nunca se las das.",
-        "de": "Challenge des Tages: Bedanke dich bei jemandem, dem du sonst nie dankst."
       }
     },
     {
@@ -237,17 +215,6 @@
       }
     },
     {
-      "id": "r-022",
-      "category": "defi",
-      "type": "challenge",
-      "text": {
-        "fr": "Défi du jour : fais 10 respirations profondes avant de commencer ta journée.",
-        "en": "Today's challenge: take 10 deep breaths before starting your day.",
-        "es": "Reto del día: haz 10 respiraciones profundas antes de empezar el día.",
-        "de": "Challenge des Tages: Atme zehnmal tief durch, bevor dein Tag beginnt."
-      }
-    },
-    {
       "id": "r-023",
       "category": "defi",
       "type": "challenge",
@@ -322,6 +289,544 @@
         "en": "Today's challenge: go to bed 30 minutes earlier than usual.",
         "es": "Reto del día: acuéstate 30 minutos antes de lo habitual.",
         "de": "Challenge des Tages: Geh 30 Minuten früher schlafen als sonst."
+      }
+    },
+    {
+      "id": "r-030",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Le meilleur moment pour planter un arbre, c'était il y a vingt ans. Le deuxième meilleur moment, c'est maintenant.",
+        "en": "The best time to plant a tree was twenty years ago. The second best time is now.",
+        "es": "El mejor momento para plantar un árbol fue hace veinte años. El segundo mejor momento es ahora.",
+        "de": "Die beste Zeit, einen Baum zu pflanzen, war vor zwanzig Jahren. Die zweitbeste ist jetzt."
+      }
+    },
+    {
+      "id": "r-031",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Il n'y a pas de vent favorable pour celui qui ne sait pas où il va.",
+        "en": "No wind is favourable to the one who does not know where they are going.",
+        "es": "No hay viento favorable para quien no sabe adónde va.",
+        "de": "Kein Wind ist günstig für den, der nicht weiß, wohin er segeln will."
+      }
+    },
+    {
+      "id": "r-032",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les petits progrès restent des progrès.",
+        "en": "Small progress is still progress.",
+        "es": "Un pequeño avance sigue siendo un avance.",
+        "de": "Kleine Fortschritte sind auch Fortschritte."
+      }
+    },
+    {
+      "id": "r-033",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "La goutte d'eau creuse la pierre, non par sa force, mais par sa constance.",
+        "en": "A drop of water hollows out stone, not by its strength but by its persistence.",
+        "es": "La gota de agua horada la piedra, no por su fuerza, sino por su constancia.",
+        "de": "Steter Tropfen höhlt den Stein – nicht durch Kraft, sondern durch Beharrlichkeit."
+      }
+    },
+    {
+      "id": "r-034",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Aujourd'hui n'a pas besoin d'être parfait pour être une bonne journée.",
+        "en": "Today doesn't have to be perfect to be a good day.",
+        "es": "Hoy no tiene que ser perfecto para ser un buen día.",
+        "de": "Heute muss nicht perfekt sein, um ein guter Tag zu werden."
+      }
+    },
+    {
+      "id": "r-035",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Ose. Au pire, tu auras appris quelque chose.",
+        "en": "Go for it. At worst, you'll have learned something.",
+        "es": "Atrévete. En el peor de los casos, habrás aprendido algo.",
+        "de": "Trau dich. Schlimmstenfalls hast du etwas gelernt."
+      }
+    },
+    {
+      "id": "r-036",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon lit et moi, c'est sérieux. Le réveil essaie de nous séparer chaque matin.",
+        "en": "My bed and I are in a serious relationship. The alarm clock tries to break us up every morning.",
+        "es": "Mi cama y yo tenemos una relación seria. El despertador intenta separarnos cada mañana.",
+        "de": "Mein Bett und ich sind fest zusammen. Der Wecker versucht jeden Morgen, uns zu trennen."
+      }
+    },
+    {
+      "id": "r-037",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai voulu commencer un régime, mais le chocolat m'a fait une meilleure offre.",
+        "en": "I wanted to start a diet, but chocolate made me a better offer.",
+        "es": "Quise empezar una dieta, pero el chocolate me hizo una oferta mejor.",
+        "de": "Ich wollte eine Diät anfangen, aber die Schokolade hat mir ein besseres Angebot gemacht."
+      }
+    },
+    {
+      "id": "r-038",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "La vie est trop courte pour plier les draps-housses.",
+        "en": "Life is too short to fold fitted sheets.",
+        "es": "La vida es demasiado corta para doblar sábanas bajeras.",
+        "de": "Das Leben ist zu kurz, um Spannbettlaken zu falten."
+      }
+    },
+    {
+      "id": "r-039",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je parle à mes plantes. Elles m'écoutent mieux que mon imprimante.",
+        "en": "I talk to my plants. They listen better than my printer.",
+        "es": "Hablo con mis plantas. Me escuchan mejor que mi impresora.",
+        "de": "Ich rede mit meinen Pflanzen. Sie hören besser zu als mein Drucker."
+      }
+    },
+    {
+      "id": "r-040",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Tu te sens inutile ? Pense au bouton « fermer les portes » de l'ascenseur.",
+        "en": "Feeling useless? Think of the lift's “close door” button.",
+        "es": "¿Te sientes inútil? Piensa en el botón de «cerrar puertas» del ascensor.",
+        "de": "Fühlst du dich nutzlos? Denk an den „Tür schließen“-Knopf im Aufzug."
+      }
+    },
+    {
+      "id": "r-041",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai fait ma liste de choses à faire. Première tâche accomplie : écrire la liste.",
+        "en": "I made my to-do list. First task done: writing the list.",
+        "es": "He hecho mi lista de tareas. Primera tarea cumplida: escribir la lista.",
+        "de": "Ich habe meine To-do-Liste geschrieben. Erste Aufgabe erledigt: die Liste schreiben."
+      }
+    },
+    {
+      "id": "r-042",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Baisse les épaules, desserre la mâchoire. Voilà, c’est mieux.",
+        "en": "Drop your shoulders, unclench your jaw. There, that’s better.",
+        "es": "Baja los hombros, relaja la mandíbula. Así, mucho mejor.",
+        "de": "Lass die Schultern sinken, entspann den Kiefer. So, schon besser."
+      }
+    },
+    {
+      "id": "r-043",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ton téléphone peut attendre cinq minutes. Ton café, lui, est meilleur chaud.",
+        "en": "Your phone can wait five minutes. Your coffee is better hot.",
+        "es": "Tu móvil puede esperar cinco minutos. Tu café está mejor caliente.",
+        "de": "Dein Handy kann fünf Minuten warten. Dein Kaffee schmeckt heiß besser."
+      }
+    },
+    {
+      "id": "r-044",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Dix minutes de marche dehors suffisent souvent à changer d'humeur.",
+        "en": "Ten minutes of walking outside is often enough to lift your mood.",
+        "es": "Diez minutos caminando al aire libre suelen bastar para cambiar de humor.",
+        "de": "Zehn Minuten draußen spazieren reichen oft, um die Laune zu heben."
+      }
+    },
+    {
+      "id": "r-045",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Tu as le droit de dire non. C'est parfois une façon de te dire oui.",
+        "en": "You're allowed to say no. Sometimes it's a way of saying yes to yourself.",
+        "es": "Tienes derecho a decir que no. A veces es una forma de decirte que sí a ti.",
+        "de": "Du darfst Nein sagen. Manchmal ist das ein Ja zu dir selbst."
+      }
+    },
+    {
+      "id": "r-046",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Une journée moyenne reste une journée réussie.",
+        "en": "An average day is still a successful day.",
+        "es": "Un día normal sigue siendo un día logrado.",
+        "de": "Ein durchschnittlicher Tag ist trotzdem ein gelungener Tag."
+      }
+    },
+    {
+      "id": "r-047",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ouvre les volets : la lumière du matin aide ton corps à régler son horloge interne.",
+        "en": "Open the curtains: morning light helps your body set its internal clock.",
+        "es": "Abre las persianas: la luz de la mañana ayuda a tu cuerpo a ajustar su reloj interno.",
+        "de": "Öffne die Vorhänge: Morgenlicht hilft deinem Körper, seine innere Uhr zu stellen."
+      }
+    },
+    {
+      "id": "r-048",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Chaque expert a d’abord été un débutant.",
+        "en": "Every expert was once a beginner.",
+        "es": "Todo experto fue alguna vez principiante.",
+        "de": "Jeder Experte hat einmal als Anfänger begonnen."
+      }
+    },
+    {
+      "id": "r-049",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Note tes idées : une idée écrite vaut dix idées oubliées.",
+        "en": "Write your ideas down: one written idea is worth ten forgotten ones.",
+        "es": "Apunta tus ideas: una idea escrita vale más que diez olvidadas.",
+        "de": "Schreib deine Ideen auf: Eine notierte Idee ist mehr wert als zehn vergessene."
+      }
+    },
+    {
+      "id": "r-050",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Demander de l'aide, c'est apprendre deux fois plus vite.",
+        "en": "Asking for help is learning twice as fast.",
+        "es": "Pedir ayuda es aprender el doble de rápido.",
+        "de": "Um Hilfe zu bitten heißt, doppelt so schnell zu lernen."
+      }
+    },
+    {
+      "id": "r-051",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Tes erreurs sont la preuve que tu essaies.",
+        "en": "Your mistakes are proof that you are trying.",
+        "es": "Tus errores son la prueba de que lo estás intentando.",
+        "de": "Deine Fehler beweisen, dass du es versuchst."
+      }
+    },
+    {
+      "id": "r-052",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Fais-le d'abord imparfaitement. Tu le feras bien ensuite.",
+        "en": "Do it imperfectly first. You'll do it well later.",
+        "es": "Hazlo primero de forma imperfecta. Ya lo harás bien después.",
+        "de": "Mach es zuerst unperfekt. Gut wird es danach."
+      }
+    },
+    {
+      "id": "r-053",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Écoute plus que tu ne parles : chaque personne sait quelque chose que tu ignores.",
+        "en": "Listen more than you speak: everyone knows something you don’t.",
+        "es": "Escucha más de lo que hablas: cada persona sabe algo que tú ignoras.",
+        "de": "Hör mehr zu, als du redest: Jeder Mensch weiß etwas, das du nicht weißt."
+      }
+    },
+    {
+      "id": "r-054",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les empreintes digitales des koalas ressemblent tellement aux nôtres qu’on peut les confondre, même au microscope.",
+        "en": "Koala fingerprints are so similar to ours that they can be mistaken for human ones, even under a microscope.",
+        "es": "Las huellas dactilares de los koalas se parecen tanto a las nuestras que pueden confundirse, incluso al microscopio.",
+        "de": "Die Fingerabdrücke von Koalas ähneln unseren so sehr, dass man sie selbst unter dem Mikroskop verwechseln kann."
+      }
+    },
+    {
+      "id": "r-055",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Chaque dauphin a son propre sifflement, qui fonctionne comme un prénom : ses proches l’utilisent pour l’appeler.",
+        "en": "Each dolphin has its own signature whistle that works like a name: others use it to call them.",
+        "es": "Cada delfín tiene su propio silbido, que funciona como un nombre: los demás lo usan para llamarlo.",
+        "de": "Jeder Delfin hat einen eigenen Pfiff, der wie ein Name funktioniert: Artgenossen rufen ihn damit."
+      }
+    },
+    {
+      "id": "r-056",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Un éclair est environ cinq fois plus chaud que la surface du Soleil.",
+        "en": "A bolt of lightning is about five times hotter than the surface of the Sun.",
+        "es": "Un rayo es unas cinco veces más caliente que la superficie del Sol.",
+        "de": "Ein Blitz ist etwa fünfmal heißer als die Oberfläche der Sonne."
+      }
+    },
+    {
+      "id": "r-057",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Notre cerveau ne pèse que 2 % de notre corps, mais consomme environ 20 % de son énergie.",
+        "en": "Our brain weighs only 2% of our body but uses about 20% of its energy.",
+        "es": "Nuestro cerebro pesa solo el 2 % del cuerpo, pero consume cerca del 20 % de su energía.",
+        "de": "Unser Gehirn macht nur 2 % des Körpergewichts aus, verbraucht aber rund 20 % seiner Energie."
+      }
+    },
+    {
+      "id": "r-058",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "On rit environ trente fois plus souvent en compagnie que seul : le rire est fait pour être partagé.",
+        "en": "We laugh about thirty times more often with others than alone: laughter is made to be shared.",
+        "es": "Nos reímos unas treinta veces más en compañía que a solas: la risa está hecha para compartirse.",
+        "de": "In Gesellschaft lachen wir etwa dreißigmal häufiger als allein: Lachen ist zum Teilen da."
+      }
+    },
+    {
+      "id": "r-059",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les écureuils oublient une partie des glands qu’ils enterrent. Résultat : ils plantent des milliers d’arbres sans le savoir.",
+        "en": "Squirrels forget some of the acorns they bury. As a result, they plant thousands of trees without knowing it.",
+        "es": "Las ardillas olvidan parte de las bellotas que entierran. Así, plantan miles de árboles sin saberlo.",
+        "de": "Eichhörnchen vergessen einen Teil der vergrabenen Eicheln – und pflanzen so unbewusst Tausende Bäume."
+      }
+    },
+    {
+      "id": "r-060",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les manchots empereurs peuvent plonger à plus de 500 mètres de profondeur.",
+        "en": "Emperor penguins can dive deeper than 500 metres.",
+        "es": "Los pingüinos emperador pueden bucear a más de 500 metros de profundidad.",
+        "de": "Kaiserpinguine können mehr als 500 Meter tief tauchen."
+      }
+    },
+    {
+      "id": "r-061",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La Tamise, déclarée « biologiquement morte » en 1957, abrite aujourd’hui des phoques, des hippocampes et plus de 100 espèces de poissons.",
+        "en": "The Thames, declared “biologically dead” in 1957, is now home to seals, seahorses and more than 100 species of fish.",
+        "es": "El Támesis, declarado «biológicamente muerto» en 1957, alberga hoy focas, caballitos de mar y más de 100 especies de peces.",
+        "de": "Die Themse, 1957 für „biologisch tot“ erklärt, beherbergt heute Robben, Seepferdchen und über 100 Fischarten."
+      }
+    },
+    {
+      "id": "r-062",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le lynx ibérique est passé de moins de 100 individus en 2002 à plus de 2 000 aujourd’hui.",
+        "en": "The Iberian lynx has gone from fewer than 100 animals in 2002 to more than 2,000 today.",
+        "es": "El lince ibérico ha pasado de menos de 100 ejemplares en 2002 a más de 2.000 hoy.",
+        "de": "Der Iberische Luchs ist von weniger als 100 Tieren im Jahr 2002 auf heute über 2.000 angewachsen."
+      }
+    },
+    {
+      "id": "r-063",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le bison d’Europe, presque disparu il y a un siècle, compte aujourd’hui plus de 6 000 animaux en liberté.",
+        "en": "The European bison, almost extinct a century ago, now numbers more than 6,000 animals in the wild.",
+        "es": "El bisonte europeo, casi extinto hace un siglo, cuenta hoy con más de 6.000 ejemplares en libertad.",
+        "de": "Der Wisent, vor einem Jahrhundert fast ausgestorben, zählt heute über 6.000 frei lebende Tiere."
+      }
+    },
+    {
+      "id": "r-064",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le panda géant n’est plus classé « en danger » depuis 2016 : on en compte plus de 1 800 à l’état sauvage.",
+        "en": "The giant panda has no longer been listed as “endangered” since 2016: more than 1,800 live in the wild.",
+        "es": "El panda gigante ya no figura como «en peligro» desde 2016: hay más de 1.800 en estado salvaje.",
+        "de": "Der Große Panda gilt seit 2016 nicht mehr als „stark gefährdet“: Über 1.800 leben in freier Wildbahn."
+      }
+    },
+    {
+      "id": "r-065",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le pygargue à tête blanche, emblème des États-Unis, a été retiré de la liste des espèces menacées en 2007.",
+        "en": "The bald eagle, emblem of the United States, was removed from the endangered species list in 2007.",
+        "es": "El pigargo cabeciblanco, emblema de Estados Unidos, salió de la lista de especies amenazadas en 2007.",
+        "de": "Der Weißkopfseeadler, Wappentier der USA, wurde 2007 von der Liste der gefährdeten Arten gestrichen."
+      }
+    },
+    {
+      "id": "r-066",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Selon l'Agence internationale de l'énergie, le solaire offre aujourd'hui, dans de nombreux pays, l'une des électricités les moins chères jamais produites.",
+        "en": "According to the International Energy Agency, solar power now offers some of the cheapest electricity ever produced in many countries.",
+        "es": "Según la Agencia Internacional de la Energía, la solar ofrece hoy, en muchos países, una de las electricidades más baratas jamás producidas.",
+        "de": "Laut Internationaler Energieagentur liefert Solarenergie heute in vielen Ländern einen der günstigsten Strompreise aller Zeiten."
+      }
+    },
+    {
+      "id": "r-067",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "En 1820, à peine un adulte sur huit savait lire. Aujourd'hui, c'est plus de huit sur dix.",
+        "en": "In 1820, barely one adult in eight could read. Today, more than eight in ten can.",
+        "es": "En 1820, apenas un adulto de cada ocho sabía leer. Hoy son más de ocho de cada diez.",
+        "de": "1820 konnte kaum ein Erwachsener von acht lesen. Heute sind es mehr als acht von zehn."
+      }
+    },
+    {
+      "id": "r-068",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Depuis 1990, la mortalité des enfants de moins de 5 ans a été divisée par plus de deux dans le monde.",
+        "en": "Since 1990, the death rate of children under 5 has been more than halved worldwide.",
+        "es": "Desde 1990, la mortalidad de los menores de 5 años se ha reducido a menos de la mitad en el mundo.",
+        "de": "Seit 1990 hat sich die Sterblichkeit von Kindern unter 5 Jahren weltweit mehr als halbiert."
+      }
+    },
+    {
+      "id": "r-069",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "L'espérance de vie mondiale est passée d'environ 32 ans en 1900 à plus de 70 ans aujourd'hui.",
+        "en": "Global life expectancy has risen from about 32 years in 1900 to over 70 today.",
+        "es": "La esperanza de vida mundial ha pasado de unos 32 años en 1900 a más de 70 hoy.",
+        "de": "Die weltweite Lebenserwartung ist von etwa 32 Jahren im Jahr 1900 auf heute über 70 gestiegen."
+      }
+    },
+    {
+      "id": "r-070",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La variole, qui a tué des centaines de millions de personnes, a été officiellement éradiquée en 1980 grâce à la vaccination.",
+        "en": "Smallpox, which killed hundreds of millions of people, was officially eradicated in 1980 thanks to vaccination.",
+        "es": "La viruela, que mató a cientos de millones de personas, fue erradicada oficialmente en 1980 gracias a la vacunación.",
+        "de": "Die Pocken, an denen Hunderte Millionen Menschen starben, gelten seit 1980 dank Impfungen als ausgerottet."
+      }
+    },
+    {
+      "id": "r-071",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Les cas de polio ont reculé de plus de 99 % depuis 1988 grâce aux campagnes de vaccination.",
+        "en": "Polio cases have fallen by more than 99% since 1988 thanks to vaccination campaigns.",
+        "es": "Los casos de polio han disminuido más de un 99 % desde 1988 gracias a las campañas de vacunación.",
+        "de": "Die Zahl der Polio-Fälle ist seit 1988 dank Impfkampagnen um mehr als 99 % gesunken."
+      }
+    },
+    {
+      "id": "r-072",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Plus de neuf humains sur dix ont aujourd'hui accès à l'électricité.",
+        "en": "More than nine in ten people now have access to electricity.",
+        "es": "Más de nueve de cada diez personas tienen hoy acceso a la electricidad.",
+        "de": "Mehr als neun von zehn Menschen haben heute Zugang zu Strom."
+      }
+    },
+    {
+      "id": "r-solstice-2026",
+      "category": "curiosite",
+      "type": "fact",
+      "from": "2026-12-21",
+      "until": "2026-12-21",
+      "text": {
+        "fr": "C'est le solstice d'hiver dans l'hémisphère nord : le jour le plus court de l'année. Dès demain, les jours rallongent !",
+        "en": "It's the winter solstice in the Northern Hemisphere: the shortest day of the year. From tomorrow, the days get longer!",
+        "es": "Es el solsticio de invierno en el hemisferio norte: el día más corto del año. ¡A partir de mañana, los días se alargan!",
+        "de": "Heute ist Wintersonnenwende auf der Nordhalbkugel: der kürzeste Tag des Jahres. Ab morgen werden die Tage länger!"
+      }
+    },
+    {
+      "id": "r-saint-valentin-2027",
+      "category": "bien-etre",
+      "type": "quote",
+      "from": "2027-02-14",
+      "until": "2027-02-14",
+      "text": {
+        "fr": "Bonne Saint-Valentin ! Dis à quelqu'un que tu aimes ce que tu apprécies chez lui.",
+        "en": "Happy Valentine’s Day! Tell someone you love what you appreciate about them.",
+        "es": "¡Feliz San Valentín! Dile a alguien a quien quieres lo que valoras de él.",
+        "de": "Alles Liebe zum Valentinstag! Sag jemandem, den du liebst, was du an ihm schätzt."
+      }
+    },
+    {
+      "id": "r-printemps-2027",
+      "category": "bien-etre",
+      "type": "quote",
+      "from": "2027-03-20",
+      "until": "2027-03-20",
+      "text": {
+        "fr": "Le printemps commence aujourd'hui, et c'est aussi la Journée internationale du bonheur. Joli programme !",
+        "en": "Spring begins today, and it's also the International Day of Happiness. What a lovely combination!",
+        "es": "Hoy empieza la primavera y también es el Día Internacional de la Felicidad. ¡Buen plan!",
+        "de": "Heute beginnt der Frühling, und es ist auch der Internationale Tag des Glücks. Schöne Kombination!"
+      }
+    },
+    {
+      "id": "r-1er-avril-2027",
+      "category": "humour",
+      "type": "quote",
+      "from": "2027-04-01",
+      "until": "2027-04-01",
+      "text": {
+        "fr": "1er avril : méfie-toi de ton dos, un poisson pourrait s'y cacher.",
+        "en": "April 1st: if someone tells you something unbelievable today, check the date first.",
+        "es": "1 de abril: en muchos países hoy es el día de las bromas. ¡Desconfía de lo demasiado increíble!",
+        "de": "1. April: Wenn dir heute jemand etwas Unglaubliches erzählt, schau zuerst aufs Datum."
+      }
+    },
+    {
+      "id": "r-fete-musique-2027",
+      "category": "curiosite",
+      "type": "fact",
+      "from": "2027-06-21",
+      "until": "2027-06-21",
+      "text": {
+        "fr": "C'est la Fête de la musique, née en France en 1982 et fêtée aujourd'hui dans plus de 120 pays. Mets ta chanson préférée !",
+        "en": "It's Make Music Day, born in France in 1982 and now celebrated in more than 120 countries. Put on your favourite song!",
+        "es": "Es la Fiesta de la Música, nacida en Francia en 1982 y celebrada hoy en más de 120 países. ¡Pon tu canción favorita!",
+        "de": "Heute ist Fête de la Musique, 1982 in Frankreich entstanden und heute in über 120 Ländern gefeiert. Leg dein Lieblingslied auf!"
       }
     }
   ]
