@@ -1,75 +1,958 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="day">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bonne Nouvelle — une bonne nouvelle chaque matin</title>
 <meta name="description" content="Chaque matin, une bonne nouvelle à gratter et un jardin qui fleurit avec toi.">
 <meta property="og:title" content="Bonne Nouvelle">
 <meta property="og:description" content="Chaque matin, une bonne nouvelle à gratter et un jardin qui fleurit avec toi.">
 <meta property="og:image" content="https://bonne-nouvelle.caffeinsoft.com/icon.png">
+<meta name="theme-color" content="#FFD3A5">
 <link rel="icon" href="icon.png">
+<link rel="preload" href="fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  :root { --bg: #FBF8FF; --ink: #2A2340; --soft: #6B6485; --accent: #7C5CFF; --card: #FFFFFF; --line: #E7E1F5; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #14112A; --ink: #EDEAF7; --soft: #A9A3C2; --accent: #B39DFF; --card: #1E1A38; --line: #2F2A50; }
+  @font-face { font-family: Fraunces; src: url(fonts/fraunces-latin-600-normal.woff2) format('woff2'); font-weight: 600; font-display: swap; }
+  @font-face { font-family: Fraunces; src: url(fonts/fraunces-latin-400-italic.woff2) format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+  @font-face { font-family: Fraunces; src: url(fonts/fraunces-latin-600-italic.woff2) format('woff2'); font-weight: 600; font-style: italic; font-display: swap; }
+  @font-face { font-family: Inter; src: url(fonts/inter-latin-400-normal.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+  @font-face { font-family: Inter; src: url(fonts/inter-latin-600-normal.woff2) format('woff2'); font-weight: 600; font-display: swap; }
+
+  /* Palettes « ciel » et « nuit » de l'app (src/theme/index.ts) */
+  :root {
+    --ink: #2B2240; --soft: #6B5F7E;
+    --glass: rgba(255,255,255,.52); --glass-strong: rgba(255,255,255,.8); --glass-border: rgba(255,255,255,.75);
+    --accent: #FF7A59; --gold: #FFB547;
+    --sky-top: #7A74C4; --sky-mid: #F7A6A1; --sky-bot: #FFD3A5;
+    --display: Fraunces, Georgia, 'Times New Roman', serif;
+    --body: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --gutter: clamp(20px, 5vw, 56px);
+    --spring: cubic-bezier(.34, 1.36, .64, 1); /* un seul petit rebond */
+  }
+  html[data-theme="night"] {
+    --ink: #F6F1FF; --soft: #BDB3DC;
+    --glass: rgba(36,30,82,.42); --glass-strong: rgba(44,38,96,.82); --glass-border: rgba(255,255,255,.14);
+    --accent: #FF9E7A; --gold: #FFD27A;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 560px; margin: 0 auto; padding: 56px 20px 48px; text-align: center; }
-  .icon { width: 112px; height: 112px; border-radius: 26px; }
-  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.2rem; line-height: 1.2; margin: 20px 0 6px; }
-  .tagline { color: var(--soft); font-size: 1.1rem; margin: 0 0 32px; }
-  ul { list-style: none; padding: 0; margin: 0 0 36px; text-align: left; display: grid; gap: 12px; }
-  li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; }
-  .store { display: inline-block; padding: 16px 28px; border-radius: 999px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: linear-gradient(135deg, #FFC861, #FF7A59); }
-  .store.soon { background: var(--line); color: var(--soft); }
-  footer { margin-top: 48px; font-size: .9rem; color: var(--soft); }
-  footer a { color: var(--accent); }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; color: var(--ink); background: var(--sky-mid);
+    font: 17px/1.6 var(--body); overflow-x: clip;
+    transition: color .8s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.04; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+  em { font-style: italic; font-weight: 400; }
+  p { margin: 0; }
+  .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--gutter); }
+  .soft { color: var(--soft); transition: color .8s ease; }
+  .eyebrow { font: 600 13px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
+  .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* ── Le ciel (fixe, piloté par le défilement) ── */
+  .sky { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none;
+    background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 55%, var(--sky-bot) 100%); }
+  .sky canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .sun, .moon { position: absolute; left: 0; top: 0; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; will-change: transform, opacity; }
+  .sun { background: radial-gradient(circle, #FFFBEA 0 30%, #FFE29A 46%, rgba(255,214,128,.45) 60%, rgba(255,200,120,0) 72%);
+    box-shadow: 0 0 120px 60px rgba(255,214,150,.35); }
+  .moon { width: 78px; height: 78px; margin: -39px 0 0 -39px; box-shadow: inset -20px 10px 0 0 #FFF6DD; filter: drop-shadow(0 0 22px rgba(255,246,221,.55)); }
+  .cloud { position: absolute; height: 60px; border-radius: 60px; background: #fff; filter: blur(14px); opacity: .7; animation: drift linear infinite; }
+  .cloud::before, .cloud::after { content: ''; position: absolute; background: #fff; border-radius: 50%; }
+  .cloud::before { width: 55%; height: 140%; left: 14%; top: -60%; }
+  .cloud::after { width: 40%; height: 120%; right: 12%; top: -40%; }
+  .clouds { position: absolute; inset: 0; transition: opacity .6s; }
+  @keyframes drift { from { transform: translateX(-30vw); } to { transform: translateX(130vw); } }
+
+  /* ── En-tête ── */
+  .top { position: fixed; inset: 0 0 auto; z-index: 20; padding: 14px var(--gutter); display: flex; align-items: center; gap: 12px; pointer-events: none; }
+  .top > * { pointer-events: auto; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 600 19px/1 var(--display); margin-right: auto; }
+  .brand img { width: 36px; height: 36px; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+  .chip-glass { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; min-height: 40px; border-radius: 999px;
+    background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    font: 600 14px/1 var(--body); color: var(--ink); transition: background-color .8s, border-color .8s, color .8s; }
+  .clock svg { width: 16px; height: 16px; }
+  .lang { cursor: pointer; }
+  .lang span { opacity: .45; } .lang span.on { opacity: 1; }
+
+  /* ── Boutons ── */
+  .store { display: inline-flex; align-items: center; gap: 12px; padding: 16px 26px 16px 20px; min-height: 58px; border-radius: 999px;
+    font: 600 17px/1.1 var(--body); text-decoration: none; color: #2B2240; border: 0;
+    background: linear-gradient(135deg, #FFC861, #FF7A59); box-shadow: 0 14px 34px -12px rgba(200,107,74,.7);
+    transition: transform .4s var(--spring), box-shadow .4s; }
+  .store:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 20px 40px -14px rgba(200,107,74,.8); }
+  .store svg { width: 22px; height: 22px; flex: none; }
+  .store.soon { background: var(--glass-strong); color: var(--soft); box-shadow: none; cursor: default; border: 1px solid var(--glass-border); }
+  .store.soon:hover { transform: none; }
+  .meta { font-size: 14px; color: var(--soft); margin-top: 14px; transition: color .8s; }
+
+  /* ── Sections ── */
+  section { position: relative; }
+  .scene { min-height: 100svh; display: flex; align-items: center; padding: 120px 0 80px; }
+  .split { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+  .split.rev > :first-child { order: 2; }
+  .lead { font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.55; color: var(--soft); max-width: 34ch; margin-top: 22px; transition: color .8s; }
+  .h-hero { font-size: clamp(2.8rem, 6.6vw, 5.6rem); }
+  .h-sec { font-size: clamp(2.3rem, 5.2vw, 4.4rem); }
+  .ctas { margin-top: 34px; }
+  .bullets { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; max-width: 40ch; }
+  .bullets li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: start; }
+  .bullets .ic { width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center; color: #fff; }
+  .bullets .ic svg { width: 18px; height: 18px; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s var(--spring); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ── Téléphone ── */
+  .phone { position: relative; width: min(340px, 82vw); aspect-ratio: 9 / 19; margin: 0 auto; border-radius: 48px; padding: 11px;
+    background: #1B1730; box-shadow: 0 50px 90px -30px rgba(43,34,64,.55), inset 0 0 0 2px #39325A; }
+  .screen { position: relative; height: 100%; border-radius: 38px; overflow: hidden; color: #2B2240;
+    background: linear-gradient(180deg, #8CC8FF 0%, #FFD9C2 55%, #FFEBDA 100%); display: flex; flex-direction: column; padding: 30px 18px 18px; }
+  .screen .pdate { font: 600 11px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: #6B5F7E; }
+  .screen .phello { font: 600 34px/1.1 var(--display); margin: 6px 0 16px; }
+  .float { animation: float 7s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-12px) rotate(-.6deg); } }
+
+  /* Carte à gratter */
+  .card-wrap { perspective: 1000px; flex: none; user-select: none; -webkit-user-select: none; }
+  .ctext.long { font-size: 17px; }
+  .ctext.xlong { font-size: 15px; }
+  .card { position: relative; min-height: 236px; border-radius: 26px; padding: 18px 18px 20px; background: rgba(255,255,255,.82);
+    border: 1px solid rgba(255,255,255,.9); box-shadow: 0 18px 40px -22px rgba(200,107,74,.6); transform-style: preserve-3d; transition: transform .45s ease; }
+  .card.flip { transform: rotateY(90deg); }
+  .card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .cat { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; color: #fff; font: 600 10.5px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; }
+  .cat svg { width: 12px; height: 12px; }
+  .ctype { font: 600 10.5px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: #6B5F7E; }
+  .ctext { font: italic 400 20px/1.42 var(--display); color: #2B2240; min-height: 6em; }
+  .ctext .w { opacity: .3; filter: blur(3px); display: inline-block; transform: translateY(6px); transition: opacity .5s ease, filter .5s ease, transform .5s ease; }
+  .ctext .w.on { opacity: 1; filter: none; transform: none; }
+  .scratch { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 26px; cursor: grab; touch-action: none; transition: opacity .7s ease; }
+  .scratch.gone { opacity: 0; pointer-events: none; }
+  .hint { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; pointer-events: none;
+    font: 600 13px/1 var(--body); color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,.18); transition: opacity .3s; }
+  .hint svg { width: 22px; height: 22px; animation: swipe 1.8s ease-in-out infinite; }
+  @keyframes swipe { 0%,100% { transform: translateX(-14px) rotate(-12deg); } 50% { transform: translateX(14px) rotate(8deg); } }
+  .actions { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 12px; border-radius: 22px; background: rgba(255,255,255,.6); border: 1px solid rgba(255,255,255,.8); }
+  .actions button { all: unset; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 0; min-height: 44px; font: 400 11.5px/1 var(--body); color: #2B2240; border-radius: 18px; }
+  .actions button:focus-visible { outline: 2px solid #FF7A59; }
+  .actions svg { width: 18px; height: 18px; transition: transform .35s var(--spring); }
+  .actions button:active svg { transform: scale(.85); }
+  .actions button.on svg { fill: #FF5E6C; stroke: #FF5E6C; transform: scale(1.15); }
+  .reveal-kbd { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px 16px; border-radius: 999px; border: 0; background: #2B2240; color: #fff; font: 600 13px var(--body); opacity: 0; pointer-events: none; }
+  .reveal-kbd:focus { opacity: 1; pointer-events: auto; }
+  .toast { position: absolute; left: 50%; bottom: 18px; transform: translate(-50%, 20px); opacity: 0; padding: 10px 16px; border-radius: 999px; background: #2B2240; color: #fff; font: 600 13px/1 var(--body); white-space: nowrap; transition: .35s var(--spring); pointer-events: none; z-index: 5; }
+  .toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+  .peek { margin-top: auto; display: grid; gap: 8px; min-height: 0; overflow: hidden; padding-top: 14px; }
+  .actions { flex: none; }
+  .peek-title { display: flex; justify-content: space-between; align-items: baseline; font: 600 19px/1.2 var(--display); margin-bottom: 2px; }
+  .peek-title small { font: 400 12px var(--body); color: #6B5F7E; }
+  .peek-row { display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 16px; background: rgba(255,255,255,.7); font: 400 14px/1.2 var(--body); }
+  .peek-row .check { width: 22px; height: 22px; }
+  .peek-row.done span { color: #6B5F7E; text-decoration: line-through; }
+  .peek-row.done .check circle { fill: #FF7A59; stroke: #FF7A59; }
+  .peek-row.done .check path { stroke-dashoffset: 0; }
+
+  /* Particules */
+  .spark { position: absolute; width: 8px; height: 8px; border-radius: 50%; pointer-events: none; z-index: 4; animation: spark .9s cubic-bezier(.2,.7,.3,1) forwards; }
+  @keyframes spark { to { transform: translate(var(--dx), var(--dy)) scale(.2); opacity: 0; } }
+
+  /* Tâches */
+  .tasks-head { display: flex; justify-content: space-between; align-items: center; margin: 4px 0 14px; }
+  .tasks-head h3 { font-size: 24px; }
+  .tasks-head small { font: 400 13px var(--body); color: #6B5F7E; display: block; margin-top: 2px; }
+  .ring { width: 44px; height: 44px; transform: rotate(-90deg); }
+  .ring circle { fill: none; stroke-width: 5; }
+  .ring .bg { stroke: rgba(43,34,64,.15); }
+  .ring .fg { stroke: url(#ringGrad); stroke-linecap: round; stroke-dasharray: 113; stroke-dashoffset: 113; transition: stroke-dashoffset .6s var(--spring); }
+  .todo { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+  .todo button { all: unset; box-sizing: border-box; cursor: pointer; width: 100%; display: flex; align-items: center; gap: 12px; padding: 13px 14px; min-height: 52px; border-radius: 18px; background: rgba(255,255,255,.75); font: 400 15px/1.2 var(--body); color: #2B2240; transition: background-color .3s, transform .3s var(--spring); position: relative; }
+  .todo button:active { transform: scale(.97); }
+  .todo button:focus-visible { outline: 2px solid #FF7A59; }
+  .check { width: 26px; height: 26px; flex: none; }
+  .check circle { fill: none; stroke: #B7AEC6; stroke-width: 2; transition: stroke .3s, fill .3s; }
+  .check path { fill: none; stroke: #fff; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 20; stroke-dashoffset: 20; transition: stroke-dashoffset .4s .1s ease; }
+  .todo .done .check circle { fill: #FF7A59; stroke: #FF7A59; }
+  .todo .done .check path { stroke-dashoffset: 0; }
+  .todo .label { position: relative; }
+  .todo .label::after { content: ''; position: absolute; left: 0; top: 52%; height: 1.5px; width: 0; background: #6B5F7E; transition: width .4s ease; }
+  .todo .done .label { color: #6B5F7E; }
+  .todo .done .label::after { width: 100%; }
+  .mini-garden { margin-top: auto; height: 170px; border-radius: 22px; background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.4)); position: relative; overflow: hidden; }
+  .mini-garden svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .grow { transform-box: fill-box; transform-origin: 50% 100%; transform: scale(0); transition: transform .9s var(--spring); }
+  .grow.on { transform: scale(1); }
+  .sway { transform-box: fill-box; transform-origin: 50% 100%; animation: sway 4s ease-in-out infinite; }
+  @keyframes sway { 50% { transform: rotate(3.5deg); } }
+  .again[hidden] { display: none; }
+  .again { all: unset; cursor: pointer; font: 600 12px var(--body); color: #6B5F7E; text-align: center; padding: 10px; min-height: 24px; }
+
+  /* Catégories */
+  .cats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; max-width: 520px; }
+  .cats .cat { font-size: 12px; padding: 9px 14px; box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
+  .cats .cat:nth-child(odd) { animation: float 6s ease-in-out infinite; }
+  .cats .cat:nth-child(even) { animation: float 7.5s ease-in-out -2s infinite; }
+  .steps { list-style: none; padding: 0; margin: 34px 0 0; display: grid; gap: 18px; counter-reset: s; }
+  .steps li { display: grid; grid-template-columns: 54px 1fr; gap: 16px; align-items: baseline; counter-increment: s; }
+  .steps li::before { content: '0' counter(s); font: italic 400 34px/1 var(--display); color: var(--accent); transition: color .8s; }
+  .steps strong { font-weight: 600; display: block; }
+  .big-count { font: 600 clamp(4rem, 12vw, 9rem)/.9 var(--display); letter-spacing: -.04em; background: linear-gradient(135deg, #FFC861, #FF7A59 50%, #F2709C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  /* Jardin */
+  .garden-scene { position: relative; height: clamp(260px, 38vw, 440px); margin-top: 40px; }
+  .garden-scene svg { position: absolute; inset: auto 0 0; width: 100%; height: 100%; overflow: visible; }
+  .stem { fill: none; stroke: #3FAE6A; stroke-width: 4; stroke-linecap: round; }
+  .draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); transition: stroke-dashoffset 1.2s ease; }
+  .on .draw { stroke-dashoffset: 0; }
+  .badges { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .badge { display: flex; align-items: center; gap: 12px; padding: 10px 16px 10px 10px; border-radius: 20px; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font: 600 14px/1.2 var(--body); transition: background-color .8s, border-color .8s; }
+  .badge i { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, #FFC861, #FF7A59); color: #fff; font-style: normal; }
+  .badge i svg { width: 18px; height: 18px; }
+  .badge small { display: block; font-weight: 400; color: var(--soft); font-size: 12px; transition: color .8s; }
+  .flame { width: 54px; height: 70px; filter: drop-shadow(0 6px 18px rgba(255,122,89,.6)); }
+  .flame path { transform-origin: 50% 100%; animation: flicker 1.6s ease-in-out infinite; }
+  .flame path + path { animation-duration: 1.1s; }
+  @keyframes flicker { 50% { transform: scale(.94, 1.06) skewX(2deg); } }
+  .streak { display: flex; align-items: center; gap: 16px; margin-top: 30px; }
+  .streak b { font: 600 34px/1 var(--display); display: block; }
+
+  /* Nuit */
+  .center { text-align: center; }
+  .center .lead { margin-left: auto; margin-right: auto; }
+  .h-night { font-size: clamp(3rem, 8vw, 7rem); }
+  .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 56px; text-align: left; }
+  .feature { padding: 26px; border-radius: 28px; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition: transform .5s var(--spring), background-color .8s, border-color .8s; }
+  .feature:hover { transform: translateY(-6px); }
+  .feature .ic { width: 46px; height: 46px; border-radius: 15px; display: grid; place-items: center; color: #fff; margin-bottom: 18px; }
+  .feature .ic svg { width: 22px; height: 22px; }
+  .feature h3 { font-size: 24px; margin-bottom: 8px; }
+  .feature p { color: var(--soft); font-size: 15.5px; transition: color .8s; }
+  .stories { position: relative; height: 380px; margin-top: 64px; }
+  .story { position: absolute; left: 50%; top: 0; width: 190px; aspect-ratio: 9 / 16; border-radius: 22px; padding: 22px 18px; color: #fff; display: flex; flex-direction: column; justify-content: space-between;
+    box-shadow: 0 30px 60px -24px rgba(0,0,0,.6); transform: translateX(-50%) rotate(0); transition: transform 1s var(--spring); }
+  .story p { font: italic 400 18px/1.35 var(--display); }
+  .story small { font: 600 9.5px/1.3 var(--body); letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+  .story small:last-child { font-size: 8px; letter-spacing: .02em; text-transform: none; overflow-wrap: anywhere; }
+  .stories.on .story:nth-child(1) { transform: translateX(calc(-50% - 170px)) rotate(-10deg) translateY(24px); }
+  .stories.on .story:nth-child(3) { transform: translateX(calc(-50% + 170px)) rotate(10deg) translateY(24px); }
+  .stories.on .story:nth-child(2) { transform: translateX(-50%) translateY(-8px); }
+
+  /* Fin */
+  .final { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px var(--gutter) 40px; }
+  .final .icon { width: 108px; height: 108px; border-radius: 28px; box-shadow: 0 24px 50px -18px rgba(0,0,0,.5); margin-bottom: 28px; }
+  footer { margin-top: auto; padding-top: 80px; font-size: 14px; color: var(--soft); transition: color .8s; }
+  footer a { color: var(--ink); }
+
+  @media (max-width: 900px) {
+    .split, .split.rev { grid-template-columns: 1fr; }
+    .split.rev > :first-child { order: 0; }
+    .scene { padding: 100px 0 64px; min-height: auto; }
+    .hero { min-height: 100svh; }
+    .features { grid-template-columns: 1fr; }
+    .stories { height: 300px; }
+    .story { width: 140px; padding: 16px 14px; }
+    .story p { font-size: 15px; }
+    .stories.on .story:nth-child(1) { transform: translateX(calc(-50% - 110px)) rotate(-10deg) translateY(24px); }
+    .stories.on .story:nth-child(3) { transform: translateX(calc(-50% + 110px)) rotate(10deg) translateY(24px); }
+    .clock { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
 </style>
 </head>
 <!-- Passer data-published à "true" quand l'app est en production sur Google Play. -->
 <body data-published="false">
+
+<div class="sky" aria-hidden="true">
+  <div class="clouds" id="clouds">
+    <div class="cloud" style="top:14%; width:220px; animation-duration:140s; animation-delay:-30s"></div>
+    <div class="cloud" style="top:28%; width:160px; animation-duration:110s; animation-delay:-80s; opacity:.55"></div>
+    <div class="cloud" style="top:8%; width:300px; animation-duration:180s; animation-delay:-120s; opacity:.5"></div>
+  </div>
+  <div class="sun" id="sun"></div>
+  <div class="moon" id="moon"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="top">
+  <a class="brand" href="#"><img src="icon.png" alt="" width="36" height="36"> Bonne Nouvelle</a>
+  <span class="chip-glass clock" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" id="clockIcon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <span id="clockTime">06:30</span>
+  </span>
+  <button class="chip-glass lang" id="lang" type="button" aria-label="English version"><span data-l="fr">FR</span>·<span data-l="en">EN</span></button>
+</header>
+
 <main>
-  <img class="icon" src="icon.png" alt="">
-  <h1>Bonne Nouvelle</h1>
-  <p class="tagline" data-i18n="tagline">Une bonne nouvelle chaque matin.</p>
-  <ul>
-    <li data-i18n="f1">☀️ Une citation, un fait étonnant, un mini-défi ou une actu positive, à gratter du bout du doigt.</li>
-    <li data-i18n="f2">✅ Une liste de tâches du jour, simple et sans pression.</li>
-    <li data-i18n="f3">🌸 Un jardin qui fleurit à chaque tâche terminée, sous un ciel qui suit l'heure.</li>
-  </ul>
-  <a class="store" id="store" href="https://play.google.com/store/apps/details?id=com.bonnenouvelle.bonne_nouvelle" data-i18n="store">Télécharger sur Google Play</a>
-  <footer>
-    <span data-i18n="free">Gratuite · français, anglais, espagnol, allemand</span><br>
-    <a href="confidentialite.html" id="privacy" data-i18n="privacy">Politique de confidentialité</a> · <a href="mailto:caffeinsoft@gmail.com">Contact</a>
-  </footer>
+  <!-- 1 · Aube -->
+  <section class="scene hero" data-hour="6.6" aria-labelledby="t-hero">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">Chaque matin, une bonne nouvelle</p>
+        <h1 id="t-hero" class="h-hero" style="margin-top:18px"><span data-i18n="h1a">Et si ta journée commençait par</span> <em data-i18n="h1b">une bonne nouvelle&nbsp;?</em></h1>
+        <p class="lead" data-i18n="lead">Une carte à gratter du bout du doigt, de petites victoires à cocher et un jardin qui fleurit avec toi, sous un ciel qui suit l'heure.</p>
+        <div class="ctas">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.bonnenouvelle.bonne_nouvelle">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.6v18.8c0 .5.5.8.9.6l16.3-9.4a.7.7 0 0 0 0-1.2L4.9 2c-.4-.2-.9.1-.9.6Z"/></svg>
+            <span data-i18n="store">Télécharger sur Google Play</span>
+          </a>
+          <p class="meta" data-i18n="free">Gratuite · français, anglais, espagnol, allemand</p>
+        </div>
+      </div>
+
+      <div class="float">
+        <div class="phone">
+          <div class="screen">
+            <p class="pdate" id="pdate">Samedi 21 novembre</p>
+            <p class="phello" data-i18n="hello">Bonjour</p>
+            <div class="card-wrap">
+              <div class="card" id="card">
+                <div class="card-head">
+                  <span class="cat" id="cardCat"></span>
+                  <span class="ctype" id="cardType"></span>
+                </div>
+                <p class="ctext" id="cardText" aria-live="polite"></p>
+                <canvas class="scratch" id="scratch" aria-hidden="true"></canvas>
+                <p class="hint" id="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v4a6 6 0 0 1-6 6h-.6a6 6 0 0 1-4.9-2.6L4 14.8a1.5 1.5 0 0 1 2.4-1.8L9 15.5"/></svg><span data-i18n="scratch">Gratte-moi</span></p>
+                <button class="reveal-kbd" id="revealKbd" type="button" data-i18n="revealBtn">Révéler la bonne nouvelle</button>
+              </div>
+            </div>
+            <div class="actions">
+              <button type="button" id="aListen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg><span data-i18n="listen">Écouter</span></button>
+              <button type="button" id="aOther"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.4 6.4L3 16M3 12a9 9 0 0 1 15.4-6.4L21 8M21 3v5h-5M3 21v-5h5"/></svg><span data-i18n="other">Une autre</span></button>
+              <button type="button" id="aKeep" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8Z"/></svg><span data-i18n="keep">Garder</span></button>
+              <button type="button" id="aShare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8h16v-8M16 6l-4-4-4 4M12 2v13"/></svg><span data-i18n="share">Partager</span></button>
+            </div>
+            <div class="peek" aria-hidden="true">
+              <p class="peek-title"><span data-i18n="tasksT">Mes tâches du jour</span><small>1/3</small></p>
+              <p class="peek-row done"><svg class="check" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11"/><path d="m8 13.5 3.2 3.2L18 9.6"/></svg><span data-i18n="pk1">Appeler Mamie</span></p>
+              <p class="peek-row"><svg class="check" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11"/><path d="m8 13.5 3.2 3.2L18 9.6"/></svg><span data-i18n="pk2">Marcher 20 minutes</span></p>
+            </div>
+            <p class="toast" id="toast1"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Matin : le rituel -->
+  <section class="scene" data-hour="9" aria-labelledby="t-ritual">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="e2">Le rituel du matin</p>
+        <h2 id="t-ritual" class="h-sec" style="margin-top:16px"><span data-i18n="h2a">Une petite dose de positif,</span> <em data-i18n="h2b">chaque jour.</em></h2>
+        <ol class="steps">
+          <li><p><strong data-i18n="s1t">Gratte la carte</strong><span class="soft" data-i18n="s1">… ou touche-la pour la retourner.</span></p></li>
+          <li><p><strong data-i18n="s2t">Le texte s'écrit mot à mot</strong><span class="soft" data-i18n="s2">Une citation, un fait étonnant, un mini-défi ou une actu qui redonne foi dans le monde.</span></p></li>
+          <li><p><strong data-i18n="s3t">Écoute-la à voix haute</strong><span class="soft" data-i18n="s3">Pendant que le café coule.</span></p></li>
+        </ol>
+      </div>
+      <div class="reveal">
+        <p class="big-count" id="count">430+</p>
+        <p class="lead" style="margin-top:8px" data-i18n="countTxt">bonnes nouvelles déjà prêtes, et de nouvelles chaque semaine, sans mettre l'app à jour.</p>
+        <div class="cats" id="cats"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Midi : les tâches -->
+  <section class="scene" data-hour="12.5" aria-labelledby="t-tasks">
+    <div class="wrap split rev">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="e3">De petites victoires</p>
+        <h2 id="t-tasks" class="h-sec" style="margin-top:16px"><span data-i18n="h3a">Tu coches,</span> <em data-i18n="h3b">ça fleurit.</em></h2>
+        <p class="lead" data-i18n="l3">Une liste du jour simple et sans pression. Essaie : coche une tâche sur le téléphone.</p>
+        <ul class="bullets">
+          <li><span class="ic" style="background:linear-gradient(135deg,#FFC861,#FF7A59)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span data-i18n="b1">La coche se dessine, les étincelles jaillissent.</span></li>
+          <li><span class="ic" style="background:linear-gradient(135deg,#B6EE7A,#1FC58E)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12c0-4 3-7 7-7 0 4-3 7-7 7ZM12 14c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5Z"/></svg></span><span data-i18n="b2">Chaque tâche terminée fait éclore une fleur unique.</span></li>
+          <li><span class="ic" style="background:linear-gradient(135deg,#C3A8FF,#7C5CFF)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h13M12 6l6 6-6 6"/></svg></span><span data-i18n="b3">Ce qui n'est pas fait passe au lendemain, tout simplement.</span></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="phone">
+          <div class="screen" style="background:linear-gradient(180deg,#71B8FF 0%,#C4E5FF 55%,#FFF4E6 100%)">
+            <div class="tasks-head">
+              <div><h3 data-i18n="tasksT">Mes tâches du jour</h3><small id="taskCount">0/4</small></div>
+              <svg class="ring" viewBox="0 0 44 44" aria-hidden="true">
+                <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC861"/><stop offset="1" stop-color="#FF7A59"/></linearGradient></defs>
+                <circle class="bg" cx="22" cy="22" r="18"/><circle class="fg" id="ring" cx="22" cy="22" r="18"/>
+              </svg>
+            </div>
+            <ul class="todo" id="todo"></ul>
+            <button class="again" id="again" type="button" hidden data-i18n="again">Recommencer</button>
+            <div class="mini-garden"><svg id="miniGarden" viewBox="0 0 300 120" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path d="M-10 112 Q150 92 310 112 V130 H-10Z" fill="#5CBF7E"/></svg></div>
+            <p class="toast" id="toast2"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Fin d'après-midi : le jardin -->
+  <section class="scene" data-hour="17.9" aria-labelledby="t-garden" style="flex-direction:column; align-items:stretch">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="e4">Ton jardin</p>
+        <h2 id="t-garden" class="h-sec" style="margin-top:16px"><span data-i18n="h4a">Un jardin qui fleurit</span> <em data-i18n="h4b">avec toi.</em></h2>
+        <p class="lead" data-i18n="l4">Les fleurs ondulent au vent, ta série de jours grandit comme une petite flamme, et 23 badges se débloquent au fil des matins.</p>
+      </div>
+      <div class="reveal">
+        <div class="streak">
+          <svg class="flame" viewBox="0 0 54 70" aria-hidden="true"><defs><linearGradient id="fl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF5E6C"/><stop offset=".6" stop-color="#FF9E5A"/><stop offset="1" stop-color="#FFD27A"/></linearGradient></defs><path d="M27 2C30 18 48 26 48 46a21 21 0 0 1-42 0C6 34 14 28 18 18c2 8 6 10 9 10-2-10-2-18 0-26Z" fill="url(#fl)"/><path d="M27 34c3 6 10 9 10 17a10 10 0 0 1-20 0c0-6 6-10 10-17Z" fill="#FFF3D6"/></svg>
+          <div><b data-i18n="streakT">7 jours de suite</b><span class="soft" data-i18n="streak">Ta flamme ne demande qu'à grandir.</span></div>
+        </div>
+        <div class="badges">
+          <span class="badge"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 22V12M12 12c0-4 3-7 7-7 0 4-3 7-7 7Z"/></svg></i><span><span data-i18n="bd1">Première graine</span><small data-i18n="bd1s">1 tâche terminée</small></span></span>
+          <span class="badge"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></i><span><span data-i18n="bd2">Semaine radieuse</span><small data-i18n="bd2s">7 jours de suite</small></span></span>
+          <span class="badge"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M17 18a5 5 0 0 0-10 0M12 2v7M4.2 10.2l1.4 1.4M1 18h2M21 18h2M18.4 11.6l1.4-1.4"/></svg></i><span><span data-i18n="bd3">Lève-tôt</span><small data-i18n="bd3s">7 rituels du matin</small></span></span>
+          <span class="badge"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2l3 6.5 7 .9-5.1 4.8 1.3 7-6.2-3.4-6.2 3.4 1.3-7L2 9.4l7-.9L12 2Z"/></svg></i><span><span data-i18n="bd4">Cent matins</span><small data-i18n="bd4s">100 jours de suite</small></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="garden-scene" id="gardenScene">
+      <svg id="bigGarden" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+    </div>
+  </section>
+
+  <!-- 5 · Soir et nuit : le ciel -->
+  <section class="scene" data-hour="21.3" aria-labelledby="t-sky">
+    <div class="wrap center reveal">
+      <p class="eyebrow" data-i18n="e5">Un ciel vivant</p>
+      <h2 id="t-sky" class="h-night" style="margin-top:16px"><span data-i18n="h5a">Du matin</span> <em data-i18n="h5b">aux étoiles.</em></h2>
+      <p class="lead" data-i18n="l5">L'app suit l'heure réelle : soleil du matin, nuages, coucher de soleil, puis lune et étoiles. La nuit, des lucioles s'invitent dans ton jardin. Ce que tu vois en faisant défiler cette page, c'est elle.</p>
+    </div>
+  </section>
+
+  <!-- 6 · Nuit : et aussi -->
+  <section class="scene" data-hour="24.6" aria-labelledby="t-more">
+    <div class="wrap">
+      <div class="center reveal">
+        <p class="eyebrow" data-i18n="e6">Et aussi</p>
+        <h2 id="t-more" class="h-sec" style="margin-top:16px"><span data-i18n="h6a">Garde-les,</span> <em data-i18n="h6b">partage-les.</em></h2>
+      </div>
+      <div class="stories" id="stories" aria-hidden="true">
+        <div class="story" style="background:linear-gradient(160deg,#C3A8FF,#7C5CFF)"><small>Bonne Nouvelle</small><p data-i18n="st1">Petit pas après petit pas, on arrive loin.</p><small>bonne-nouvelle.caffeinsoft.com</small></div>
+        <div class="story" style="background:linear-gradient(160deg,#26235E,#5B3A80 55%,#B5607A)"><small>Bonne Nouvelle</small><p data-i18n="st2">Ce soir, regarde le ciel une minute. Rien d'autre.</p><small>bonne-nouvelle.caffeinsoft.com</small></div>
+        <div class="story" style="background:linear-gradient(160deg,#7EF0E2,#1FA59A)"><small>Bonne Nouvelle</small><p data-i18n="st3">Les forêts d'Europe gagnent du terrain depuis 30 ans.</p><small>bonne-nouvelle.caffeinsoft.com</small></div>
+      </div>
+      <div class="features">
+        <div class="feature reveal"><div class="ic" style="background:linear-gradient(135deg,#FFA3C2,#FF5E8A)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="16" rx="2.5" transform="rotate(8 12 11)"/><path d="M4 7.5 3 18a2 2 0 0 0 1.8 2.2l7 .7"/></svg></div><h3 data-i18n="f1t">Favoris à glisser</h3><p data-i18n="f1">Relis tes nouvelles préférées comme des cartes : à droite tu gardes, à gauche tu passes.</p></div>
+        <div class="feature reveal"><div class="ic" style="background:linear-gradient(135deg,#FFD08A,#F2709C)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M10 8h4M10 12h4"/></svg></div><h3 data-i18n="f2t">Partage en story</h3><p data-i18n="f2">Une jolie image 9:16 aux couleurs du ciel du moment, prête pour Instagram, WhatsApp ou tes proches.</p></div>
+        <div class="feature reveal"><div class="ic" style="background:linear-gradient(135deg,#8EDBFF,#4A8CFF)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/></svg></div><h3 data-i18n="f3t">Un widget</h3><p data-i18n="f3">La nouvelle du jour sur ton écran d'accueil, sur le ciel du moment.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · Avant l'aube -->
+  <section class="final" data-hour="29.7" aria-labelledby="t-final">
+    <img class="icon reveal" src="icon.png" alt="" width="108" height="108">
+    <h2 id="t-final" class="h-night reveal"><span data-i18n="h7a">À demain</span> <em data-i18n="h7b">matin.</em></h2>
+    <p class="lead reveal" data-i18n="l7">Commence ta prochaine journée du bon pied.</p>
+    <div class="ctas reveal">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.bonnenouvelle.bonne_nouvelle">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.6v18.8c0 .5.5.8.9.6l16.3-9.4a.7.7 0 0 0 0-1.2L4.9 2c-.4-.2-.9.1-.9.6Z"/></svg>
+        <span data-i18n="store">Télécharger sur Google Play</span>
+      </a>
+      <p class="meta" data-i18n="free2">Gratuite. Une option unique, sans abonnement, retire les publicités.</p>
+    </div>
+    <footer>
+      <a href="confidentialite.html" class="privacy" data-i18n="privacy">Politique de confidentialité</a> · <a href="mailto:caffeinsoft@gmail.com">Contact</a> · <a href="https://caffeinsoft.com" data-i18n="by">Une app CaffeinSoft</a>
+    </footer>
+  </section>
 </main>
+
 <script>
-  // Français par défaut, anglais pour les autres langues du navigateur.
-  var en = {
-    tagline: 'Good news, every morning.',
-    f1: '☀️ A quote, a surprising fact, a mini-challenge or a heart-warming story, revealed with a scratch of your finger.',
-    f2: '✅ A simple, pressure-free daily to-do list.',
-    f3: '🌸 A garden that blooms with every task you finish, under a sky that follows the time of day.',
-    store: 'Get it on Google Play',
-    soon: 'Coming soon on Google Play',
-    free: 'Free · English, French, Spanish, German',
-    privacy: 'Privacy policy'
+(function () {
+  'use strict';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ───────── Langue : français par défaut, anglais sinon (choix mémorisé) ───────── */
+  var EN = {
+    eyebrow: 'Good news, every morning', h1a: 'What if your day started with', h1b: 'good news?',
+    lead: 'A card to scratch with your fingertip, tiny wins to tick off and a garden that blooms with you, under a sky that follows the time of day.',
+    store: 'Get it on Google Play', soon: 'Coming soon on Google Play', free: 'Free · English, French, Spanish, German',
+    hello: 'Good morning', scratch: 'Scratch me', revealBtn: 'Reveal the good news', listen: 'Listen', other: 'Another', keep: 'Keep', share: 'Share',
+    e2: 'The morning ritual', h2a: 'A little dose of positivity,', h2b: 'every day.',
+    s1t: 'Scratch the card', s1: '… or tap it to flip it over.', s2t: 'The text writes itself, word by word', s2: 'A quote, a surprising fact, a mini-challenge or a story that restores your faith in the world.',
+    s3t: 'Listen to it out loud', s3: 'While the coffee brews.',
+    countTxt: 'pieces of good news ready to go, with new ones every week, no app update needed.',
+    e3: 'Tiny wins', h3a: 'You tick,', h3b: 'it blooms.', l3: 'A simple, pressure-free daily list. Try it: tick a task on the phone.',
+    b1: 'The tick draws itself, sparks fly.', b2: 'Every finished task grows a unique flower.', b3: 'Whatever is left moves to tomorrow. Simple.',
+    tasksT: 'Today’s tasks', pk1: 'Call Grandma', pk2: 'Walk for 20 minutes', again: 'Start again', allDone: 'Radiant day!',
+    e4: 'Your garden', h4a: 'A garden that blooms', h4b: 'with you.', l4: 'Flowers sway in the wind, your streak grows like a little flame, and 23 badges unlock morning after morning.',
+    streakT: '7 days in a row', streak: 'Your flame just wants to grow.',
+    bd1: 'First seed', bd1s: '1 task done', bd2: 'Radiant week', bd2s: '7 days in a row', bd3: 'Early bird', bd3s: '7 morning rituals', bd4: 'A hundred mornings', bd4s: '100 days in a row',
+    e5: 'A living sky', h5a: 'From morning', h5b: 'to the stars.',
+    l5: 'The app follows the real time of day: morning sun, clouds, sunset, then moon and stars. At night, fireflies visit your garden. What you see while scrolling this page is the app.',
+    e6: 'And also', h6a: 'Keep them,', h6b: 'share them.',
+    st1: 'Step by step, you go a long way.', st2: 'Tonight, look at the sky for a minute. Nothing else.', st3: 'Europe’s forests have been growing for 30 years.',
+    f1t: 'Swipeable favourites', f1: 'Reread your favourite good news like cards: swipe right to keep, left to skip.',
+    f2t: 'Share as a story', f2: 'A lovely 9:16 picture in the colours of the current sky, ready for Instagram, WhatsApp or your loved ones.',
+    f3t: 'A widget', f3: 'Today’s good news on your home screen, over the current sky.',
+    h7a: 'See you', h7b: 'tomorrow morning.', l7: 'Start your next day on the right foot.',
+    free2: 'Free. A one-time option, no subscription, removes the ads.',
+    privacy: 'Privacy policy', by: 'A CaffeinSoft app', copied: 'Link copied', kept: 'Kept in your favourites'
   };
-  var isFr = (navigator.language || 'fr').toLowerCase().indexOf('fr') === 0;
-  if (!isFr) {
-    document.documentElement.lang = 'en';
-    document.querySelectorAll('[data-i18n]').forEach(function (el) { el.textContent = en[el.dataset.i18n]; });
-    document.getElementById('privacy').href = 'privacy.html';
+  var FR = {};
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { FR[el.dataset.i18n] = el.textContent; });
+  Object.assign(FR, { soon: 'Bientôt sur Google Play', allDone: 'Journée radieuse !', copied: 'Lien copié', kept: 'Gardée dans tes favoris' });
+
+  var lang;
+  try { lang = localStorage.getItem('bn-lang'); } catch (e) {}
+  if (lang !== 'fr' && lang !== 'en') lang = (navigator.language || 'fr').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+  var published = document.body.dataset.published === 'true';
+
+  function t(key) { return (lang === 'en' ? EN : FR)[key] || FR[key] || ''; }
+  function applyLang() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('.privacy').forEach(function (a) { a.href = lang === 'fr' ? 'confidentialite.html' : 'privacy.html'; });
+    document.querySelectorAll('#lang span').forEach(function (s) { s.classList.toggle('on', s.dataset.l === lang); });
+    document.getElementById('lang').setAttribute('aria-label', lang === 'fr' ? 'English version' : 'Version française');
+    // Tant que l'app n'est pas publiée, la fiche Play renvoie une erreur : pas de lien.
+    if (!published) document.querySelectorAll('.store').forEach(function (a) {
+      a.removeAttribute('href'); a.classList.add('soon'); a.querySelector('span').textContent = t('soon');
+    });
+    document.getElementById('pdate').textContent = new Intl.DateTimeFormat(lang === 'fr' ? 'fr-FR' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date());
+    renderCats(); renderTodos(); showItem(current, revealed);
+    if (!scratched) { last = null; paintVeil(); }
   }
-  // Tant que l'app n'est pas publiée, la fiche Play renvoie une erreur : pas de lien.
-  if (document.body.dataset.published !== 'true') {
-    var store = document.getElementById('store');
-    store.removeAttribute('href');
-    store.classList.add('soon');
-    store.textContent = isFr ? 'Bientôt sur Google Play' : en.soon;
+  document.getElementById('lang').addEventListener('click', function () {
+    lang = lang === 'fr' ? 'en' : 'fr';
+    try { localStorage.setItem('bn-lang', lang); } catch (e) {}
+    applyLang();
+  });
+
+  /* ───────── Le ciel : mêmes couleurs que l'app (src/sky/palette.ts) ───────── */
+  var KEYFRAMES = [
+    [0, ['#0B0A26', '#1B1840', '#2E2462']], [5, ['#1B1840', '#4B3A78', '#C77D9A']], [6.5, ['#7A74C4', '#F7A6A1', '#FFD3A5']],
+    [8, ['#8CC8FF', '#FFD9C2', '#FFEBDA']], [12, ['#71B8FF', '#C4E5FF', '#FFF4E6']], [16, ['#80B8F0', '#FFE0B8', '#FFD1A1']],
+    [18.5, ['#5161B8', '#F08A8A', '#FFB86B']], [20, ['#26235E', '#5B3A80', '#B5607A']], [22, ['#0F0E2E', '#1E1A4A', '#33295F']],
+    [24, ['#0B0A26', '#1B1840', '#2E2462']]
+  ];
+  function rgb(h) { var n = parseInt(h.slice(1), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; }
+  function mix(a, b, k) { var x = rgb(a), y = rgb(b); return 'rgb(' + [0, 1, 2].map(function (i) { return Math.round(x[i] + (y[i] - x[i]) * k); }).join(',') + ')'; }
+  function lum(c) { var m = c.match(/\d+/g).map(Number); return (0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2]) / 255; }
+  function skyColors(hour) {
+    var h = ((hour % 24) + 24) % 24;
+    for (var i = 0; i < KEYFRAMES.length - 1; i++) {
+      var a = KEYFRAMES[i], b = KEYFRAMES[i + 1];
+      if (h >= a[0] && h <= b[0]) { var k = (h - a[0]) / (b[0] - a[0]); return [0, 1, 2].map(function (j) { return mix(a[1][j], b[1][j], k); }); }
+    }
+    return KEYFRAMES[0][1];
   }
+  function isNight(h) { h = ((h % 24) + 24) % 24; return h >= 20 || h < 6.5; }
+  function celestial(hour) {
+    var h = ((hour % 24) + 24) % 24, sun = !isNight(h);
+    var span = sun ? 13.5 : 10.5, start = sun ? 6.5 : 20;
+    var p = ((h - start + 24) % 24) / span;
+    return { x: 0.1 + p * 0.8, y: 0.34 - Math.sin(p * Math.PI) * 0.26, sun: sun, p: p };
+  }
+
+  var root = document.documentElement, sunEl = document.getElementById('sun'), moonEl = document.getElementById('moon');
+  var cloudsEl = document.getElementById('clouds'), clockTime = document.getElementById('clockTime'), clockIcon = document.getElementById('clockIcon');
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  var night = 0, sceneHour = 6.6;
+  var SUN_ICON = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+  var MOON_ICON = '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/>';
+  var lastIcon = '';
+
+  function paintSky(hour) {
+    sceneHour = hour;
+    var c = skyColors(hour);
+    root.style.setProperty('--sky-top', c[0]); root.style.setProperty('--sky-mid', c[1]); root.style.setProperty('--sky-bot', c[2]);
+    themeMeta.content = c[0];
+    var l = (lum(c[0]) + lum(c[1])) / 2;
+    var dark = l < 0.5;
+    if ((root.dataset.theme === 'night') !== dark) root.dataset.theme = dark ? 'night' : 'day';
+    night = Math.max(0, Math.min(1, (0.5 - l) / 0.22));
+    var vw = innerWidth, vh = innerHeight, pos = celestial(hour);
+    var fade = Math.min(1, Math.sin(pos.p * Math.PI) * 3.2);
+    var x = pos.x * vw, y = pos.y * vh;
+    sunEl.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    moonEl.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    sunEl.style.opacity = pos.sun ? fade : 0;
+    moonEl.style.opacity = pos.sun ? 0 : fade;
+    cloudsEl.style.opacity = Math.max(0, 1 - night * 1.4) * 0.9;
+    var hh = ((hour % 24) + 24) % 24, H = Math.floor(hh), M = Math.floor((hh - H) * 60 / 5) * 5;
+    clockTime.textContent = (H < 10 ? '0' : '') + H + ':' + (M < 10 ? '0' : '') + M;
+    var icon = pos.sun ? SUN_ICON : MOON_ICON;
+    if (icon !== lastIcon) { clockIcon.innerHTML = icon; lastIcon = icon; }
+  }
+
+  // Heure de la scène = interpolation entre les sections (data-hour) selon le défilement.
+  var anchors = [].slice.call(document.querySelectorAll('[data-hour]'));
+  function hourFromScroll() {
+    var mid = innerHeight / 2, pts = anchors.map(function (s) {
+      var r = s.getBoundingClientRect(); return { c: r.top + Math.min(r.height, innerHeight) / 2, h: parseFloat(s.dataset.hour) };
+    });
+    if (mid <= pts[0].c) return pts[0].h;
+    for (var i = 0; i < pts.length - 1; i++) {
+      if (mid >= pts[i].c && mid <= pts[i + 1].c) {
+        var k = (mid - pts[i].c) / (pts[i + 1].c - pts[i].c);
+        k = k * k * (3 - 2 * k); // lissage
+        return pts[i].h + (pts[i + 1].h - pts[i].h) * k;
+      }
+    }
+    return pts[pts.length - 1].h;
+  }
+  var intro = reduce || scrollY > 40 ? null : { t0: performance.now(), from: 4.4 };
+  var ticking = false;
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; if (!intro) paintSky(hourFromScroll()); }); } }
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', function () { sizeCanvas(); onScroll(); });
+
+  /* Étoiles, étoiles filantes et lucioles */
+  var cv = document.getElementById('stars'), ctx = cv.getContext('2d'), dpr = 1, W = 0, Hh = 0;
+  var seed = 7; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+  var stars = [], flies = [], shooting = [];
+  for (var i = 0; i < 180; i++) stars.push({ x: rnd(), y: rnd() * 0.85, r: rnd() * 1.3 + 0.3, tw: rnd() * 6.28, sp: 0.6 + rnd() * 1.6 });
+  for (i = 0; i < 22; i++) flies.push({ x: rnd(), y: 0.62 + rnd() * 0.36, a: rnd() * 6.28, s: 0.0004 + rnd() * 0.0008, ph: rnd() * 6.28 });
+  function sizeCanvas() { dpr = Math.min(devicePixelRatio || 1, 2); W = innerWidth; Hh = innerHeight; cv.width = W * dpr; cv.height = Hh * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  sizeCanvas();
+  var nextShoot = 0, cleared = false;
+  function frame(now) {
+    if (intro) {
+      var k = Math.min(1, (now - intro.t0) / 2600), e = 1 - Math.pow(1 - k, 3);
+      paintSky(intro.from + (hourFromScroll() - intro.from) * e);
+      if (k >= 1) intro = null;
+    }
+    if (night > 0.01) {
+      cleared = false;
+      ctx.clearRect(0, 0, W, Hh);
+      var tt = now / 1000;
+      for (var i = 0; i < stars.length; i++) {
+        var s = stars[i], a = night * (reduce ? 0.8 : 0.55 + 0.45 * Math.sin(tt * s.sp + s.tw));
+        ctx.globalAlpha = a; ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath(); ctx.arc(s.x * W, s.y * Hh, s.r, 0, 6.283); ctx.fill();
+      }
+      if (!reduce) {
+        if (night > 0.6 && now > nextShoot) {
+          shooting.push({ x: Math.random() * W * 0.8 + W * 0.1, y: Math.random() * Hh * 0.35, vx: 7 + Math.random() * 5, vy: 3 + Math.random() * 2, life: 1 });
+          nextShoot = now + 2500 + Math.random() * 4500;
+        }
+        shooting = shooting.filter(function (m) {
+          m.x += m.vx; m.y += m.vy; m.life -= 0.018;
+          var g = ctx.createLinearGradient(m.x, m.y, m.x - m.vx * 14, m.y - m.vy * 14);
+          g.addColorStop(0, 'rgba(255,255,255,' + (m.life * night) + ')'); g.addColorStop(1, 'rgba(255,255,255,0)');
+          ctx.globalAlpha = 1; ctx.strokeStyle = g; ctx.lineWidth = 2; ctx.lineCap = 'round';
+          ctx.beginPath(); ctx.moveTo(m.x, m.y); ctx.lineTo(m.x - m.vx * 14, m.y - m.vy * 14); ctx.stroke();
+          return m.life > 0;
+        });
+        for (i = 0; i < flies.length; i++) {
+          var f = flies[i];
+          f.a += (Math.random() - 0.5) * 0.3; f.x += Math.cos(f.a) * f.s; f.y += Math.sin(f.a) * f.s * 0.6;
+          if (f.x < 0) f.x = 1; if (f.x > 1) f.x = 0; if (f.y < 0.6) f.y = 0.6; if (f.y > 0.99) f.y = 0.99;
+          var glow = night * (0.35 + 0.65 * Math.max(0, Math.sin(tt * 1.7 + f.ph)));
+          var gx = f.x * W, gy = f.y * Hh, rg = ctx.createRadialGradient(gx, gy, 0, gx, gy, 9);
+          rg.addColorStop(0, 'rgba(255,236,150,' + glow + ')'); rg.addColorStop(1, 'rgba(255,220,120,0)');
+          ctx.globalAlpha = 1; ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(gx, gy, 9, 0, 6.283); ctx.fill();
+        }
+      }
+      ctx.globalAlpha = 1;
+    } else if (!cleared) { ctx.clearRect(0, 0, W, Hh); cleared = true; }
+    requestAnimationFrame(frame);
+  }
+  paintSky(intro ? intro.from : hourFromScroll());
+  requestAnimationFrame(frame);
+
+  /* ───────── Apparitions ───────── */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in', 'on'); io.unobserve(en.target); } });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.reveal, #stories, #gardenScene').forEach(function (el) { io.observe(el); });
+
+  /* ───────── Catégories (couleurs de src/content/categories.ts) ───────── */
+  var CATS = {
+    motivation: { g: ['#FFC861', '#FF7A59'], fr: 'Motivation', en: 'Motivation', ic: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/>' },
+    humour: { g: ['#FFA3C2', '#FF5E8A'], fr: 'Humour', en: 'Humour', ic: '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>' },
+    'bien-etre': { g: ['#FFC9A8', '#FF8FA3'], fr: 'Bien-être', en: 'Well-being', ic: '<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8Z"/>' },
+    developpement: { g: ['#C3A8FF', '#7C5CFF'], fr: 'Développement', en: 'Growth', ic: '<path d="m23 6-9.5 9.5-5-5L1 18M17 6h6v6"/>' },
+    curiosite: { g: ['#8EDBFF', '#4A8CFF'], fr: 'Curiosité', en: 'Curiosity', ic: '<circle cx="12" cy="12" r="10"/><path d="m14.3 8 5.7 9.9M9.7 8h11.5M7.4 12l5.7-9.9M9.7 16 4 6.1M14.3 16H2.8M16.6 12l-5.7 9.9"/>' },
+    defi: { g: ['#B6EE7A', '#1FC58E'], fr: 'Défi', en: 'Challenge', ic: '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>' },
+    planete: { g: ['#7EF0E2', '#1FA59A'], fr: 'Planète', en: 'Planet', ic: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>' },
+    monde: { g: ['#FFD08A', '#F2709C'], fr: 'Monde', en: 'World', ic: '<circle cx="12" cy="12" r="2"/><path d="M16.2 7.8a6 6 0 0 1 0 8.5M7.8 16.2a6 6 0 0 1 0-8.5M19.1 4.9a10 10 0 0 1 0 14.2M4.9 19.1a10 10 0 0 1 0-14.2"/>' }
+  };
+  var TYPES = { quote: { fr: 'Citation', en: 'Quote' }, fact: { fr: 'Le saviez-vous ?', en: 'Did you know?' }, challenge: { fr: 'Mini-défi', en: 'Mini-challenge' }, actu: { fr: 'Actu positive', en: 'Good news' } };
+  function catChip(el, key) {
+    var c = CATS[key] || CATS.motivation;
+    el.style.background = 'linear-gradient(135deg,' + c.g[0] + ',' + c.g[1] + ')';
+    el.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' + c.ic + '</svg>';
+    el.appendChild(document.createTextNode(c[lang]));
+  }
+  function renderCats() {
+    var box = document.getElementById('cats'); box.textContent = '';
+    Object.keys(CATS).forEach(function (k) { var s = document.createElement('span'); s.className = 'cat'; catChip(s, k); box.appendChild(s); });
+  }
+
+  /* ───────── La carte du jour : vrais contenus en ligne (contenus.json) ───────── */
+  var FALLBACK = [
+    { id: 'f1', category: 'bien-etre', type: 'quote', text: { fr: 'Respire. Ce moment est le seul dont tu as besoin maintenant.', en: 'Breathe. This moment is the only one you need right now.' } },
+    { id: 'f2', category: 'curiosite', type: 'fact', text: { fr: 'Les loutres de mer se tiennent par la main pendant leur sommeil pour ne pas dériver.', en: 'Sea otters hold hands while they sleep so they don’t drift apart.' } },
+    { id: 'f3', category: 'defi', type: 'challenge', text: { fr: 'Aujourd\'hui, envoie un message gentil à quelqu\'un à qui tu n\'as pas parlé depuis longtemps.', en: 'Today, send a kind message to someone you haven’t talked to in a while.' } }
+  ];
+  var pool = FALLBACK, current = FALLBACK[0], revealed = false;
+  function todayKey() { var d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+  function pickToday(items) {
+    var day = todayKey();
+    var dated = items.filter(function (i) { return i.from && i.from <= day && (!i.until || day <= i.until); });
+    if (dated.length) return dated[0];
+    var plain = items.filter(function (i) { return !i.from && !i.until; });
+    var n = Math.floor(Date.now() / 864e5 - new Date().getTimezoneOffset() / 1440);
+    return plain[(n * 7919) % plain.length];
+  }
+
+  var cardText = document.getElementById('cardText'), cardEl = document.getElementById('card');
+  var wordTimers = [];
+  function showItem(item, instant) {
+    current = item;
+    catChip(document.getElementById('cardCat'), item.category);
+    document.getElementById('cardType').textContent = (TYPES[item.type] || TYPES.quote)[lang];
+    var txt = item.text[lang] || item.text.fr;
+    wordTimers.forEach(clearTimeout); wordTimers = [];
+    cardText.textContent = '';
+    cardText.classList.toggle('long', txt.length > 120 && txt.length <= 190);
+    cardText.classList.toggle('xlong', txt.length > 190);
+    txt.split(' ').forEach(function (w, i) {
+      var s = document.createElement('span'); s.className = 'w'; s.textContent = w;
+      cardText.appendChild(s); cardText.appendChild(document.createTextNode(' '));
+      if (instant || reduce) s.classList.add('on');
+      else if (revealed) wordTimers.push(setTimeout(function () { s.classList.add('on'); }, 120 + i * 90));
+    });
+  }
+
+  fetch('contenus.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (data) {
+    var items = (data.items || []).filter(function (i) { return i.text && i.text.fr && i.text.en && i.type !== 'actu'; });
+    if (!items.length) return;
+    pool = items;
+    var c = document.getElementById('count');
+    c.textContent = (items.length + 90) + '';
+    if (!revealed && last === null) { showItem(pickToday(items), false); paintVeil(); }
+  }).catch(function () {});
+
+  /* Le voile à gratter */
+  var sc = document.getElementById('scratch'), sctx = sc.getContext('2d'), hint = document.getElementById('hint');
+  var scratched = false, drawing = false, last = null, moved = 0, checks = 0;
+  function paintVeil() {
+    var r = cardEl.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 2);
+    // Taille de mise en page (offset*), pas getBoundingClientRect : la carte flotte (transform).
+    r = { width: cardEl.offsetWidth, height: cardEl.offsetHeight };
+    sc.width = Math.max(1, r.width * d); sc.height = Math.max(1, r.height * d);
+    sctx.setTransform(d, 0, 0, d, 0, 0);
+    sctx.globalCompositeOperation = 'source-over';
+    var c = CATS[current.category] || CATS.motivation, g = sctx.createLinearGradient(0, 0, r.width, r.height);
+    g.addColorStop(0, c.g[0]); g.addColorStop(1, c.g[1]);
+    sctx.fillStyle = g; sctx.fillRect(0, 0, r.width, r.height);
+    // Paillettes
+    var s2 = 11;
+    for (var i = 0; i < 70; i++) {
+      s2 = (s2 * 16807) % 2147483647;
+      var x = (s2 % 1000) / 1000 * r.width; s2 = (s2 * 16807) % 2147483647;
+      var y = (s2 % 1000) / 1000 * r.height;
+      sctx.fillStyle = 'rgba(255,255,255,' + (0.15 + (i % 5) * 0.08) + ')';
+      sctx.beginPath(); sctx.arc(x, y, 1 + (i % 3), 0, 6.283); sctx.fill();
+    }
+    sctx.fillStyle = 'rgba(255,255,255,.95)';
+    sctx.font = 'italic 400 26px Fraunces, Georgia, serif'; sctx.textAlign = 'center';
+    sctx.fillText(lang === 'fr' ? 'Ta bonne nouvelle' : 'Your good news', r.width / 2, r.height / 2 - 4);
+    sctx.font = '600 11px Inter, system-ui, sans-serif';
+    sctx.fillText(lang === 'fr' ? 'DU JOUR' : 'OF THE DAY', r.width / 2, r.height / 2 + 20);
+  }
+  function pos(e) { var r = sc.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+  function scratchAt(p) {
+    sctx.globalCompositeOperation = 'destination-out';
+    sctx.lineWidth = 46; sctx.lineCap = 'round'; sctx.lineJoin = 'round';
+    sctx.beginPath(); sctx.moveTo(last ? last.x : p.x, last ? last.y : p.y); sctx.lineTo(p.x, p.y); sctx.stroke();
+    if (last) moved += Math.hypot(p.x - last.x, p.y - last.y);
+    last = p;
+    if (++checks % 8 === 0 && clearedRatio() > 0.48) doReveal(false);
+  }
+  function clearedRatio() {
+    var data = sctx.getImageData(0, 0, sc.width, sc.height).data, n = 0, tot = 0;
+    for (var i = 3; i < data.length; i += 4 * 24) { tot++; if (data[i] < 40) n++; }
+    return n / tot;
+  }
+  sc.addEventListener('pointerdown', function (e) {
+    if (scratched) return;
+    drawing = true; moved = 0; sc.setPointerCapture(e.pointerId); hint.style.opacity = 0;
+    var p = pos(e); last = p; scratchAt(p);
+  });
+  sc.addEventListener('pointermove', function (e) { if (drawing) scratchAt(pos(e)); });
+  sc.addEventListener('pointerup', function () {
+    if (!drawing) return; drawing = false;
+    if (moved < 6) doReveal(true); // simple toucher : flip 3D
+    else if (clearedRatio() > 0.48) doReveal(false);
+  });
+  document.getElementById('revealKbd').addEventListener('click', function () { doReveal(true); });
+
+  function burst(host, x, y, colors, n) {
+    if (reduce) return;
+    for (var i = 0; i < n; i++) {
+      var s = document.createElement('span'); s.className = 'spark';
+      var a = Math.random() * 6.283, d = 40 + Math.random() * 90;
+      s.style.left = x + 'px'; s.style.top = y + 'px';
+      s.style.background = colors[i % colors.length];
+      s.style.setProperty('--dx', Math.cos(a) * d + 'px'); s.style.setProperty('--dy', Math.sin(a) * d + 'px');
+      host.appendChild(s); setTimeout(function (el) { el.remove(); }.bind(null, s), 950);
+    }
+  }
+  function vibrate(p) { if (navigator.vibrate) try { navigator.vibrate(p); } catch (e) {} }
+  function doReveal(flip) {
+    if (scratched) return;
+    scratched = true; revealed = true; hint.style.opacity = 0;
+    document.getElementById('revealKbd').hidden = true;
+    var finish = function () {
+      sc.classList.add('gone'); showItem(current, false); vibrate([12, 40, 18]);
+      var c = CATS[current.category] || CATS.motivation, r = cardEl.getBoundingClientRect();
+      burst(cardEl, r.width / 2, r.height / 2, [c.g[0], c.g[1], '#FFFFFF', '#FFD27A'], 26);
+    };
+    if (flip && !reduce) {
+      cardEl.classList.add('flip');
+      setTimeout(function () { finish(); cardEl.classList.remove('flip'); }, 450);
+    } else finish();
+  }
+  function resetVeil() {
+    scratched = false; revealed = false; last = null; sc.classList.remove('gone'); hint.style.opacity = 1;
+    document.getElementById('revealKbd').hidden = false;
+    paintVeil();
+  }
+
+  /* Boutons de la carte */
+  var toast1 = document.getElementById('toast1');
+  function toast(el, msg) { el.textContent = msg; el.classList.add('on'); clearTimeout(el._t); el._t = setTimeout(function () { el.classList.remove('on'); }, 1800); }
+  var listenBtn = document.getElementById('aListen');
+  if (!('speechSynthesis' in window)) listenBtn.style.visibility = 'hidden';
+  listenBtn.addEventListener('click', function () {
+    if (!revealed) { doReveal(true); }
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(current.text[lang] || current.text.fr);
+    u.lang = lang === 'fr' ? 'fr-FR' : 'en-GB'; u.rate = 0.95;
+    speechSynthesis.speak(u);
+  });
+  document.getElementById('aOther').addEventListener('click', function () {
+    var next = current, guard = 0;
+    while (next === current && guard++ < 10) next = pool[Math.floor(Math.random() * pool.length)];
+    current = next; keepBtn.classList.remove('on'); keepBtn.setAttribute('aria-pressed', 'false');
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    revealed = false; showItem(current, false); resetVeil();
+  });
+  var keepBtn = document.getElementById('aKeep');
+  keepBtn.addEventListener('click', function () {
+    var on = !keepBtn.classList.contains('on');
+    keepBtn.classList.toggle('on', on); keepBtn.setAttribute('aria-pressed', String(on));
+    if (on) { vibrate(10); toast(toast1, t('kept')); }
+  });
+  document.getElementById('aShare').addEventListener('click', function () {
+    var data = { title: 'Bonne Nouvelle', text: (current.text[lang] || current.text.fr), url: location.href.split('#')[0] };
+    if (navigator.share) navigator.share(data).catch(function () {});
+    else if (navigator.clipboard) navigator.clipboard.writeText(data.text + '\n' + data.url).then(function () { toast(toast1, t('copied')); });
+  });
+
+  /* ───────── Les tâches qui font fleurir le jardin ───────── */
+  var TASKS = { fr: ['Appeler Mamie', 'Marcher 20 minutes', 'Lire 10 pages', 'Boire un grand verre d\'eau'], en: ['Call Grandma', 'Walk for 20 minutes', 'Read 10 pages', 'Drink a big glass of water'] };
+  var done = [false, false, false, false];
+  var FLOWER_COLORS = [['#FF8FA3', '#FF5E8A'], ['#FFC861', '#FF7A59'], ['#8EDBFF', '#4A8CFF'], ['#C3A8FF', '#7C5CFF'], ['#7EF0E2', '#1FA59A'], ['#FFD08A', '#F2709C']];
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(name, attrs, parent) { var e = document.createElementNS(NS, name); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+  // Fleur générative : n pétales autour d'un cœur, sur une tige
+  function flower(parent, x, baseY, h, colors, petals, size, cls) {
+    var g = el('g', { class: cls || '' }, parent);
+    var sway = el('g', { class: 'sway', style: 'animation-delay:' + (-Math.random() * 4).toFixed(2) + 's' }, g);
+    var topY = baseY - h, bend = (Math.random() - 0.5) * h * 0.25;
+    var stem = el('path', { class: 'stem', d: 'M' + x + ' ' + baseY + ' Q' + (x + bend) + ' ' + (baseY - h / 2) + ' ' + x + ' ' + topY }, sway);
+    el('path', { d: 'M' + (x + bend * 0.4) + ' ' + (baseY - h * 0.42) + ' q' + (size * 0.9) + ' ' + (-size * 0.5) + ' ' + (size * 1.6) + ' ' + (-size * 0.1) + ' q' + (-size * 0.8) + ' ' + (size * 0.6) + ' ' + (-size * 1.6) + ' ' + (size * 0.1) + 'Z', fill: '#4CC27E' }, sway);
+    // La position reste un attribut SVG ; l'éclosion (CSS transform) est sur un groupe intérieur.
+    var at = el('g', { transform: 'translate(' + x + ' ' + topY + ')' }, sway);
+    var head = el('g', { class: 'grow' }, at);
+    var gid = 'g' + Math.random().toString(36).slice(2, 8);
+    var grad = el('radialGradient', { id: gid }, head);
+    el('stop', { offset: '0', 'stop-color': colors[0] }, grad); el('stop', { offset: '1', 'stop-color': colors[1] }, grad);
+    for (var i = 0; i < petals; i++) el('ellipse', { cx: 0, cy: -size * 0.62, rx: size * 0.34, ry: size * 0.62, fill: 'url(#' + gid + ')', transform: 'rotate(' + (i * 360 / petals) + ')' }, head);
+    el('circle', { r: size * 0.3, fill: '#FFD27A' }, head);
+    return { g: g, stem: stem, head: head };
+  }
+
+  var mini = document.getElementById('miniGarden'), miniFlowers = [];
+  [60, 120, 185, 245].forEach(function (x, i) {
+    el('ellipse', { cx: x, cy: 108, rx: 7, ry: 3, fill: '#3E9A64', opacity: '.6' }, mini); // graine en attente
+    var f = flower(mini, x, 108, 66 + (i % 2) * 20, FLOWER_COLORS[i], 6 + (i % 3), 21);
+    f.g.style.opacity = 0; f.g.style.transition = 'opacity .3s';
+    miniFlowers.push(f);
+  });
+  var todoEl = document.getElementById('todo'), ring = document.getElementById('ring'), again = document.getElementById('again');
+  function renderTodos() {
+    todoEl.textContent = '';
+    TASKS[lang].forEach(function (label, i) {
+      var li = document.createElement('li'), b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('aria-pressed', String(done[i])); if (done[i]) b.className = 'done';
+      b.innerHTML = '<svg class="check" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11"/><path d="m8 13.5 3.2 3.2L18 9.6"/></svg>';
+      var span = document.createElement('span'); span.className = 'label'; span.textContent = label; b.appendChild(span);
+      b.addEventListener('click', function () { toggleTask(i, b); });
+      li.appendChild(b); todoEl.appendChild(li);
+    });
+    updateProgress();
+  }
+  function updateProgress() {
+    var n = done.filter(Boolean).length;
+    document.getElementById('taskCount').textContent = n + '/4 ' + (lang === 'fr' ? 'terminées' : 'done');
+    ring.style.strokeDashoffset = 113 - 113 * n / 4;
+    again.hidden = n < 4;
+  }
+  function toggleTask(i, b) {
+    done[i] = !done[i];
+    b.classList.toggle('done', done[i]); b.setAttribute('aria-pressed', String(done[i]));
+    var f = miniFlowers[i];
+    if (done[i]) {
+      f.g.style.opacity = 1; requestAnimationFrame(function () { f.head.classList.add('on'); });
+      var r = b.getBoundingClientRect(), host = b.closest('.screen'), hr = host.getBoundingClientRect();
+      burst(host, r.left - hr.left + 27, r.top - hr.top + r.height / 2, ['#FFC861', '#FF7A59', '#FF8FA3', '#7EF0E2'], 14);
+      vibrate(12);
+      if (done.every(Boolean)) { toast(document.getElementById('toast2'), t('allDone')); burst(host, hr.width / 2, hr.height - 80, ['#FFC861', '#FF7A59', '#C3A8FF', '#7EF0E2', '#FFFFFF'], 34); vibrate([15, 60, 15, 60, 30]); }
+    } else { f.head.classList.remove('on'); setTimeout(function () { if (!done[i]) f.g.style.opacity = 0; }, 400); }
+    updateProgress();
+  }
+  again.addEventListener('click', function () {
+    done = [false, false, false, false];
+    miniFlowers.forEach(function (f) { f.head.classList.remove('on'); f.g.style.opacity = 0; });
+    renderTodos();
+  });
+
+  /* Le grand jardin */
+  var big = document.getElementById('bigGarden');
+  el('path', { d: 'M-50 360 Q300 300 600 330 T1250 320 V420 H-50Z', fill: '#2F7D55', opacity: '.55' }, big);
+  el('path', { d: 'M-50 380 Q350 335 700 365 T1250 350 V420 H-50Z', fill: '#3E9A64' }, big);
+  var xs = [70, 170, 250, 350, 440, 530, 615, 700, 790, 880, 960, 1050, 1135];
+  xs.forEach(function (x, i) {
+    var f = flower(big, x, 372 - (i % 3) * 6, 120 + ((i * 37) % 110), FLOWER_COLORS[i % FLOWER_COLORS.length], 5 + (i % 4), 26 + (i % 3) * 6);
+    var len = f.stem.getTotalLength ? Math.ceil(f.stem.getTotalLength()) : 300;
+    f.stem.classList.add('draw'); f.stem.style.setProperty('--len', len);
+    f.stem.style.transitionDelay = (i * 0.09) + 's';
+    f.head.style.transitionDelay = (0.9 + i * 0.09) + 's';
+    f.head.classList.add('big-head');
+  });
+  var gardenScene = document.getElementById('gardenScene');
+  new MutationObserver(function () {
+    if (gardenScene.classList.contains('on')) big.querySelectorAll('.big-head').forEach(function (h) { h.classList.add('on'); });
+  }).observe(gardenScene, { attributes: true, attributeFilter: ['class'] });
+
+  /* Démarrage */
+  applyLang();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (!scratched) paintVeil(); });
+  paintVeil();
+  // Sur mobile, la barre d'adresse déclenche des « resize » : on ne repeint le voile
+  // que si la largeur de la carte change vraiment et qu'on n'a pas commencé à gratter.
+  var veilWidth = cardEl.getBoundingClientRect().width;
+  addEventListener('resize', function () {
+    var w = cardEl.getBoundingClientRect().width;
+    if (!scratched && last === null && Math.abs(w - veilWidth) > 1) { veilWidth = w; paintVeil(); }
+  });
+})();
 </script>
 </body>
 </html>
