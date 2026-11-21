@@ -828,6 +828,2976 @@
         "es": "Es la Fiesta de la Música, nacida en Francia en 1982 y celebrada hoy en más de 120 países. ¡Pon tu canción favorita!",
         "de": "Heute ist Fête de la Musique, 1982 in Frankreich entstanden und heute in über 120 Ländern gefeiert. Leg dein Lieblingslied auf!"
       }
+    },
+    {
+      "id": "r-073",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Pose une main sur ton cœur, respire, et remercie ton corps pour tout ce qu'il fait.",
+        "en": "Place a hand on your heart, breathe, and thank your body for all it does.",
+        "es": "Pon una mano en el corazón, respira y da las gracias a tu cuerpo por todo lo que hace.",
+        "de": "Leg eine Hand aufs Herz, atme und danke deinem Körper für alles, was er tut."
+      }
+    },
+    {
+      "id": "r-074",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Tu as le droit de ralentir. Le monde ne s'arrêtera pas pour autant.",
+        "en": "You're allowed to slow down. The world won't stop because of it.",
+        "es": "Tienes derecho a ir más despacio. El mundo no se detendrá por eso.",
+        "de": "Du darfst langsamer werden. Die Welt bleibt deswegen nicht stehen."
+      }
+    },
+    {
+      "id": "r-075",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Un verre d'eau, une fenêtre ouverte, une minute de calme : le trio gagnant du matin.",
+        "en": "A glass of water, an open window, a minute of calm: the morning's winning trio.",
+        "es": "Un vaso de agua, una ventana abierta, un minuto de calma: el trío ganador de la mañana.",
+        "de": "Ein Glas Wasser, ein offenes Fenster, eine Minute Ruhe: das Siegertrio des Morgens."
+      }
+    },
+    {
+      "id": "r-076",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ce que tu ressens est valable, même si tu ne sais pas encore le nommer.",
+        "en": "What you feel is valid, even if you can't name it yet.",
+        "es": "Lo que sientes es válido, aunque todavía no sepas nombrarlo.",
+        "de": "Was du fühlst, zählt, auch wenn du es noch nicht benennen kannst."
+      }
+    },
+    {
+      "id": "r-077",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Le repos n'est pas une récompense, c'est un besoin.",
+        "en": "Rest isn't a reward, it's a need.",
+        "es": "El descanso no es una recompensa, es una necesidad.",
+        "de": "Ruhe ist keine Belohnung, sondern ein Bedürfnis."
+      }
+    },
+    {
+      "id": "r-078",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Souris à ton reflet ce matin. Il le mérite.",
+        "en": "Smile at your reflection this morning. It deserves it.",
+        "es": "Sonríe a tu reflejo esta mañana. Se lo merece.",
+        "de": "Lächle heute Morgen dein Spiegelbild an. Es hat es verdient."
+      }
+    },
+    {
+      "id": "r-079",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Inspire en comptant jusqu'à quatre, expire jusqu'à six. Recommence trois fois.",
+        "en": "Breathe in for a count of four, out for six. Repeat three times.",
+        "es": "Inspira contando hasta cuatro y espira hasta seis. Repite tres veces.",
+        "de": "Atme bis vier zählend ein und bis sechs aus. Wiederhole das dreimal."
+      }
+    },
+    {
+      "id": "r-080",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ta valeur ne dépend pas de ta productivité.",
+        "en": "Your worth doesn't depend on your productivity.",
+        "es": "Tu valor no depende de tu productividad.",
+        "de": "Dein Wert hängt nicht von deiner Produktivität ab."
+      }
+    },
+    {
+      "id": "r-081",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Un peu de soleil sur le visage fait des merveilles pour l'humeur.",
+        "en": "A little sun on your face works wonders for your mood.",
+        "es": "Un poco de sol en la cara hace maravillas con el ánimo.",
+        "de": "Ein bisschen Sonne im Gesicht wirkt Wunder für die Laune."
+      }
+    },
+    {
+      "id": "r-082",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Parle-toi comme tu parlerais à ton meilleur ami.",
+        "en": "Talk to yourself the way you'd talk to your best friend.",
+        "es": "Háblate como le hablarías a tu mejor amigo.",
+        "de": "Sprich mit dir, wie du mit deinem besten Freund sprechen würdest."
+      }
+    },
+    {
+      "id": "r-083",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Les émotions sont comme la météo : elles passent toujours.",
+        "en": "Emotions are like the weather: they always pass.",
+        "es": "Las emociones son como el tiempo: siempre pasan.",
+        "de": "Gefühle sind wie das Wetter: Sie ziehen immer vorüber."
+      }
+    },
+    {
+      "id": "r-084",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Prends le temps de savourer ta première gorgée de café ou de thé.",
+        "en": "Take the time to savour your first sip of coffee or tea.",
+        "es": "Tómate tu tiempo para saborear el primer sorbo de café o de té.",
+        "de": "Nimm dir Zeit, den ersten Schluck Kaffee oder Tee zu genießen."
+      }
+    },
+    {
+      "id": "r-085",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Dire « je ne sais pas » ou « j'ai besoin d'aide », c'est une force.",
+        "en": "Saying \"I don't know\" or \"I need help\" is a strength.",
+        "es": "Decir «no lo sé» o «necesito ayuda» es una fortaleza.",
+        "de": "„Ich weiß es nicht“ oder „Ich brauche Hilfe“ zu sagen, ist eine Stärke."
+      }
+    },
+    {
+      "id": "r-086",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Regarde par la fenêtre pendant une minute. Juste regarder, sans rien faire.",
+        "en": "Look out of the window for a minute. Just look, without doing anything.",
+        "es": "Mira por la ventana durante un minuto. Solo mirar, sin hacer nada.",
+        "de": "Schau eine Minute lang aus dem Fenster. Einfach schauen, ohne etwas zu tun."
+      }
+    },
+    {
+      "id": "r-087",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Tu n'as pas à être parfait pour mériter de la douceur.",
+        "en": "You don't have to be perfect to deserve kindness.",
+        "es": "No tienes que ser perfecto para merecer ternura.",
+        "de": "Du musst nicht perfekt sein, um Sanftheit zu verdienen."
+      }
+    },
+    {
+      "id": "r-088",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Une bonne nuit de sommeil règle plus de problèmes qu'on ne le croit.",
+        "en": "A good night's sleep solves more problems than we think.",
+        "es": "Una buena noche de sueño resuelve más problemas de lo que creemos.",
+        "de": "Eine gute Nacht Schlaf löst mehr Probleme, als man denkt."
+      }
+    },
+    {
+      "id": "r-089",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Le bonheur se cache souvent dans les choses simples : un rire, un plat chaud, un ciel bleu.",
+        "en": "Happiness often hides in simple things: a laugh, a warm meal, a blue sky.",
+        "es": "La felicidad suele esconderse en lo sencillo: una risa, un plato caliente, un cielo azul.",
+        "de": "Glück versteckt sich oft in einfachen Dingen: einem Lachen, einem warmen Essen, einem blauen Himmel."
+      }
+    },
+    {
+      "id": "r-090",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Écoute ton corps : il te parle bien avant de crier.",
+        "en": "Listen to your body: it speaks to you long before it shouts.",
+        "es": "Escucha a tu cuerpo: te habla mucho antes de gritar.",
+        "de": "Hör auf deinen Körper: Er spricht lange, bevor er schreit."
+      }
+    },
+    {
+      "id": "r-091",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Pardonne-toi les erreurs d'hier. Tu as fait de ton mieux avec ce que tu savais.",
+        "en": "Forgive yourself for yesterday's mistakes. You did your best with what you knew.",
+        "es": "Perdónate los errores de ayer. Hiciste lo que pudiste con lo que sabías.",
+        "de": "Verzeih dir die Fehler von gestern. Du hast mit dem, was du wusstest, dein Bestes gegeben."
+      }
+    },
+    {
+      "id": "r-092",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Éteins une notification aujourd'hui. Ton esprit te dira merci.",
+        "en": "Turn off one notification today. Your mind will thank you.",
+        "es": "Desactiva una notificación hoy. Tu mente te lo agradecerá.",
+        "de": "Schalte heute eine Benachrichtigung aus. Dein Kopf wird es dir danken."
+      }
+    },
+    {
+      "id": "r-093",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Une promenade de quelques minutes peut remettre de l'ordre dans les pensées.",
+        "en": "A walk of just a few minutes can put your thoughts back in order.",
+        "es": "Un paseo de unos minutos puede ordenar los pensamientos.",
+        "de": "Ein paar Minuten Spaziergang können die Gedanken wieder ordnen."
+      }
+    },
+    {
+      "id": "r-094",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Il est permis de ne rien faire de productif pendant un moment.",
+        "en": "It's allowed to do nothing productive for a while.",
+        "es": "Está permitido no hacer nada productivo durante un rato.",
+        "de": "Es ist erlaubt, eine Weile nichts Produktives zu tun."
+      }
+    },
+    {
+      "id": "r-095",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Prends soin de toi comme d'une plante : de la lumière, de l'eau et de la patience.",
+        "en": "Take care of yourself like a plant: light, water and patience.",
+        "es": "Cuídate como a una planta: luz, agua y paciencia.",
+        "de": "Kümmere dich um dich wie um eine Pflanze: Licht, Wasser und Geduld."
+      }
+    },
+    {
+      "id": "r-096",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ton calme est contagieux. Partage-le.",
+        "en": "Your calm is contagious. Share it.",
+        "es": "Tu calma es contagiosa. Compártela.",
+        "de": "Deine Ruhe ist ansteckend. Teile sie."
+      }
+    },
+    {
+      "id": "r-097",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Note trois jolies choses avant de dormir. Même minuscules.",
+        "en": "Write down three lovely things before you sleep. Even tiny ones.",
+        "es": "Anota tres cosas bonitas antes de dormir. Aunque sean diminutas.",
+        "de": "Schreib vor dem Schlafen drei schöne Dinge auf. Auch winzige."
+      }
+    },
+    {
+      "id": "r-098",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "La gratitude ne change pas le passé, mais elle éclaire le présent.",
+        "en": "Gratitude doesn't change the past, but it brightens the present.",
+        "es": "La gratitud no cambia el pasado, pero ilumina el presente.",
+        "de": "Dankbarkeit ändert nicht die Vergangenheit, aber sie erhellt die Gegenwart."
+      }
+    },
+    {
+      "id": "r-099",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Étire-toi comme un chat au réveil. Les chats savent ce qu'ils font.",
+        "en": "Stretch like a cat when you wake up. Cats know what they're doing.",
+        "es": "Estírate como un gato al despertar. Los gatos saben lo que hacen.",
+        "de": "Streck dich beim Aufwachen wie eine Katze. Katzen wissen, was sie tun."
+      }
+    },
+    {
+      "id": "r-100",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Tu n'as pas à porter le monde entier sur tes épaules aujourd'hui.",
+        "en": "You don't have to carry the whole world on your shoulders today.",
+        "es": "Hoy no tienes que cargar con el mundo entero.",
+        "de": "Du musst heute nicht die ganze Welt auf deinen Schultern tragen."
+      }
+    },
+    {
+      "id": "r-101",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Laisse partir ce que tu ne peux pas contrôler. Garde ton énergie pour le reste.",
+        "en": "Let go of what you can't control. Save your energy for the rest.",
+        "es": "Suelta lo que no puedes controlar. Guarda tu energía para lo demás.",
+        "de": "Lass los, was du nicht kontrollieren kannst. Spar deine Energie für den Rest."
+      }
+    },
+    {
+      "id": "r-102",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Une douche chaude, une musique douce : parfois, c'est tout ce qu'il faut.",
+        "en": "A warm shower, some soft music: sometimes that's all it takes.",
+        "es": "Una ducha caliente, una música suave: a veces es todo lo que hace falta.",
+        "de": "Eine warme Dusche, sanfte Musik: Manchmal ist das alles, was man braucht."
+      }
+    },
+    {
+      "id": "r-103",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Être gentil avec soi-même, ça s'apprend. Et ça commence aujourd'hui.",
+        "en": "Being kind to yourself can be learned. And it starts today.",
+        "es": "Ser amable con uno mismo se aprende. Y empieza hoy.",
+        "de": "Freundlich zu sich selbst zu sein, kann man lernen. Und es beginnt heute."
+      }
+    },
+    {
+      "id": "r-104",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Les pauses ne sont pas du temps perdu, ce sont des recharges.",
+        "en": "Breaks aren't wasted time, they're recharges.",
+        "es": "Las pausas no son tiempo perdido, son recargas.",
+        "de": "Pausen sind keine verlorene Zeit, sondern Aufladestationen."
+      }
+    },
+    {
+      "id": "r-105",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Ce soir, couche-toi un peu plus tôt. Demain te remerciera.",
+        "en": "Tonight, go to bed a little earlier. Tomorrow will thank you.",
+        "es": "Esta noche, acuéstate un poco antes. Mañana te lo agradecerá.",
+        "de": "Geh heute Abend etwas früher schlafen. Der Morgen wird es dir danken."
+      }
+    },
+    {
+      "id": "r-106",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Le silence aussi nourrit. Offre-t'en quelques minutes.",
+        "en": "Silence nourishes too. Give yourself a few minutes of it.",
+        "es": "El silencio también alimenta. Regálate unos minutos.",
+        "de": "Auch Stille nährt. Schenk dir ein paar Minuten davon."
+      }
+    },
+    {
+      "id": "r-107",
+      "category": "bien-etre",
+      "type": "quote",
+      "text": {
+        "fr": "Tu fais de ton mieux, et c'est déjà beaucoup.",
+        "en": "You're doing your best, and that's already a lot.",
+        "es": "Estás haciendo lo que puedes, y eso ya es mucho.",
+        "de": "Du gibst dein Bestes, und das ist schon viel."
+      }
+    },
+    {
+      "id": "r-108",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les vaches ont des « meilleures amies » : séparées d'elles, elles sont plus stressées.",
+        "en": "Cows have \"best friends\": when separated from them, they get more stressed.",
+        "es": "Las vacas tienen «mejores amigas»: separadas de ellas, se estresan más.",
+        "de": "Kühe haben „beste Freundinnen“: Getrennt von ihnen sind sie gestresster."
+      }
+    },
+    {
+      "id": "r-109",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les pieuvres peuvent changer de couleur en une fraction de seconde.",
+        "en": "Octopuses can change colour in a fraction of a second.",
+        "es": "Los pulpos pueden cambiar de color en una fracción de segundo.",
+        "de": "Kraken können in Sekundenbruchteilen ihre Farbe wechseln."
+      }
+    },
+    {
+      "id": "r-110",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Un colibri bat des ailes jusqu'à 80 fois par seconde.",
+        "en": "A hummingbird can beat its wings up to 80 times per second.",
+        "es": "Un colibrí puede batir las alas hasta 80 veces por segundo.",
+        "de": "Ein Kolibri schlägt bis zu 80-mal pro Sekunde mit den Flügeln."
+      }
+    },
+    {
+      "id": "r-111",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les flamants roses doivent leur couleur aux crevettes et aux algues qu'ils mangent.",
+        "en": "Flamingos get their pink colour from the shrimp and algae they eat.",
+        "es": "Los flamencos deben su color rosa a las gambas y algas que comen.",
+        "de": "Flamingos verdanken ihre rosa Farbe den Krebschen und Algen, die sie fressen."
+      }
+    },
+    {
+      "id": "r-112",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Certains éléphants reconnaissent leur reflet dans un miroir, comme les humains.",
+        "en": "Some elephants recognise their reflection in a mirror, just like humans.",
+        "es": "Algunos elefantes se reconocen en un espejo, igual que los humanos.",
+        "de": "Manche Elefanten erkennen sich im Spiegel, genau wie Menschen."
+      }
+    },
+    {
+      "id": "r-113",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les abeilles communiquent en dansant pour indiquer où se trouvent les fleurs.",
+        "en": "Bees communicate by dancing to show where the flowers are.",
+        "es": "Las abejas se comunican bailando para indicar dónde están las flores.",
+        "de": "Bienen verständigen sich durch Tänze, um zu zeigen, wo die Blüten sind."
+      }
+    },
+    {
+      "id": "r-114",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les corbeaux savent utiliser des outils et résoudre des énigmes en plusieurs étapes.",
+        "en": "Crows can use tools and solve multi-step puzzles.",
+        "es": "Los cuervos saben usar herramientas y resolver acertijos de varios pasos.",
+        "de": "Krähen benutzen Werkzeuge und lösen Rätsel in mehreren Schritten."
+      }
+    },
+    {
+      "id": "r-115",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "On connaît environ 350 000 espèces de plantes à fleurs.",
+        "en": "About 350,000 species of flowering plants are known.",
+        "es": "Se conocen unas 350 000 especies de plantas con flores.",
+        "de": "Rund 350.000 Arten von Blütenpflanzen sind bekannt."
+      }
+    },
+    {
+      "id": "r-116",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "La Lune s'éloigne de la Terre d'environ 3,8 cm chaque année.",
+        "en": "The Moon moves about 3.8 cm farther from Earth every year.",
+        "es": "La Luna se aleja de la Tierra unos 3,8 cm cada año.",
+        "de": "Der Mond entfernt sich jedes Jahr etwa 3,8 cm von der Erde."
+      }
+    },
+    {
+      "id": "r-117",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les loutres ont une poche de peau sous le bras pour garder leur caillou préféré.",
+        "en": "Sea otters have a skin pouch under their arm to keep their favourite stone.",
+        "es": "Las nutrias marinas tienen un bolsillo de piel bajo el brazo para guardar su piedra favorita.",
+        "de": "Seeotter haben eine Hauttasche unter dem Arm für ihren Lieblingsstein."
+      }
+    },
+    {
+      "id": "r-118",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Un nuage d'orage peut contenir l'équivalent de plusieurs centaines de milliers de tonnes d'eau.",
+        "en": "A thundercloud can hold the equivalent of several hundred thousand tonnes of water.",
+        "es": "Una nube de tormenta puede contener el equivalente a cientos de miles de toneladas de agua.",
+        "de": "Eine Gewitterwolke kann mehrere Hunderttausend Tonnen Wasser enthalten."
+      }
+    },
+    {
+      "id": "r-119",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Le cœur humain bat environ 100 000 fois par jour.",
+        "en": "The human heart beats about 100,000 times a day.",
+        "es": "El corazón humano late unas 100 000 veces al día.",
+        "de": "Das menschliche Herz schlägt etwa 100.000-mal am Tag."
+      }
+    },
+    {
+      "id": "r-120",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les tournesols jeunes suivent le soleil d'est en ouest au cours de la journée.",
+        "en": "Young sunflowers follow the sun from east to west during the day.",
+        "es": "Los girasoles jóvenes siguen al sol de este a oeste a lo largo del día.",
+        "de": "Junge Sonnenblumen folgen der Sonne im Laufe des Tages von Ost nach West."
+      }
+    },
+    {
+      "id": "r-121",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les étoiles de mer peuvent faire repousser un bras perdu.",
+        "en": "Starfish can regrow a lost arm.",
+        "es": "Las estrellas de mar pueden regenerar un brazo perdido.",
+        "de": "Seesterne können einen verlorenen Arm nachwachsen lassen."
+      }
+    },
+    {
+      "id": "r-122",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "La tour Eiffel est repeinte environ tous les sept ans, avec près de 60 tonnes de peinture.",
+        "en": "The Eiffel Tower is repainted about every seven years, using nearly 60 tonnes of paint.",
+        "es": "La torre Eiffel se repinta aproximadamente cada siete años con casi 60 toneladas de pintura.",
+        "de": "Der Eiffelturm wird etwa alle sieben Jahre mit fast 60 Tonnen Farbe neu gestrichen."
+      }
+    },
+    {
+      "id": "r-123",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les dauphins dorment avec une moitié du cerveau éveillée.",
+        "en": "Dolphins sleep with half of their brain awake.",
+        "es": "Los delfines duermen con la mitad del cerebro despierta.",
+        "de": "Delfine schlafen mit einer wachen Gehirnhälfte."
+      }
+    },
+    {
+      "id": "r-124",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Le bambou peut pousser de près d'un mètre en une seule journée.",
+        "en": "Bamboo can grow almost a metre in a single day.",
+        "es": "El bambú puede crecer casi un metro en un solo día.",
+        "de": "Bambus kann an einem einzigen Tag fast einen Meter wachsen."
+      }
+    },
+    {
+      "id": "r-125",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les chats passent environ deux tiers de leur vie à dormir.",
+        "en": "Cats spend about two thirds of their lives sleeping.",
+        "es": "Los gatos pasan unos dos tercios de su vida durmiendo.",
+        "de": "Katzen verbringen etwa zwei Drittel ihres Lebens mit Schlafen."
+      }
+    },
+    {
+      "id": "r-126",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Un éclair peut chauffer l'air autour de lui à près de 30 000 °C.",
+        "en": "A lightning bolt can heat the surrounding air to nearly 30,000 °C.",
+        "es": "Un rayo puede calentar el aire a su alrededor a casi 30 000 °C.",
+        "de": "Ein Blitz kann die Luft um sich herum auf fast 30.000 °C erhitzen."
+      }
+    },
+    {
+      "id": "r-127",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les arbres d'une forêt peuvent s'échanger des nutriments grâce aux champignons de leurs racines.",
+        "en": "Trees in a forest can exchange nutrients through the fungi on their roots.",
+        "es": "Los árboles de un bosque pueden intercambiar nutrientes gracias a los hongos de sus raíces.",
+        "de": "Bäume im Wald können über Pilze an ihren Wurzeln Nährstoffe austauschen."
+      }
+    },
+    {
+      "id": "r-128",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Le rire est plus ancien que le langage : les grands singes rient aussi.",
+        "en": "Laughter is older than language: great apes laugh too.",
+        "es": "La risa es más antigua que el lenguaje: los grandes simios también ríen.",
+        "de": "Lachen ist älter als die Sprache: Auch Menschenaffen lachen."
+      }
+    },
+    {
+      "id": "r-129",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les koalas dorment jusqu'à 20 heures par jour.",
+        "en": "Koalas sleep up to 20 hours a day.",
+        "es": "Los koalas duermen hasta 20 horas al día.",
+        "de": "Koalas schlafen bis zu 20 Stunden am Tag."
+      }
+    },
+    {
+      "id": "r-130",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Le Soleil représente environ 99,8 % de la masse du système solaire.",
+        "en": "The Sun makes up about 99.8% of the mass of the solar system.",
+        "es": "El Sol representa alrededor del 99,8 % de la masa del sistema solar.",
+        "de": "Die Sonne macht etwa 99,8 % der Masse des Sonnensystems aus."
+      }
+    },
+    {
+      "id": "r-131",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les manchots offrent parfois un joli caillou à leur partenaire.",
+        "en": "Penguins sometimes give a pretty pebble to their partner.",
+        "es": "Los pingüinos a veces regalan una piedra bonita a su pareja.",
+        "de": "Pinguine schenken ihrem Partner manchmal einen hübschen Kieselstein."
+      }
+    },
+    {
+      "id": "r-132",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Un flocon de neige met souvent près d'une heure à tomber du nuage jusqu'au sol.",
+        "en": "A snowflake often takes about an hour to fall from the cloud to the ground.",
+        "es": "Un copo de nieve suele tardar casi una hora en caer de la nube al suelo.",
+        "de": "Eine Schneeflocke braucht oft etwa eine Stunde von der Wolke bis zum Boden."
+      }
+    },
+    {
+      "id": "r-133",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les écureuils adoptent parfois des petits orphelins de leur famille.",
+        "en": "Squirrels sometimes adopt orphaned young from their family.",
+        "es": "Las ardillas a veces adoptan crías huérfanas de su familia.",
+        "de": "Eichhörnchen adoptieren manchmal verwaiste Jungtiere aus ihrer Verwandtschaft."
+      }
+    },
+    {
+      "id": "r-134",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Notre nez peut distinguer des milliers d'odeurs différentes.",
+        "en": "Our nose can tell apart thousands of different smells.",
+        "es": "Nuestra nariz puede distinguir miles de olores distintos.",
+        "de": "Unsere Nase kann Tausende verschiedene Gerüche unterscheiden."
+      }
+    },
+    {
+      "id": "r-135",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les baleines bleues sont les plus grands animaux ayant jamais existé.",
+        "en": "Blue whales are the largest animals that have ever lived.",
+        "es": "Las ballenas azules son los animales más grandes que han existido jamás.",
+        "de": "Blauwale sind die größten Tiere, die je gelebt haben."
+      }
+    },
+    {
+      "id": "r-136",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les hiboux ne peuvent pas bouger les yeux : ils tournent la tête jusqu'à 270 degrés.",
+        "en": "Owls can't move their eyes: they turn their heads up to 270 degrees.",
+        "es": "Los búhos no pueden mover los ojos: giran la cabeza hasta 270 grados.",
+        "de": "Eulen können ihre Augen nicht bewegen: Sie drehen den Kopf bis zu 270 Grad."
+      }
+    },
+    {
+      "id": "r-137",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les lucioles produisent une lumière froide qui ne dégage presque pas de chaleur.",
+        "en": "Fireflies make a cold light that gives off almost no heat.",
+        "es": "Las luciérnagas producen una luz fría que casi no desprende calor.",
+        "de": "Glühwürmchen erzeugen ein kaltes Licht, das fast keine Wärme abgibt."
+      }
+    },
+    {
+      "id": "r-138",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Le papillon monarque parcourt jusqu'à 4 000 km pour migrer vers le Mexique.",
+        "en": "The monarch butterfly travels up to 4,000 km to migrate to Mexico.",
+        "es": "La mariposa monarca recorre hasta 4000 km para migrar a México.",
+        "de": "Der Monarchfalter legt bis zu 4.000 km zurück, um nach Mexiko zu ziehen."
+      }
+    },
+    {
+      "id": "r-139",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Le plus ancien arbre vivant connu, un pin en Californie, a plus de 4 700 ans.",
+        "en": "The oldest known living tree, a pine in California, is over 4,700 years old.",
+        "es": "El árbol vivo más antiguo conocido, un pino de California, tiene más de 4700 años.",
+        "de": "Der älteste bekannte lebende Baum, eine Kiefer in Kalifornien, ist über 4.700 Jahre alt."
+      }
+    },
+    {
+      "id": "r-140",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Certains chiens comprennent plus d'une centaine de mots.",
+        "en": "Some dogs understand more than a hundred words.",
+        "es": "Algunos perros entienden más de cien palabras.",
+        "de": "Manche Hunde verstehen mehr als hundert Wörter."
+      }
+    },
+    {
+      "id": "r-141",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "Les rats rient quand on les chatouille, avec des sons trop aigus pour nos oreilles.",
+        "en": "Rats laugh when tickled, with sounds too high-pitched for our ears.",
+        "es": "Las ratas ríen cuando se les hacen cosquillas, con sonidos demasiado agudos para nuestros oídos.",
+        "de": "Ratten lachen, wenn man sie kitzelt, mit Lauten, die für unsere Ohren zu hoch sind."
+      }
+    },
+    {
+      "id": "r-142",
+      "category": "curiosite",
+      "type": "fact",
+      "text": {
+        "fr": "La Voie lactée compte plus de cent milliards d'étoiles.",
+        "en": "The Milky Way contains more than a hundred billion stars.",
+        "es": "La Vía Láctea tiene más de cien mil millones de estrellas.",
+        "de": "Die Milchstraße umfasst mehr als hundert Milliarden Sterne."
+      }
+    },
+    {
+      "id": "r-143",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écris un petit mot gentil sur un post-it et laisse-le quelque part.",
+        "en": "Today's challenge: write a kind note on a sticky note and leave it somewhere.",
+        "es": "Reto del día: escribe una nota amable en un pósit y déjala en algún sitio.",
+        "de": "Challenge des Tages: Schreib eine nette Notiz auf einen Haftzettel und lass ihn irgendwo liegen."
+      }
+    },
+    {
+      "id": "r-144",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : bois un verre d'eau dès ton réveil.",
+        "en": "Today's challenge: drink a glass of water as soon as you wake up.",
+        "es": "Reto del día: bebe un vaso de agua nada más despertarte.",
+        "de": "Challenge des Tages: Trink direkt nach dem Aufwachen ein Glas Wasser."
+      }
+    },
+    {
+      "id": "r-145",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : marche dix minutes dehors, sans écouteurs.",
+        "en": "Today's challenge: walk outside for ten minutes, without earphones.",
+        "es": "Reto del día: camina diez minutos al aire libre, sin auriculares.",
+        "de": "Challenge des Tages: Geh zehn Minuten draußen spazieren, ohne Kopfhörer."
+      }
+    },
+    {
+      "id": "r-146",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : range un seul tiroir. Juste un.",
+        "en": "Today's challenge: tidy a single drawer. Just one.",
+        "es": "Reto del día: ordena un solo cajón. Solo uno.",
+        "de": "Challenge des Tages: Räum eine einzige Schublade auf. Nur eine."
+      }
+    },
+    {
+      "id": "r-147",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : complimente un collègue ou un proche sur quelque chose de précis.",
+        "en": "Today's challenge: compliment a colleague or loved one on something specific.",
+        "es": "Reto del día: elogia a un compañero o a un ser querido por algo concreto.",
+        "de": "Challenge des Tages: Mach einem Kollegen oder einem lieben Menschen ein konkretes Kompliment."
+      }
+    },
+    {
+      "id": "r-148",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : éteins ton téléphone pendant le repas.",
+        "en": "Today's challenge: switch off your phone during your meal.",
+        "es": "Reto del día: apaga el móvil durante la comida.",
+        "de": "Challenge des Tages: Schalte beim Essen dein Handy aus."
+      }
+    },
+    {
+      "id": "r-149",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écris trois choses qui t'ont fait sourire cette semaine.",
+        "en": "Today's challenge: write down three things that made you smile this week.",
+        "es": "Reto del día: escribe tres cosas que te hayan hecho sonreír esta semana.",
+        "de": "Challenge des Tages: Schreib drei Dinge auf, die dich diese Woche zum Lächeln gebracht haben."
+      }
+    },
+    {
+      "id": "r-150",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : apprends à dire « merci » dans une nouvelle langue.",
+        "en": "Today's challenge: learn to say \"thank you\" in a new language.",
+        "es": "Reto del día: aprende a decir «gracias» en un idioma nuevo.",
+        "de": "Challenge des Tages: Lerne, in einer neuen Sprache „Danke“ zu sagen."
+      }
+    },
+    {
+      "id": "r-151",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : fais deux minutes d'étirements avant de te coucher.",
+        "en": "Today's challenge: do two minutes of stretching before bed.",
+        "es": "Reto del día: haz dos minutos de estiramientos antes de acostarte.",
+        "de": "Challenge des Tages: Mach vor dem Schlafengehen zwei Minuten Dehnübungen."
+      }
+    },
+    {
+      "id": "r-152",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : prends des nouvelles d'une personne âgée de ton entourage.",
+        "en": "Today's challenge: check in on an older person you know.",
+        "es": "Reto del día: pregunta cómo está una persona mayor de tu entorno.",
+        "de": "Challenge des Tages: Erkundige dich bei einem älteren Menschen aus deinem Umfeld, wie es ihm geht."
+      }
+    },
+    {
+      "id": "r-153",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : mange un fruit ou un légume que tu n'as pas goûté depuis longtemps.",
+        "en": "Today's challenge: eat a fruit or vegetable you haven't tasted in ages.",
+        "es": "Reto del día: come una fruta o verdura que no pruebes desde hace mucho.",
+        "de": "Challenge des Tages: Iss ein Obst oder Gemüse, das du lange nicht probiert hast."
+      }
+    },
+    {
+      "id": "r-154",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écoute un morceau de musique les yeux fermés, du début à la fin.",
+        "en": "Today's challenge: listen to a piece of music with your eyes closed, start to finish.",
+        "es": "Reto del día: escucha una canción con los ojos cerrados, de principio a fin.",
+        "de": "Challenge des Tages: Hör ein Musikstück mit geschlossenen Augen von Anfang bis Ende."
+      }
+    },
+    {
+      "id": "r-155",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : tiens la porte à quelqu'un et souris-lui.",
+        "en": "Today's challenge: hold the door for someone and smile at them.",
+        "es": "Reto del día: sujeta la puerta a alguien y sonríele.",
+        "de": "Challenge des Tages: Halte jemandem die Tür auf und lächle ihn an."
+      }
+    },
+    {
+      "id": "r-156",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : désabonne-toi d'une newsletter que tu ne lis jamais.",
+        "en": "Today's challenge: unsubscribe from a newsletter you never read.",
+        "es": "Reto del día: date de baja de un boletín que nunca lees.",
+        "de": "Challenge des Tages: Melde dich von einem Newsletter ab, den du nie liest."
+      }
+    },
+    {
+      "id": "r-157",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : prépare-toi un petit-déjeuner un peu plus soigné que d'habitude.",
+        "en": "Today's challenge: make yourself a slightly nicer breakfast than usual.",
+        "es": "Reto del día: prepárate un desayuno un poco más cuidado que de costumbre.",
+        "de": "Challenge des Tages: Mach dir ein etwas schöneres Frühstück als sonst."
+      }
+    },
+    {
+      "id": "r-158",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : regarde le coucher du soleil, même par la fenêtre.",
+        "en": "Today's challenge: watch the sunset, even through a window.",
+        "es": "Reto del día: mira la puesta de sol, aunque sea por la ventana.",
+        "de": "Challenge des Tages: Schau dir den Sonnenuntergang an, auch durchs Fenster."
+      }
+    },
+    {
+      "id": "r-159",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : fais un don, même tout petit, d'objets ou de vêtements.",
+        "en": "Today's challenge: donate something, even small, like objects or clothes.",
+        "es": "Reto del día: dona algo, aunque sea pequeño: objetos o ropa.",
+        "de": "Challenge des Tages: Spende etwas, auch nur eine Kleinigkeit, wie Gegenstände oder Kleidung."
+      }
+    },
+    {
+      "id": "r-160",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écris la liste de tes cinq plus beaux souvenirs.",
+        "en": "Today's challenge: write a list of your five best memories.",
+        "es": "Reto del día: escribe la lista de tus cinco mejores recuerdos.",
+        "de": "Challenge des Tages: Schreib eine Liste deiner fünf schönsten Erinnerungen."
+      }
+    },
+    {
+      "id": "r-161",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : passe une soirée sans écran.",
+        "en": "Today's challenge: spend an evening without screens.",
+        "es": "Reto del día: pasa una tarde sin pantallas.",
+        "de": "Challenge des Tages: Verbring einen Abend ohne Bildschirm."
+      }
+    },
+    {
+      "id": "r-162",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : envoie une photo souvenir à un ami, avec un petit message.",
+        "en": "Today's challenge: send a memory photo to a friend, with a short message.",
+        "es": "Reto del día: envía una foto de recuerdo a un amigo, con un mensajito.",
+        "de": "Challenge des Tages: Schick einem Freund ein Erinnerungsfoto mit einer kurzen Nachricht."
+      }
+    },
+    {
+      "id": "r-163",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : monte les escaliers en souriant. Essaie, c'est contagieux.",
+        "en": "Today's challenge: climb the stairs smiling. Try it, it's contagious.",
+        "es": "Reto del día: sube las escaleras sonriendo. Pruébalo, es contagioso.",
+        "de": "Challenge des Tages: Geh lächelnd die Treppe hoch. Probier es, es ist ansteckend."
+      }
+    },
+    {
+      "id": "r-164",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : apprends le prénom d'une personne que tu croises souvent.",
+        "en": "Today's challenge: learn the name of someone you often cross paths with.",
+        "es": "Reto del día: aprende el nombre de alguien con quien te cruzas a menudo.",
+        "de": "Challenge des Tages: Lerne den Namen eines Menschen, dem du oft begegnest."
+      }
+    },
+    {
+      "id": "r-165",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : prends une vraie pause de quinze minutes, loin de tout.",
+        "en": "Today's challenge: take a real fifteen-minute break, away from everything.",
+        "es": "Reto del día: tómate un descanso de verdad de quince minutos, lejos de todo.",
+        "de": "Challenge des Tages: Mach eine echte Viertelstunde Pause, weit weg von allem."
+      }
+    },
+    {
+      "id": "r-166",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : nettoie l'écran de ton téléphone et de ton ordinateur.",
+        "en": "Today's challenge: clean your phone and computer screens.",
+        "es": "Reto del día: limpia la pantalla del móvil y del ordenador.",
+        "de": "Challenge des Tages: Putz den Bildschirm von Handy und Computer."
+      }
+    },
+    {
+      "id": "r-167",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : écris une lettre, une vraie, sur papier.",
+        "en": "Today's challenge: write a letter, a real one, on paper.",
+        "es": "Reto del día: escribe una carta, de verdad, en papel.",
+        "de": "Challenge des Tages: Schreib einen Brief, einen echten, auf Papier."
+      }
+    },
+    {
+      "id": "r-168",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : essaie une nouvelle recette avec ce que tu as dans le frigo.",
+        "en": "Today's challenge: try a new recipe with what's in your fridge.",
+        "es": "Reto del día: prueba una receta nueva con lo que tengas en la nevera.",
+        "de": "Challenge des Tages: Probier ein neues Rezept mit dem, was im Kühlschrank ist."
+      }
+    },
+    {
+      "id": "r-169",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : félicite-toi à voix haute pour une chose réussie aujourd'hui.",
+        "en": "Today's challenge: congratulate yourself out loud for something you did well today.",
+        "es": "Reto del día: felicítate en voz alta por algo que te haya salido bien hoy.",
+        "de": "Challenge des Tages: Lob dich laut für etwas, das dir heute gelungen ist."
+      }
+    },
+    {
+      "id": "r-170",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : partage un fou rire. Une vidéo drôle, un souvenir, une blague.",
+        "en": "Today's challenge: share a good laugh. A funny video, a memory, a joke.",
+        "es": "Reto del día: comparte una buena carcajada. Un vídeo gracioso, un recuerdo, un chiste.",
+        "de": "Challenge des Tages: Teile einen Lachanfall. Ein lustiges Video, eine Erinnerung, einen Witz."
+      }
+    },
+    {
+      "id": "r-171",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : plante une graine ou rempote une plante.",
+        "en": "Today's challenge: plant a seed or repot a plant.",
+        "es": "Reto del día: planta una semilla o trasplanta una planta.",
+        "de": "Challenge des Tages: Pflanz einen Samen oder topf eine Pflanze um."
+      }
+    },
+    {
+      "id": "r-172",
+      "category": "defi",
+      "type": "challenge",
+      "text": {
+        "fr": "Défi du jour : demande à quelqu'un « Qu'est-ce qui t'a rendu heureux cette semaine ? ».",
+        "en": "Today's challenge: ask someone \"What made you happy this week?\".",
+        "es": "Reto del día: pregunta a alguien «¿Qué te ha hecho feliz esta semana?».",
+        "de": "Challenge des Tages: Frag jemanden: „Was hat dich diese Woche glücklich gemacht?“."
+      }
+    },
+    {
+      "id": "r-173",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Apprendre une chose nouvelle par jour, c'est 365 découvertes par an.",
+        "en": "Learning one new thing a day means 365 discoveries a year.",
+        "es": "Aprender una cosa nueva al día son 365 descubrimientos al año.",
+        "de": "Jeden Tag etwas Neues lernen heißt 365 Entdeckungen im Jahr."
+      }
+    },
+    {
+      "id": "r-174",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Ce qui te met mal à l'aise aujourd'hui te rendra plus fort demain.",
+        "en": "What makes you uncomfortable today will make you stronger tomorrow.",
+        "es": "Lo que hoy te incomoda mañana te hará más fuerte.",
+        "de": "Was dich heute verunsichert, macht dich morgen stärker."
+      }
+    },
+    {
+      "id": "r-175",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Les questions sont plus utiles que les certitudes.",
+        "en": "Questions are more useful than certainties.",
+        "es": "Las preguntas son más útiles que las certezas.",
+        "de": "Fragen sind nützlicher als Gewissheiten."
+      }
+    },
+    {
+      "id": "r-176",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Un livre ouvert, c'est une porte vers un autre monde.",
+        "en": "An open book is a door to another world.",
+        "es": "Un libro abierto es una puerta a otro mundo.",
+        "de": "Ein offenes Buch ist eine Tür zu einer anderen Welt."
+      }
+    },
+    {
+      "id": "r-177",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "On ne devient pas bon en évitant les erreurs, mais en apprenant d'elles.",
+        "en": "You don't get good by avoiding mistakes, but by learning from them.",
+        "es": "No se llega a ser bueno evitando errores, sino aprendiendo de ellos.",
+        "de": "Man wird nicht gut, indem man Fehler vermeidet, sondern indem man aus ihnen lernt."
+      }
+    },
+    {
+      "id": "r-178",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Dix minutes de pratique chaque jour valent mieux qu'une heure une fois par mois.",
+        "en": "Ten minutes of practice a day beats one hour once a month.",
+        "es": "Diez minutos de práctica al día valen más que una hora una vez al mes.",
+        "de": "Zehn Minuten Übung am Tag sind besser als eine Stunde einmal im Monat."
+      }
+    },
+    {
+      "id": "r-179",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Change une petite habitude, et observe ce qu'elle change autour d'elle.",
+        "en": "Change one small habit, and watch what it changes around it.",
+        "es": "Cambia un pequeño hábito y observa lo que cambia a su alrededor.",
+        "de": "Ändere eine kleine Gewohnheit und beobachte, was sie um sich herum verändert."
+      }
+    },
+    {
+      "id": "r-180",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Le feedback est un cadeau, même quand l'emballage est maladroit.",
+        "en": "Feedback is a gift, even when the wrapping is clumsy.",
+        "es": "Una crítica es un regalo, aunque el envoltorio sea torpe.",
+        "de": "Feedback ist ein Geschenk, auch wenn die Verpackung ungeschickt ist."
+      }
+    },
+    {
+      "id": "r-181",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Ceux qui réussissent ne sont pas ceux qui n'ont jamais échoué, mais ceux qui n'ont pas abandonné.",
+        "en": "Those who succeed aren't those who never failed, but those who didn't give up.",
+        "es": "Los que triunfan no son los que nunca fallaron, sino los que no se rindieron.",
+        "de": "Erfolgreich sind nicht die, die nie gescheitert sind, sondern die, die nicht aufgegeben haben."
+      }
+    },
+    {
+      "id": "r-182",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Prends une minute ce soir pour te demander : qu'ai-je appris aujourd'hui ?",
+        "en": "Take a minute tonight to ask yourself: what did I learn today?",
+        "es": "Tómate un minuto esta noche para preguntarte: ¿qué he aprendido hoy?",
+        "de": "Nimm dir heute Abend eine Minute für die Frage: Was habe ich heute gelernt?"
+      }
+    },
+    {
+      "id": "r-183",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Les limites sont souvent des habitudes que l'on n'a pas encore remises en question.",
+        "en": "Limits are often habits we haven't questioned yet.",
+        "es": "Los límites suelen ser hábitos que aún no hemos cuestionado.",
+        "de": "Grenzen sind oft Gewohnheiten, die wir noch nicht hinterfragt haben."
+      }
+    },
+    {
+      "id": "r-184",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Entoure-toi de personnes qui te tirent vers le haut.",
+        "en": "Surround yourself with people who lift you up.",
+        "es": "Rodéate de personas que te impulsen hacia arriba.",
+        "de": "Umgib dich mit Menschen, die dich nach oben ziehen."
+      }
+    },
+    {
+      "id": "r-185",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Le temps passé à apprendre n'est jamais du temps perdu.",
+        "en": "Time spent learning is never time wasted.",
+        "es": "El tiempo dedicado a aprender nunca es tiempo perdido.",
+        "de": "Zeit, die man mit Lernen verbringt, ist nie verlorene Zeit."
+      }
+    },
+    {
+      "id": "r-186",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Organiser sa journée la veille, c'est se faire un cadeau pour le lendemain.",
+        "en": "Planning your day the night before is a gift to your tomorrow.",
+        "es": "Organizar el día la víspera es un regalo para el día siguiente.",
+        "de": "Den Tag am Vorabend zu planen ist ein Geschenk an den nächsten Morgen."
+      }
+    },
+    {
+      "id": "r-187",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Écouter vraiment quelqu'un, c'est l'une des compétences les plus rares.",
+        "en": "Truly listening to someone is one of the rarest skills.",
+        "es": "Escuchar de verdad a alguien es una de las habilidades más raras.",
+        "de": "Jemandem wirklich zuzuhören ist eine der seltensten Fähigkeiten."
+      }
+    },
+    {
+      "id": "r-188",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Avant d'être bon, on est forcément maladroit. C'est normal.",
+        "en": "Before you're good, you're bound to be clumsy. That's normal.",
+        "es": "Antes de ser bueno, uno es torpe. Es normal.",
+        "de": "Bevor man gut ist, ist man zwangsläufig ungeschickt. Das ist normal."
+      }
+    },
+    {
+      "id": "r-189",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "La curiosité ouvre plus de portes que le talent.",
+        "en": "Curiosity opens more doors than talent.",
+        "es": "La curiosidad abre más puertas que el talento.",
+        "de": "Neugier öffnet mehr Türen als Talent."
+      }
+    },
+    {
+      "id": "r-190",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Savoir dire non à certaines choses, c'est dire oui à l'essentiel.",
+        "en": "Saying no to some things means saying yes to what matters.",
+        "es": "Saber decir no a algunas cosas es decir sí a lo esencial.",
+        "de": "Zu manchen Dingen Nein zu sagen heißt, zum Wesentlichen Ja zu sagen."
+      }
+    },
+    {
+      "id": "r-191",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Chaque expert a commencé par ne rien savoir du tout.",
+        "en": "Every expert started out knowing nothing at all.",
+        "es": "Todo experto empezó sin saber absolutamente nada.",
+        "de": "Jeder Experte hat damit angefangen, gar nichts zu wissen."
+      }
+    },
+    {
+      "id": "r-192",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Ce n'est pas la vitesse qui compte, c'est la direction.",
+        "en": "It isn't speed that matters, it's direction.",
+        "es": "No importa la velocidad, sino la dirección.",
+        "de": "Nicht die Geschwindigkeit zählt, sondern die Richtung."
+      }
+    },
+    {
+      "id": "r-193",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Une idée notée est une idée sauvée.",
+        "en": "An idea written down is an idea saved.",
+        "es": "Una idea anotada es una idea salvada.",
+        "de": "Eine notierte Idee ist eine gerettete Idee."
+      }
+    },
+    {
+      "id": "r-194",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Le meilleur investissement, c'est celui que tu fais en toi.",
+        "en": "The best investment is the one you make in yourself.",
+        "es": "La mejor inversión es la que haces en ti mismo.",
+        "de": "Die beste Investition ist die in dich selbst."
+      }
+    },
+    {
+      "id": "r-195",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "On apprend plus en enseignant qu'en écoutant.",
+        "en": "You learn more by teaching than by listening.",
+        "es": "Se aprende más enseñando que escuchando.",
+        "de": "Man lernt mehr beim Lehren als beim Zuhören."
+      }
+    },
+    {
+      "id": "r-196",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Demande « pourquoi ? » trois fois de suite : tu trouveras la vraie raison.",
+        "en": "Ask \"why?\" three times in a row: you'll find the real reason.",
+        "es": "Pregunta «¿por qué?» tres veces seguidas: encontrarás la verdadera razón.",
+        "de": "Frag dreimal hintereinander „Warum?“: Du findest den wahren Grund."
+      }
+    },
+    {
+      "id": "r-197",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Tes échecs sont des brouillons, pas des verdicts.",
+        "en": "Your failures are drafts, not verdicts.",
+        "es": "Tus fracasos son borradores, no veredictos.",
+        "de": "Deine Misserfolge sind Entwürfe, keine Urteile."
+      }
+    },
+    {
+      "id": "r-198",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Lire dix pages par jour, c'est une quinzaine de livres par an.",
+        "en": "Reading ten pages a day adds up to about fifteen books a year.",
+        "es": "Leer diez páginas al día equivale a unos quince libros al año.",
+        "de": "Zehn Seiten am Tag sind etwa fünfzehn Bücher im Jahr."
+      }
+    },
+    {
+      "id": "r-199",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "L'esprit est comme un parachute : il fonctionne mieux ouvert.",
+        "en": "The mind is like a parachute: it works better when it's open.",
+        "es": "La mente es como un paracaídas: funciona mejor abierta.",
+        "de": "Der Geist ist wie ein Fallschirm: Er funktioniert besser, wenn er offen ist."
+      }
+    },
+    {
+      "id": "r-200",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Ce que tu fais chaque jour compte plus que ce que tu fais de temps en temps.",
+        "en": "What you do every day matters more than what you do once in a while.",
+        "es": "Lo que haces cada día cuenta más que lo que haces de vez en cuando.",
+        "de": "Was du jeden Tag tust, zählt mehr als das, was du ab und zu tust."
+      }
+    },
+    {
+      "id": "r-201",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Accepter de ne pas savoir, c'est le début de toute découverte.",
+        "en": "Accepting that you don't know is the start of every discovery.",
+        "es": "Aceptar que no sabes es el comienzo de todo descubrimiento.",
+        "de": "Zu akzeptieren, dass man etwas nicht weiß, ist der Anfang jeder Entdeckung."
+      }
+    },
+    {
+      "id": "r-202",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Une conversation sincère peut changer une vie.",
+        "en": "An honest conversation can change a life.",
+        "es": "Una conversación sincera puede cambiar una vida.",
+        "de": "Ein ehrliches Gespräch kann ein Leben verändern."
+      }
+    },
+    {
+      "id": "r-203",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Fixe-toi un objectif si petit qu'il est impossible d'échouer.",
+        "en": "Set yourself a goal so small that it's impossible to fail.",
+        "es": "Ponte una meta tan pequeña que sea imposible fallar.",
+        "de": "Setz dir ein Ziel, das so klein ist, dass du nicht scheitern kannst."
+      }
+    },
+    {
+      "id": "r-204",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "La confiance en soi se construit en tenant les promesses qu'on se fait.",
+        "en": "Self-confidence is built by keeping the promises you make to yourself.",
+        "es": "La confianza en uno mismo se construye cumpliendo las promesas que uno se hace.",
+        "de": "Selbstvertrauen entsteht, wenn man die Versprechen hält, die man sich selbst gibt."
+      }
+    },
+    {
+      "id": "r-205",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Changer d'avis n'est pas une faiblesse, c'est la preuve qu'on réfléchit.",
+        "en": "Changing your mind isn't a weakness, it's proof that you're thinking.",
+        "es": "Cambiar de opinión no es una debilidad, es la prueba de que piensas.",
+        "de": "Seine Meinung zu ändern ist keine Schwäche, sondern ein Beweis, dass man nachdenkt."
+      }
+    },
+    {
+      "id": "r-206",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Chaque jour est une occasion de devenir une meilleure version de toi-même.",
+        "en": "Every day is a chance to become a better version of yourself.",
+        "es": "Cada día es una oportunidad para ser una mejor versión de ti.",
+        "de": "Jeder Tag ist eine Chance, eine bessere Version deiner selbst zu werden."
+      }
+    },
+    {
+      "id": "r-207",
+      "category": "developpement",
+      "type": "quote",
+      "text": {
+        "fr": "Rien ne remplace l'expérience. Alors expérimente.",
+        "en": "Nothing replaces experience. So experiment.",
+        "es": "Nada sustituye a la experiencia. Así que experimenta.",
+        "de": "Nichts ersetzt Erfahrung. Also probier es aus."
+      }
+    },
+    {
+      "id": "r-208",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai un super programme pour aujourd'hui : faire semblant de savoir ce que je fais.",
+        "en": "I have a great plan for today: pretending I know what I'm doing.",
+        "es": "Tengo un gran plan para hoy: fingir que sé lo que hago.",
+        "de": "Ich habe heute einen tollen Plan: so tun, als wüsste ich, was ich tue."
+      }
+    },
+    {
+      "id": "r-209",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon chat me regarde comme si c'était moi, l'animal de compagnie.",
+        "en": "My cat looks at me as if I were the pet.",
+        "es": "Mi gato me mira como si la mascota fuera yo.",
+        "de": "Meine Katze schaut mich an, als wäre ich das Haustier."
+      }
+    },
+    {
+      "id": "r-210",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je ne suis pas paresseux, je suis en mode économie d'énergie.",
+        "en": "I'm not lazy, I'm in energy-saving mode.",
+        "es": "No soy perezoso, estoy en modo ahorro de energía.",
+        "de": "Ich bin nicht faul, ich bin im Energiesparmodus."
+      }
+    },
+    {
+      "id": "r-211",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Le mot de passe doit contenir une majuscule, un chiffre et un hiéroglyphe.",
+        "en": "Your password must contain a capital letter, a number and a hieroglyph.",
+        "es": "La contraseña debe contener una mayúscula, un número y un jeroglífico.",
+        "de": "Das Passwort muss einen Großbuchstaben, eine Zahl und eine Hieroglyphe enthalten."
+      }
+    },
+    {
+      "id": "r-212",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon sport préféré : sauter des conclusions.",
+        "en": "My favourite sport: jumping to conclusions.",
+        "es": "Mi deporte favorito: sacar conclusiones precipitadas.",
+        "de": "Mein Lieblingssport: voreilige Schlüsse ziehen."
+      }
+    },
+    {
+      "id": "r-213",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai essayé d'être normal une fois. Pire journée de ma vie.",
+        "en": "I tried being normal once. Worst day of my life.",
+        "es": "Una vez intenté ser normal. El peor día de mi vida.",
+        "de": "Ich habe einmal versucht, normal zu sein. Schlimmster Tag meines Lebens."
+      }
+    },
+    {
+      "id": "r-214",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je range ma chambre une fois par an : c'est mon jour des fouilles archéologiques.",
+        "en": "I tidy my room once a year: it's my archaeological dig day.",
+        "es": "Ordeno mi cuarto una vez al año: es mi día de excavación arqueológica.",
+        "de": "Ich räume einmal im Jahr mein Zimmer auf: Das ist mein archäologischer Grabungstag."
+      }
+    },
+    {
+      "id": "r-215",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "La cuisine, c'est simple : on suit la recette et on commande une pizza.",
+        "en": "Cooking is simple: follow the recipe, then order a pizza.",
+        "es": "Cocinar es fácil: sigues la receta y luego pides una pizza.",
+        "de": "Kochen ist einfach: Rezept befolgen und dann Pizza bestellen."
+      }
+    },
+    {
+      "id": "r-216",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon GPS et moi avons des avis divergents sur le mot « tout droit ».",
+        "en": "My GPS and I disagree on the meaning of \"straight ahead\".",
+        "es": "Mi GPS y yo no coincidimos en lo que significa «todo recto».",
+        "de": "Mein Navi und ich sind uns nicht einig, was „geradeaus“ bedeutet."
+      }
+    },
+    {
+      "id": "r-217",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai commencé un régime : je ne mange plus devant l'ordinateur. Maintenant, je mange devant la télé.",
+        "en": "I started a diet: no more eating at the computer. Now I eat in front of the TV.",
+        "es": "Empecé una dieta: ya no como delante del ordenador. Ahora como delante de la tele.",
+        "de": "Ich habe eine Diät angefangen: Ich esse nicht mehr vor dem Computer. Jetzt esse ich vor dem Fernseher."
+      }
+    },
+    {
+      "id": "r-218",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Les plantes d'intérieur me survivent rarement. Je leur parle trop de mes problèmes.",
+        "en": "Houseplants rarely survive me. I tell them too much about my problems.",
+        "es": "Las plantas de interior rara vez me sobreviven. Les cuento demasiado mis problemas.",
+        "de": "Zimmerpflanzen überleben mich selten. Ich erzähle ihnen zu viel von meinen Problemen."
+      }
+    },
+    {
+      "id": "r-219",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je fais du yoga : chaque matin, je m'étire pour attraper mon téléphone.",
+        "en": "I do yoga: every morning I stretch to reach my phone.",
+        "es": "Hago yoga: cada mañana me estiro para alcanzar el móvil.",
+        "de": "Ich mache Yoga: Jeden Morgen strecke ich mich nach meinem Handy."
+      }
+    },
+    {
+      "id": "r-220",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon superpouvoir : oublier pourquoi je suis entré dans une pièce.",
+        "en": "My superpower: forgetting why I walked into a room.",
+        "es": "Mi superpoder: olvidar para qué entré en una habitación.",
+        "de": "Meine Superkraft: vergessen, warum ich einen Raum betreten habe."
+      }
+    },
+    {
+      "id": "r-221",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Le café ne pose pas de questions. Le café comprend.",
+        "en": "Coffee doesn't ask questions. Coffee understands.",
+        "es": "El café no hace preguntas. El café entiende.",
+        "de": "Kaffee stellt keine Fragen. Kaffee versteht."
+      }
+    },
+    {
+      "id": "r-222",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai dit à mon réveil que je l'aimais. Il a sonné quand même.",
+        "en": "I told my alarm clock I loved it. It rang anyway.",
+        "es": "Le dije a mi despertador que lo quería. Sonó igual.",
+        "de": "Ich habe meinem Wecker gesagt, dass ich ihn liebe. Er hat trotzdem geklingelt."
+      }
+    },
+    {
+      "id": "r-223",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Ma liste de courses ressemble à un roman policier : on ne sait jamais comment ça finit.",
+        "en": "My shopping list reads like a crime novel: you never know how it ends.",
+        "es": "Mi lista de la compra parece una novela policíaca: nunca sabes cómo acaba.",
+        "de": "Meine Einkaufsliste liest sich wie ein Krimi: Man weiß nie, wie sie endet."
+      }
+    },
+    {
+      "id": "r-224",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je ne parle pas tout seul, je fais des réunions avec moi-même.",
+        "en": "I don't talk to myself, I hold meetings with myself.",
+        "es": "No hablo solo, hago reuniones conmigo mismo.",
+        "de": "Ich rede nicht mit mir selbst, ich halte Besprechungen mit mir ab."
+      }
+    },
+    {
+      "id": "r-225",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Les chaussettes disparaissent dans la machine. Elles partent sans doute en vacances.",
+        "en": "Socks disappear in the washing machine. They're probably off on holiday.",
+        "es": "Los calcetines desaparecen en la lavadora. Seguro que se van de vacaciones.",
+        "de": "Socken verschwinden in der Waschmaschine. Wahrscheinlich machen sie Urlaub."
+      }
+    },
+    {
+      "id": "r-226",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai rangé mon bureau. Je ne trouve plus rien, mais c'est joli.",
+        "en": "I tidied my desk. I can't find anything now, but it looks nice.",
+        "es": "Ordené mi escritorio. Ya no encuentro nada, pero queda bonito.",
+        "de": "Ich habe meinen Schreibtisch aufgeräumt. Jetzt finde ich nichts mehr, aber es sieht hübsch aus."
+      }
+    },
+    {
+      "id": "r-227",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je suis un lève-tôt. Enfin, je me lève tôt pour me rendormir.",
+        "en": "I'm an early riser. Well, I get up early to go back to sleep.",
+        "es": "Soy madrugador. Bueno, madrugo para volver a dormirme.",
+        "de": "Ich bin Frühaufsteher. Na ja, ich stehe früh auf, um wieder einzuschlafen."
+      }
+    },
+    {
+      "id": "r-228",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mon chien est persuadé que le facteur est un génie du mal.",
+        "en": "My dog is convinced the postman is an evil genius.",
+        "es": "Mi perro está convencido de que el cartero es un genio del mal.",
+        "de": "Mein Hund ist überzeugt, dass der Postbote ein böses Genie ist."
+      }
+    },
+    {
+      "id": "r-229",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Il n'y a pas de mauvaise météo, seulement des plaids insuffisants.",
+        "en": "There's no bad weather, only too few blankets.",
+        "es": "No hay mal tiempo, solo mantas insuficientes.",
+        "de": "Es gibt kein schlechtes Wetter, nur zu wenige Kuscheldecken."
+      }
+    },
+    {
+      "id": "r-230",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai fait du sport ce matin : j'ai couru après le bus. Et je l'ai eu !",
+        "en": "I exercised this morning: I ran after the bus. And I caught it!",
+        "es": "Hice deporte esta mañana: corrí detrás del autobús. ¡Y lo pillé!",
+        "de": "Ich habe heute Morgen Sport gemacht: Ich bin dem Bus hinterhergerannt. Und ich habe ihn erwischt!"
+      }
+    },
+    {
+      "id": "r-231",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Le secret d'une bonne journée ? Ne pas lire ses mails avant le café.",
+        "en": "The secret to a good day? Don't read your emails before coffee.",
+        "es": "¿El secreto de un buen día? No leer los correos antes del café.",
+        "de": "Das Geheimnis eines guten Tages? Keine Mails vor dem Kaffee lesen."
+      }
+    },
+    {
+      "id": "r-232",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Je suis multitâche : je peux oublier plusieurs choses à la fois.",
+        "en": "I'm a multitasker: I can forget several things at once.",
+        "es": "Soy multitarea: puedo olvidar varias cosas a la vez.",
+        "de": "Ich bin multitaskingfähig: Ich kann mehrere Dinge gleichzeitig vergessen."
+      }
+    },
+    {
+      "id": "r-233",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Si la vie te donne des citrons, demande du sucre et de l'eau pétillante.",
+        "en": "If life gives you lemons, ask for sugar and sparkling water.",
+        "es": "Si la vida te da limones, pide azúcar y agua con gas.",
+        "de": "Wenn das Leben dir Zitronen gibt, frag nach Zucker und Sprudel."
+      }
+    },
+    {
+      "id": "r-234",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Ma plante verte est en plastique. Enfin un être vivant que je n'ai pas fait fuir.",
+        "en": "My green plant is plastic. Finally a living thing I haven't scared away.",
+        "es": "Mi planta es de plástico. Por fin algo vivo que no he espantado.",
+        "de": "Meine Grünpflanze ist aus Plastik. Endlich ein Lebewesen, das ich nicht vertrieben habe."
+      }
+    },
+    {
+      "id": "r-235",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Le canapé et moi, c'est une longue histoire d'amour.",
+        "en": "The sofa and I have a long love story.",
+        "es": "El sofá y yo tenemos una larga historia de amor.",
+        "de": "Das Sofa und ich, das ist eine lange Liebesgeschichte."
+      }
+    },
+    {
+      "id": "r-236",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai appris à cuisiner trois plats : les pâtes, les pâtes et les pâtes.",
+        "en": "I've learned to cook three dishes: pasta, pasta and pasta.",
+        "es": "He aprendido a cocinar tres platos: pasta, pasta y pasta.",
+        "de": "Ich habe drei Gerichte kochen gelernt: Nudeln, Nudeln und Nudeln."
+      }
+    },
+    {
+      "id": "r-237",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Mes chaussettes ne sont pas dépareillées, elles sont en édition limitée.",
+        "en": "My socks aren't mismatched, they're a limited edition.",
+        "es": "Mis calcetines no están desparejados, son una edición limitada.",
+        "de": "Meine Socken passen nicht zusammen? Das ist eine limitierte Auflage."
+      }
+    },
+    {
+      "id": "r-238",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai fini par trouver mes lunettes. Elles étaient sur mon nez.",
+        "en": "I finally found my glasses. They were on my nose.",
+        "es": "Al final encontré mis gafas. Las tenía puestas.",
+        "de": "Ich habe meine Brille endlich gefunden. Sie war auf meiner Nase."
+      }
+    },
+    {
+      "id": "r-239",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Le week-end dure deux jours, mais le lundi semble en durer cinq.",
+        "en": "The weekend lasts two days, but Monday feels like five.",
+        "es": "El fin de semana dura dos días, pero el lunes parece durar cinco.",
+        "de": "Das Wochenende dauert zwei Tage, aber der Montag fühlt sich an wie fünf."
+      }
+    },
+    {
+      "id": "r-240",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Quand je dis « cinq minutes », je parle en minutes de chat.",
+        "en": "When I say \"five minutes\", I mean cat minutes.",
+        "es": "Cuando digo «cinco minutos», hablo en minutos de gato.",
+        "de": "Wenn ich „fünf Minuten“ sage, meine ich Katzenminuten."
+      }
+    },
+    {
+      "id": "r-241",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "Ma batterie est à 2 % et moi aussi. Allez, on se recharge ensemble.",
+        "en": "My battery is at 2% and so am I. Come on, let's recharge together.",
+        "es": "Mi batería está al 2 % y yo también. Venga, recarguémonos juntos.",
+        "de": "Mein Akku ist bei 2 % und ich auch. Komm, wir laden zusammen auf."
+      }
+    },
+    {
+      "id": "r-242",
+      "category": "humour",
+      "type": "quote",
+      "text": {
+        "fr": "J'ai toujours raison. Sauf quand j'ai tort, mais c'est rare.",
+        "en": "I'm always right. Except when I'm wrong, but that's rare.",
+        "es": "Siempre tengo razón. Salvo cuando me equivoco, pero es raro.",
+        "de": "Ich habe immer recht. Außer wenn ich falschliege, aber das ist selten."
+      }
+    },
+    {
+      "id": "r-243",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La part de la population mondiale vivant dans l'extrême pauvreté a été divisée par plus de trois depuis 1990.",
+        "en": "The share of the world's population living in extreme poverty has fallen more than threefold since 1990.",
+        "es": "La proporción de la población mundial en pobreza extrema se ha dividido por más de tres desde 1990.",
+        "de": "Der Anteil der Weltbevölkerung in extremer Armut ist seit 1990 auf weniger als ein Drittel gesunken."
+      }
+    },
+    {
+      "id": "r-244",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Près de neuf enfants sur dix dans le monde vont aujourd'hui à l'école primaire.",
+        "en": "Nearly nine in ten children worldwide now attend primary school.",
+        "es": "Casi nueve de cada diez niños en el mundo van hoy a la escuela primaria.",
+        "de": "Fast neun von zehn Kindern weltweit besuchen heute eine Grundschule."
+      }
+    },
+    {
+      "id": "r-245",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "L'accès à l'eau potable s'est étendu à plus de deux milliards de personnes supplémentaires depuis 2000.",
+        "en": "Access to safe drinking water has reached more than two billion additional people since 2000.",
+        "es": "El acceso al agua potable ha llegado a más de dos mil millones de personas adicionales desde 2000.",
+        "de": "Seit 2000 haben über zwei Milliarden Menschen zusätzlich Zugang zu sauberem Trinkwasser erhalten."
+      }
+    },
+    {
+      "id": "r-246",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le nombre de décès dus aux catastrophes naturelles a fortement baissé au cours du dernier siècle, grâce aux alertes et à la prévention.",
+        "en": "Deaths from natural disasters have fallen sharply over the last century, thanks to warnings and prevention.",
+        "es": "Las muertes por desastres naturales han bajado mucho en el último siglo, gracias a las alertas y la prevención.",
+        "de": "Die Zahl der Todesopfer durch Naturkatastrophen ist im letzten Jahrhundert dank Warnsystemen und Vorsorge stark gesunken."
+      }
+    },
+    {
+      "id": "r-247",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Aujourd'hui, la plupart des enfants du monde sont vaccinés contre la rougeole.",
+        "en": "Today, most of the world's children are vaccinated against measles.",
+        "es": "Hoy, la mayoría de los niños del mundo están vacunados contra el sarampión.",
+        "de": "Heute ist die Mehrheit der Kinder weltweit gegen Masern geimpft."
+      }
+    },
+    {
+      "id": "r-248",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La mortalité maternelle dans le monde a baissé d'environ un tiers depuis 2000.",
+        "en": "Maternal mortality worldwide has fallen by about a third since 2000.",
+        "es": "La mortalidad materna en el mundo ha bajado alrededor de un tercio desde 2000.",
+        "de": "Die Müttersterblichkeit ist weltweit seit 2000 um etwa ein Drittel gesunken."
+      }
+    },
+    {
+      "id": "r-249",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Plus de la moitié de la population mondiale utilise aujourd'hui Internet.",
+        "en": "More than half of the world's population now uses the internet.",
+        "es": "Más de la mitad de la población mundial usa hoy internet.",
+        "de": "Mehr als die Hälfte der Weltbevölkerung nutzt heute das Internet."
+      }
+    },
+    {
+      "id": "r-250",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La dracunculose (ver de Guinée), qui touchait 3,5 millions de personnes en 1986, est presque éradiquée.",
+        "en": "Guinea worm disease, which affected 3.5 million people in 1986, is almost eradicated.",
+        "es": "La dracunculosis (gusano de Guinea), que afectaba a 3,5 millones de personas en 1986, está casi erradicada.",
+        "de": "Die Medinawurm-Krankheit, 1986 noch bei 3,5 Millionen Menschen, ist fast ausgerottet."
+      }
+    },
+    {
+      "id": "r-251",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le paludisme a reculé dans de nombreux pays : plus de quarante sont aujourd'hui certifiés sans paludisme.",
+        "en": "Malaria has retreated in many countries: more than forty are now certified malaria-free.",
+        "es": "La malaria ha retrocedido en muchos países: más de cuarenta están hoy certificados libres de malaria.",
+        "de": "Malaria ist in vielen Ländern zurückgegangen: Über vierzig Länder sind heute als malariafrei zertifiziert."
+      }
+    },
+    {
+      "id": "r-252",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Les filles sont aujourd'hui presque aussi nombreuses que les garçons à l'école primaire dans le monde.",
+        "en": "Girls are now almost as numerous as boys in primary schools worldwide.",
+        "es": "Hoy hay casi tantas niñas como niños en la escuela primaria en el mundo.",
+        "de": "Mädchen besuchen heute weltweit fast genauso häufig die Grundschule wie Jungen."
+      }
+    },
+    {
+      "id": "r-253",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Les accidents d'avion sont devenus extrêmement rares : voyager en avion est l'un des moyens les plus sûrs.",
+        "en": "Plane crashes have become extremely rare: flying is one of the safest ways to travel.",
+        "es": "Los accidentes de avión se han vuelto muy raros: volar es una de las formas más seguras de viajar.",
+        "de": "Flugzeugunglücke sind extrem selten geworden: Fliegen ist eine der sichersten Arten zu reisen."
+      }
+    },
+    {
+      "id": "r-254",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Dans de nombreux pays, les routes sont bien plus sûres qu'il y a cinquante ans, malgré beaucoup plus de voitures.",
+        "en": "In many countries, roads are far safer than fifty years ago, despite many more cars.",
+        "es": "En muchos países, las carreteras son mucho más seguras que hace cincuenta años, pese a haber muchos más coches.",
+        "de": "In vielen Ländern sind die Straßen viel sicherer als vor fünfzig Jahren, trotz viel mehr Autos."
+      }
+    },
+    {
+      "id": "r-255",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La couche d'ozone se reconstitue : c'est la preuve qu'un accord mondial peut réparer la planète.",
+        "en": "The ozone layer is recovering: proof that a global agreement can repair the planet.",
+        "es": "La capa de ozono se está recuperando: prueba de que un acuerdo mundial puede reparar el planeta.",
+        "de": "Die Ozonschicht erholt sich: ein Beweis, dass ein weltweites Abkommen den Planeten heilen kann."
+      }
+    },
+    {
+      "id": "r-256",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le nombre de personnes souffrant de la faim a nettement baissé depuis les années 1970 en proportion de la population.",
+        "en": "The share of people suffering from hunger has fallen sharply since the 1970s.",
+        "es": "La proporción de personas que pasan hambre ha bajado mucho desde los años 70.",
+        "de": "Der Anteil der hungernden Menschen ist seit den 1970er-Jahren deutlich gesunken."
+      }
+    },
+    {
+      "id": "r-257",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le travail des enfants a reculé de plus d'un tiers entre 2000 et 2020.",
+        "en": "Child labour fell by more than a third between 2000 and 2020.",
+        "es": "El trabajo infantil se redujo más de un tercio entre 2000 y 2020.",
+        "de": "Kinderarbeit ist zwischen 2000 und 2020 um mehr als ein Drittel zurückgegangen."
+      }
+    },
+    {
+      "id": "r-258",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le prix des panneaux solaires a chuté de plus de 90 % en dix ans environ.",
+        "en": "The price of solar panels has dropped by more than 90% in about ten years.",
+        "es": "El precio de los paneles solares ha caído más de un 90 % en unos diez años.",
+        "de": "Der Preis von Solarmodulen ist in etwa zehn Jahren um mehr als 90 % gefallen."
+      }
+    },
+    {
+      "id": "r-259",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Plus de 7 personnes sur 10 dans le monde ont aujourd'hui un téléphone portable.",
+        "en": "More than 7 in 10 people worldwide now own a mobile phone.",
+        "es": "Más de 7 de cada 10 personas en el mundo tienen hoy un móvil.",
+        "de": "Mehr als 7 von 10 Menschen weltweit besitzen heute ein Mobiltelefon."
+      }
+    },
+    {
+      "id": "r-260",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La lèpre, autrefois très répandue, se soigne aujourd'hui grâce à un traitement gratuit distribué dans le monde entier.",
+        "en": "Leprosy, once widespread, can now be cured with a free treatment distributed worldwide.",
+        "es": "La lepra, antes muy extendida, se cura hoy con un tratamiento gratuito distribuido en todo el mundo.",
+        "de": "Lepra, früher weit verbreitet, ist heute mit einer weltweit kostenlos verteilten Behandlung heilbar."
+      }
+    },
+    {
+      "id": "r-261",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La peine de mort a été abolie, en droit ou en pratique, par plus des deux tiers des pays du monde.",
+        "en": "The death penalty has been abolished in law or practice by more than two thirds of the world's countries.",
+        "es": "La pena de muerte ha sido abolida, en la ley o en la práctica, por más de dos tercios de los países del mundo.",
+        "de": "Die Todesstrafe ist in mehr als zwei Dritteln der Länder der Welt rechtlich oder faktisch abgeschafft."
+      }
+    },
+    {
+      "id": "r-262",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le nombre de livres publiés chaque année dans le monde se compte en millions.",
+        "en": "The number of books published worldwide each year runs into the millions.",
+        "es": "El número de libros publicados cada año en el mundo se cuenta por millones.",
+        "de": "Weltweit erscheinen jedes Jahr Millionen von Büchern."
+      }
+    },
+    {
+      "id": "r-263",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Les dons de sang sauvent chaque année des millions de vies grâce à des donneurs bénévoles.",
+        "en": "Blood donations save millions of lives every year, thanks to volunteer donors.",
+        "es": "Las donaciones de sangre salvan millones de vidas cada año gracias a donantes voluntarios.",
+        "de": "Blutspenden retten jedes Jahr dank freiwilliger Spender Millionen Leben."
+      }
+    },
+    {
+      "id": "r-264",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "L'espérance de vie a progressé sur tous les continents depuis 1950.",
+        "en": "Life expectancy has risen on every continent since 1950.",
+        "es": "La esperanza de vida ha aumentado en todos los continentes desde 1950.",
+        "de": "Die Lebenserwartung ist seit 1950 auf allen Kontinenten gestiegen."
+      }
+    },
+    {
+      "id": "r-265",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Wikipédia, écrite par des bénévoles, existe dans plus de 300 langues.",
+        "en": "Wikipedia, written by volunteers, exists in more than 300 languages.",
+        "es": "Wikipedia, escrita por voluntarios, existe en más de 300 idiomas.",
+        "de": "Wikipedia, von Freiwilligen geschrieben, gibt es in mehr als 300 Sprachen."
+      }
+    },
+    {
+      "id": "r-266",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le vaccin contre la polio a permis d'éviter la paralysie à des millions d'enfants.",
+        "en": "The polio vaccine has spared millions of children from paralysis.",
+        "es": "La vacuna contra la polio ha evitado la parálisis a millones de niños.",
+        "de": "Der Polio-Impfstoff hat Millionen Kinder vor Lähmungen bewahrt."
+      }
+    },
+    {
+      "id": "r-267",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Les greffes d'organes, impossibles il y a un siècle, sauvent aujourd'hui des milliers de vies chaque année.",
+        "en": "Organ transplants, impossible a century ago, now save thousands of lives every year.",
+        "es": "Los trasplantes de órganos, imposibles hace un siglo, salvan hoy miles de vidas cada año.",
+        "de": "Organtransplantationen, vor einem Jahrhundert unmöglich, retten heute jedes Jahr Tausende Leben."
+      }
+    },
+    {
+      "id": "r-268",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "La pénicilline, découverte en 1928, a sauvé des dizaines de millions de vies.",
+        "en": "Penicillin, discovered in 1928, has saved tens of millions of lives.",
+        "es": "La penicilina, descubierta en 1928, ha salvado decenas de millones de vidas.",
+        "de": "Penicillin, 1928 entdeckt, hat Dutzende Millionen Leben gerettet."
+      }
+    },
+    {
+      "id": "r-269",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "En un siècle, le nombre de pays où les femmes peuvent voter est passé d'une poignée à presque tous.",
+        "en": "In a century, the number of countries where women can vote has gone from a handful to almost all.",
+        "es": "En un siglo, los países donde las mujeres pueden votar han pasado de unos pocos a casi todos.",
+        "de": "In einem Jahrhundert ist die Zahl der Länder mit Frauenwahlrecht von einer Handvoll auf fast alle gestiegen."
+      }
+    },
+    {
+      "id": "r-270",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Le trou de la couche d'ozone au-dessus de l'Antarctique est aujourd'hui plus petit qu'au début des années 2000.",
+        "en": "The ozone hole over Antarctica is now smaller than in the early 2000s.",
+        "es": "El agujero de la capa de ozono sobre la Antártida es hoy más pequeño que a principios de los 2000.",
+        "de": "Das Ozonloch über der Antarktis ist heute kleiner als Anfang der 2000er-Jahre."
+      }
+    },
+    {
+      "id": "r-271",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Grâce aux réseaux d'alerte, les cyclones font aujourd'hui beaucoup moins de victimes qu'autrefois au Bangladesh.",
+        "en": "Thanks to warning networks, cyclones now claim far fewer lives in Bangladesh than they used to.",
+        "es": "Gracias a las redes de alerta, los ciclones causan hoy muchas menos víctimas que antes en Bangladés.",
+        "de": "Dank Warnnetzen fordern Wirbelstürme in Bangladesch heute viel weniger Opfer als früher."
+      }
+    },
+    {
+      "id": "r-272",
+      "category": "monde",
+      "type": "fact",
+      "text": {
+        "fr": "Chaque jour, des centaines de milliers de personnes accèdent pour la première fois à l'électricité ou à Internet.",
+        "en": "Every day, hundreds of thousands of people get access to electricity or the internet for the first time.",
+        "es": "Cada día, cientos de miles de personas acceden por primera vez a la electricidad o a internet.",
+        "de": "Jeden Tag erhalten Hunderttausende Menschen zum ersten Mal Zugang zu Strom oder Internet."
+      }
+    },
+    {
+      "id": "r-273",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Commence là où tu es, avec ce que tu as. C'est déjà beaucoup.",
+        "en": "Start where you are, with what you have. That's already a lot.",
+        "es": "Empieza donde estás, con lo que tienes. Ya es mucho.",
+        "de": "Fang dort an, wo du bist, mit dem, was du hast. Das ist schon viel."
+      }
+    },
+    {
+      "id": "r-274",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Tu n'as pas raté ta journée : elle n'est pas finie.",
+        "en": "You haven't failed your day: it isn't over yet.",
+        "es": "No has fallado tu día: todavía no ha terminado.",
+        "de": "Dein Tag ist nicht verloren: Er ist noch nicht vorbei."
+      }
+    },
+    {
+      "id": "r-275",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Chaque petit pas d'aujourd'hui construit le chemin de demain.",
+        "en": "Every small step today builds tomorrow's path.",
+        "es": "Cada pequeño paso de hoy construye el camino de mañana.",
+        "de": "Jeder kleine Schritt heute baut den Weg von morgen."
+      }
+    },
+    {
+      "id": "r-276",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Le courage ne fait pas de bruit. Parfois, c'est juste se lever et réessayer.",
+        "en": "Courage doesn't make noise. Sometimes it's just getting up and trying again.",
+        "es": "El valor no hace ruido. A veces es solo levantarse y volver a intentarlo.",
+        "de": "Mut ist leise. Manchmal heißt er einfach: aufstehen und es noch einmal versuchen."
+      }
+    },
+    {
+      "id": "r-277",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Rien n'est plus fort qu'une petite habitude répétée chaque jour.",
+        "en": "Nothing is stronger than a small habit repeated every day.",
+        "es": "No hay nada más fuerte que un pequeño hábito repetido cada día.",
+        "de": "Nichts ist stärker als eine kleine Gewohnheit, die man jeden Tag wiederholt."
+      }
+    },
+    {
+      "id": "r-278",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Tu es plus capable que tu ne le crois ce matin.",
+        "en": "You are more capable than you think this morning.",
+        "es": "Eres más capaz de lo que crees esta mañana.",
+        "de": "Du kannst mehr, als du heute Morgen glaubst."
+      }
+    },
+    {
+      "id": "r-279",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les montagnes se gravissent un pas après l'autre, jamais d'un bond.",
+        "en": "Mountains are climbed one step at a time, never in a single leap.",
+        "es": "Las montañas se suben paso a paso, nunca de un salto.",
+        "de": "Berge erklimmt man Schritt für Schritt, nie mit einem Sprung."
+      }
+    },
+    {
+      "id": "r-280",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Fais aujourd'hui ce que ton toi de demain te remerciera d'avoir fait.",
+        "en": "Do today what your future self will thank you for.",
+        "es": "Haz hoy lo que tu yo de mañana te agradecerá.",
+        "de": "Tu heute, wofür dir dein zukünftiges Ich danken wird."
+      }
+    },
+    {
+      "id": "r-281",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Un « pas encore » vaut mieux qu'un « jamais ».",
+        "en": "A \"not yet\" is better than a \"never\".",
+        "es": "Un «todavía no» vale más que un «nunca».",
+        "de": "Ein „noch nicht“ ist besser als ein „nie“."
+      }
+    },
+    {
+      "id": "r-282",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "La réussite, c'est souvent une suite de petits efforts que personne ne voit.",
+        "en": "Success is often a series of small efforts that nobody sees.",
+        "es": "El éxito suele ser una serie de pequeños esfuerzos que nadie ve.",
+        "de": "Erfolg ist oft eine Reihe kleiner Mühen, die niemand sieht."
+      }
+    },
+    {
+      "id": "r-283",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Ne te compare qu'à la personne que tu étais hier.",
+        "en": "Only compare yourself to the person you were yesterday.",
+        "es": "Compárate solo con la persona que eras ayer.",
+        "de": "Vergleiche dich nur mit dem Menschen, der du gestern warst."
+      }
+    },
+    {
+      "id": "r-284",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Même lentement, tu avances. Et avancer, c'est gagner.",
+        "en": "Even slowly, you're moving forward. And moving forward is winning.",
+        "es": "Aunque sea despacio, avanzas. Y avanzar es ganar.",
+        "de": "Auch langsam kommst du voran. Und vorankommen heißt gewinnen."
+      }
+    },
+    {
+      "id": "r-285",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les plus beaux projets commencent souvent par « et si j'essayais ? ».",
+        "en": "The best projects often start with \"what if I tried?\".",
+        "es": "Los mejores proyectos suelen empezar con «¿y si lo intento?».",
+        "de": "Die schönsten Projekte beginnen oft mit „Und wenn ich es versuche?“."
+      }
+    },
+    {
+      "id": "r-286",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Une journée difficile n'efface pas tous tes progrès.",
+        "en": "One hard day doesn't erase all your progress.",
+        "es": "Un día difícil no borra todo tu progreso.",
+        "de": "Ein schwerer Tag löscht nicht all deine Fortschritte."
+      }
+    },
+    {
+      "id": "r-287",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Choisis une seule chose importante aujourd'hui, et fais-la bien.",
+        "en": "Choose one important thing today, and do it well.",
+        "es": "Elige una sola cosa importante hoy y hazla bien.",
+        "de": "Wähle heute eine einzige wichtige Sache und mach sie gut."
+      }
+    },
+    {
+      "id": "r-288",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "L'arbre le plus solide a d'abord été une petite graine têtue.",
+        "en": "The strongest tree was once a small, stubborn seed.",
+        "es": "El árbol más fuerte fue antes una pequeña semilla testaruda.",
+        "de": "Der stärkste Baum war einmal ein kleiner, sturer Samen."
+      }
+    },
+    {
+      "id": "r-289",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Tu n'as pas besoin de tout savoir pour faire le premier pas.",
+        "en": "You don't need to know everything to take the first step.",
+        "es": "No necesitas saberlo todo para dar el primer paso.",
+        "de": "Du musst nicht alles wissen, um den ersten Schritt zu machen."
+      }
+    },
+    {
+      "id": "r-290",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Le meilleur moyen de finir, c'est de commencer.",
+        "en": "The best way to finish is to start.",
+        "es": "La mejor manera de terminar es empezar.",
+        "de": "Der beste Weg, etwas zu beenden, ist anzufangen."
+      }
+    },
+    {
+      "id": "r-291",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Chaque fois que tu te relèves, tu deviens un peu plus fort.",
+        "en": "Every time you get back up, you become a little stronger.",
+        "es": "Cada vez que te levantas, te vuelves un poco más fuerte.",
+        "de": "Jedes Mal, wenn du wieder aufstehst, wirst du ein bisschen stärker."
+      }
+    },
+    {
+      "id": "r-292",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Ta persévérance d'aujourd'hui est la fierté de demain.",
+        "en": "Your perseverance today is tomorrow's pride.",
+        "es": "Tu perseverancia de hoy es el orgullo de mañana.",
+        "de": "Deine Ausdauer von heute ist dein Stolz von morgen."
+      }
+    },
+    {
+      "id": "r-293",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Il n'est jamais trop tard pour devenir ce que tu aurais pu être.",
+        "en": "It's never too late to become what you might have been.",
+        "es": "Nunca es tarde para llegar a ser lo que podrías haber sido.",
+        "de": "Es ist nie zu spät, das zu werden, was du hättest sein können."
+      }
+    },
+    {
+      "id": "r-294",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les obstacles ne bloquent pas le chemin : ils font partie du chemin.",
+        "en": "Obstacles don't block the path: they are part of the path.",
+        "es": "Los obstáculos no bloquean el camino: forman parte de él.",
+        "de": "Hindernisse versperren nicht den Weg: Sie sind ein Teil davon."
+      }
+    },
+    {
+      "id": "r-295",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Une heure de concentration vaut mieux qu'une journée d'hésitation.",
+        "en": "One hour of focus is worth more than a day of hesitation.",
+        "es": "Una hora de concentración vale más que un día de dudas.",
+        "de": "Eine Stunde Konzentration ist mehr wert als ein Tag des Zögerns."
+      }
+    },
+    {
+      "id": "r-296",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Garde ton cap, même quand le vent change.",
+        "en": "Keep your course, even when the wind changes.",
+        "es": "Mantén el rumbo, incluso cuando cambie el viento.",
+        "de": "Halte deinen Kurs, auch wenn der Wind dreht."
+      }
+    },
+    {
+      "id": "r-297",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les rêves deviennent des projets dès qu'on leur donne une date.",
+        "en": "Dreams become plans as soon as you give them a date.",
+        "es": "Los sueños se convierten en proyectos en cuanto les pones una fecha.",
+        "de": "Träume werden zu Plänen, sobald man ihnen ein Datum gibt."
+      }
+    },
+    {
+      "id": "r-298",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Tu as déjà surmonté tant de choses. Celle-ci aussi passera.",
+        "en": "You've already overcome so much. This too will pass.",
+        "es": "Ya has superado tantas cosas. Esto también pasará.",
+        "de": "Du hast schon so vieles gemeistert. Auch das geht vorbei."
+      }
+    },
+    {
+      "id": "r-299",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Un effort de plus, c'est souvent celui qui fait la différence.",
+        "en": "One more effort is often the one that makes the difference.",
+        "es": "Un esfuerzo más suele ser el que marca la diferencia.",
+        "de": "Eine Anstrengung mehr ist oft die, die den Unterschied macht."
+      }
+    },
+    {
+      "id": "r-300",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Fais de ton mieux. Ton mieux d'aujourd'hui suffit.",
+        "en": "Do your best. Today's best is enough.",
+        "es": "Haz lo mejor que puedas. Tu mejor de hoy es suficiente.",
+        "de": "Gib dein Bestes. Dein Bestes von heute genügt."
+      }
+    },
+    {
+      "id": "r-301",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "La patience et la régularité battent presque toujours le talent pressé.",
+        "en": "Patience and consistency almost always beat hurried talent.",
+        "es": "La paciencia y la constancia casi siempre vencen al talento apresurado.",
+        "de": "Geduld und Beständigkeit schlagen fast immer eiliges Talent."
+      }
+    },
+    {
+      "id": "r-302",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Ce que tu commences aujourd'hui peut changer ton année.",
+        "en": "What you start today can change your year.",
+        "es": "Lo que empiezas hoy puede cambiar tu año.",
+        "de": "Was du heute beginnst, kann dein Jahr verändern."
+      }
+    },
+    {
+      "id": "r-303",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Tu n'es pas en retard : tu avances à ton rythme.",
+        "en": "You're not behind: you're moving at your own pace.",
+        "es": "No vas con retraso: avanzas a tu ritmo.",
+        "de": "Du bist nicht spät dran: Du gehst in deinem Tempo."
+      }
+    },
+    {
+      "id": "r-304",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Les petites victoires méritent d'être fêtées, elles aussi.",
+        "en": "Small victories deserve to be celebrated too.",
+        "es": "Las pequeñas victorias también merecen celebrarse.",
+        "de": "Auch kleine Siege verdienen es, gefeiert zu werden."
+      }
+    },
+    {
+      "id": "r-305",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Celui qui déplace une montagne commence par de petites pierres.",
+        "en": "The one who moves a mountain begins by carrying small stones.",
+        "es": "Quien mueve una montaña empieza cargando piedras pequeñas.",
+        "de": "Wer einen Berg versetzt, beginnt mit kleinen Steinen."
+      }
+    },
+    {
+      "id": "r-306",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Aujourd'hui est une page blanche. Écris-y une ligne dont tu seras fier.",
+        "en": "Today is a blank page. Write a line you'll be proud of.",
+        "es": "Hoy es una página en blanco. Escribe una línea de la que te sientas orgulloso.",
+        "de": "Heute ist ein leeres Blatt. Schreib eine Zeile, auf die du stolz sein wirst."
+      }
+    },
+    {
+      "id": "r-307",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "L'énergie suit l'intention : décide d'abord, la motivation viendra.",
+        "en": "Energy follows intention: decide first, motivation will come.",
+        "es": "La energía sigue a la intención: decide primero, la motivación llegará.",
+        "de": "Energie folgt der Absicht: Entscheide zuerst, die Motivation kommt dann."
+      }
+    },
+    {
+      "id": "r-308",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Tes efforts discrets finiront par faire du bruit.",
+        "en": "Your quiet efforts will eventually make some noise.",
+        "es": "Tus esfuerzos discretos acabarán haciendo ruido.",
+        "de": "Deine leisen Mühen werden irgendwann laut."
+      }
+    },
+    {
+      "id": "r-309",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Un jour, tu repenseras à ce moment comme au début de quelque chose de beau.",
+        "en": "One day you'll look back on this moment as the start of something beautiful.",
+        "es": "Un día recordarás este momento como el comienzo de algo bonito.",
+        "de": "Eines Tages wirst du an diesen Moment als Anfang von etwas Schönem denken."
+      }
+    },
+    {
+      "id": "r-310",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Le progrès n'est pas toujours visible, mais il est toujours réel.",
+        "en": "Progress isn't always visible, but it's always real.",
+        "es": "El progreso no siempre se ve, pero siempre es real.",
+        "de": "Fortschritt ist nicht immer sichtbar, aber immer echt."
+      }
+    },
+    {
+      "id": "r-311",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Ose demander, ose essayer, ose recommencer.",
+        "en": "Dare to ask, dare to try, dare to start again.",
+        "es": "Atrévete a pedir, a intentar, a empezar de nuevo.",
+        "de": "Trau dich zu fragen, zu versuchen, neu anzufangen."
+      }
+    },
+    {
+      "id": "r-312",
+      "category": "motivation",
+      "type": "quote",
+      "text": {
+        "fr": "Quand tu doutes, souviens-toi pourquoi tu as commencé.",
+        "en": "When in doubt, remember why you started.",
+        "es": "Cuando dudes, recuerda por qué empezaste.",
+        "de": "Wenn du zweifelst, erinnere dich, warum du angefangen hast."
+      }
+    },
+    {
+      "id": "r-313",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le gorille des montagnes, au bord de l'extinction dans les années 1980, compte aujourd'hui plus de 1 000 individus.",
+        "en": "The mountain gorilla, close to extinction in the 1980s, now numbers more than 1,000 animals.",
+        "es": "El gorila de montaña, al borde de la extinción en los años 80, cuenta hoy con más de 1000 ejemplares.",
+        "de": "Der Berggorilla, in den 1980er-Jahren fast ausgestorben, zählt heute über 1.000 Tiere."
+      }
+    },
+    {
+      "id": "r-314",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La loutre d'Europe est revenue dans de nombreuses rivières de France grâce à des eaux plus propres.",
+        "en": "The Eurasian otter has returned to many French rivers thanks to cleaner water.",
+        "es": "La nutria europea ha vuelto a muchos ríos de Francia gracias a aguas más limpias.",
+        "de": "Der Fischotter ist dank saubererem Wasser in viele Flüsse Frankreichs zurückgekehrt."
+      }
+    },
+    {
+      "id": "r-315",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le phoque gris est revenu en nombre sur les côtes de la mer du Nord.",
+        "en": "Grey seals have returned in large numbers to the North Sea coasts.",
+        "es": "La foca gris ha vuelto en gran número a las costas del mar del Norte.",
+        "de": "Kegelrobben sind in großer Zahl an die Küsten der Nordsee zurückgekehrt."
+      }
+    },
+    {
+      "id": "r-316",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La population de baleines grises du Pacifique Est s'est reconstituée après des décennies de protection.",
+        "en": "The eastern Pacific grey whale population recovered after decades of protection.",
+        "es": "La población de ballenas grises del Pacífico oriental se recuperó tras décadas de protección.",
+        "de": "Die Grauwale im Ostpazifik haben sich nach Jahrzehnten des Schutzes erholt."
+      }
+    },
+    {
+      "id": "r-317",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le castor, presque disparu de France au début du XXe siècle, en occupe aujourd'hui de nombreuses rivières.",
+        "en": "The beaver, almost gone from France in the early 20th century, now lives in many of its rivers.",
+        "es": "El castor, casi desaparecido de Francia a principios del siglo XX, ocupa hoy muchos de sus ríos.",
+        "de": "Der Biber, Anfang des 20. Jahrhunderts in Frankreich fast verschwunden, lebt heute in vielen Flüssen."
+      }
+    },
+    {
+      "id": "r-318",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le vautour fauve plane de nouveau au-dessus des gorges du Tarn et de la Jonte grâce à sa réintroduction.",
+        "en": "The griffon vulture soars again over the Tarn and Jonte gorges thanks to its reintroduction.",
+        "es": "El buitre leonado vuelve a planear sobre las gargantas del Tarn y del Jonte gracias a su reintroducción.",
+        "de": "Der Gänsegeier kreist dank seiner Wiederansiedlung wieder über den Schluchten von Tarn und Jonte."
+      }
+    },
+    {
+      "id": "r-319",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La cigogne blanche, devenue rare en Alsace dans les années 1970, y niche de nouveau par centaines de couples.",
+        "en": "The white stork, rare in Alsace in the 1970s, now nests there again in hundreds of pairs.",
+        "es": "La cigüeña blanca, escasa en Alsacia en los años 70, vuelve a anidar allí por cientos de parejas.",
+        "de": "Der Weißstorch, im Elsass in den 1970er-Jahren selten geworden, nistet dort wieder mit Hunderten Paaren."
+      }
+    },
+    {
+      "id": "r-320",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les aires marines protégées permettent souvent aux poissons de revenir en plus grand nombre et plus gros.",
+        "en": "Marine protected areas often let fish come back in greater numbers and larger sizes.",
+        "es": "Las áreas marinas protegidas suelen permitir que los peces vuelvan en mayor número y más grandes.",
+        "de": "In Meeresschutzgebieten kehren Fische oft zahlreicher und größer zurück."
+      }
+    },
+    {
+      "id": "r-321",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "L'éolien et le solaire produisent aujourd'hui une part croissante de l'électricité mondiale.",
+        "en": "Wind and solar now produce a growing share of the world's electricity.",
+        "es": "La eólica y la solar producen hoy una parte creciente de la electricidad mundial.",
+        "de": "Wind und Sonne erzeugen heute einen wachsenden Anteil des weltweiten Stroms."
+      }
+    },
+    {
+      "id": "r-322",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le loup gris est revenu naturellement en France au début des années 1990, depuis l'Italie.",
+        "en": "The grey wolf returned naturally to France in the early 1990s, from Italy.",
+        "es": "El lobo gris volvió de forma natural a Francia a principios de los 90, desde Italia.",
+        "de": "Der Grauwolf ist Anfang der 1990er-Jahre auf natürlichem Weg aus Italien nach Frankreich zurückgekehrt."
+      }
+    },
+    {
+      "id": "r-323",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le saumon atlantique remonte de nouveau certaines rivières d'où il avait disparu, grâce aux passes à poissons.",
+        "en": "Atlantic salmon swim up some rivers again where they had vanished, thanks to fish ladders.",
+        "es": "El salmón atlántico vuelve a remontar algunos ríos de los que había desaparecido, gracias a las escalas para peces.",
+        "de": "Der Atlantische Lachs wandert dank Fischtreppen wieder Flüsse hinauf, aus denen er verschwunden war."
+      }
+    },
+    {
+      "id": "r-324",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le Rhin, autrefois très pollué, abrite à nouveau des dizaines d'espèces de poissons.",
+        "en": "The Rhine, once heavily polluted, is again home to dozens of fish species.",
+        "es": "El Rin, antes muy contaminado, vuelve a albergar decenas de especies de peces.",
+        "de": "Der Rhein, einst stark verschmutzt, beherbergt wieder Dutzende Fischarten."
+      }
+    },
+    {
+      "id": "r-325",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le condor de Californie, réduit à 27 oiseaux en 1987, en compte aujourd'hui plusieurs centaines.",
+        "en": "The California condor, down to 27 birds in 1987, now numbers several hundred.",
+        "es": "El cóndor de California, reducido a 27 aves en 1987, cuenta hoy con varios cientos.",
+        "de": "Der Kalifornische Kondor, 1987 auf 27 Vögel geschrumpft, zählt heute mehrere Hundert."
+      }
+    },
+    {
+      "id": "r-326",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La tortue verte et bien d'autres espèces profitent de plages et d'îles mieux protégées.",
+        "en": "Green turtles and many other species benefit from better-protected beaches and islands.",
+        "es": "La tortuga verde y muchas otras especies se benefician de playas e islas mejor protegidas.",
+        "de": "Grüne Meeresschildkröten und viele andere Arten profitieren von besser geschützten Stränden und Inseln."
+      }
+    },
+    {
+      "id": "r-327",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les forêts couvrent encore près d'un tiers des terres émergées de la planète.",
+        "en": "Forests still cover nearly a third of the planet's land.",
+        "es": "Los bosques todavía cubren casi un tercio de la superficie terrestre.",
+        "de": "Wälder bedecken noch immer fast ein Drittel der Landfläche der Erde."
+      }
+    },
+    {
+      "id": "r-328",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "En Europe, la surface des forêts a augmenté depuis 1990.",
+        "en": "In Europe, forest area has increased since 1990.",
+        "es": "En Europa, la superficie forestal ha aumentado desde 1990.",
+        "de": "In Europa ist die Waldfläche seit 1990 gewachsen."
+      }
+    },
+    {
+      "id": "r-329",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le bouquetin des Alpes, presque disparu au XIXe siècle, compte aujourd'hui des dizaines de milliers d'individus.",
+        "en": "The Alpine ibex, nearly extinct in the 19th century, now numbers tens of thousands.",
+        "es": "La cabra montés de los Alpes, casi extinta en el siglo XIX, cuenta hoy con decenas de miles de ejemplares.",
+        "de": "Der Alpensteinbock, im 19. Jahrhundert fast ausgestorben, zählt heute Zehntausende Tiere."
+      }
+    },
+    {
+      "id": "r-330",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La baleine franche australe se rétablit lentement mais sûrement depuis la fin de la chasse.",
+        "en": "The southern right whale is recovering slowly but surely since whaling ended.",
+        "es": "La ballena franca austral se recupera lenta pero firmemente desde el fin de la caza.",
+        "de": "Der Südliche Glattwal erholt sich seit dem Ende des Walfangs langsam, aber stetig."
+      }
+    },
+    {
+      "id": "r-331",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le faucon pèlerin, menacé par les pesticides au XXe siècle, niche aujourd'hui jusque sur les cathédrales.",
+        "en": "The peregrine falcon, threatened by pesticides in the 20th century, now nests even on cathedrals.",
+        "es": "El halcón peregrino, amenazado por los pesticidas en el siglo XX, anida hoy incluso en catedrales.",
+        "de": "Der Wanderfalke, im 20. Jahrhundert durch Pestizide bedroht, brütet heute sogar auf Kathedralen."
+      }
+    },
+    {
+      "id": "r-332",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le rhinocéros blanc du Sud, réduit à quelques dizaines d'individus vers 1900, en compte aujourd'hui des milliers.",
+        "en": "The southern white rhino, down to a few dozen around 1900, now numbers in the thousands.",
+        "es": "El rinoceronte blanco del sur, reducido a unas decenas hacia 1900, cuenta hoy con miles.",
+        "de": "Das Südliche Breitmaulnashorn, um 1900 auf einige Dutzend geschrumpft, zählt heute Tausende."
+      }
+    },
+    {
+      "id": "r-333",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les parcs nationaux et réserves protègent aujourd'hui environ 17 % des terres du globe.",
+        "en": "National parks and reserves now protect about 17% of the world's land.",
+        "es": "Los parques nacionales y reservas protegen hoy alrededor del 17 % de las tierras del planeta.",
+        "de": "Nationalparks und Schutzgebiete schützen heute etwa 17 % der Landflächen der Erde."
+      }
+    },
+    {
+      "id": "r-334",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Chaque année, des millions de bénévoles ramassent des déchets sur les plages du monde entier.",
+        "en": "Every year, millions of volunteers pick up litter on beaches around the world.",
+        "es": "Cada año, millones de voluntarios recogen basura en playas de todo el mundo.",
+        "de": "Jedes Jahr sammeln Millionen Freiwillige weltweit Müll an Stränden."
+      }
+    },
+    {
+      "id": "r-335",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le lynx boréal vit de nouveau dans le massif du Jura, d'où il avait disparu.",
+        "en": "The Eurasian lynx lives again in the Jura mountains, where it had disappeared.",
+        "es": "El lince boreal vuelve a vivir en el macizo del Jura, de donde había desaparecido.",
+        "de": "Der Eurasische Luchs lebt wieder im Jura, wo er verschwunden war."
+      }
+    },
+    {
+      "id": "r-336",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les populations de tigres sauvages augmentent de nouveau en Inde et au Népal.",
+        "en": "Wild tiger numbers are rising again in India and Nepal.",
+        "es": "Las poblaciones de tigres salvajes vuelven a aumentar en India y Nepal.",
+        "de": "Die Zahl wilder Tiger steigt in Indien und Nepal wieder."
+      }
+    },
+    {
+      "id": "r-337",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les abeilles solitaires, souvent oubliées, pollinisent une grande partie des fleurs sauvages.",
+        "en": "Solitary bees, often overlooked, pollinate a large share of wild flowers.",
+        "es": "Las abejas solitarias, a menudo olvidadas, polinizan gran parte de las flores silvestres.",
+        "de": "Solitäre Wildbienen, oft übersehen, bestäuben einen großen Teil der Wildblumen."
+      }
+    },
+    {
+      "id": "r-338",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Un hôtel à insectes ou un coin de jardin laissé sauvage suffit à accueillir de nombreuses espèces.",
+        "en": "An insect hotel or a corner of garden left wild is enough to welcome many species.",
+        "es": "Un hotel de insectos o un rincón de jardín sin cortar basta para acoger a muchas especies.",
+        "de": "Ein Insektenhotel oder eine wilde Gartenecke reicht, um vielen Arten ein Zuhause zu geben."
+      }
+    },
+    {
+      "id": "r-339",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les récifs de corail artificiels créés par des plongeurs redonnent vie à des fonds marins abîmés.",
+        "en": "Artificial coral reefs built by divers bring damaged seabeds back to life.",
+        "es": "Los arrecifes artificiales creados por buceadores devuelven la vida a fondos marinos dañados.",
+        "de": "Künstliche Korallenriffe, von Tauchern angelegt, beleben geschädigte Meeresböden wieder."
+      }
+    },
+    {
+      "id": "r-340",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Les voitures électriques représentent aujourd'hui une part croissante des ventes de voitures neuves.",
+        "en": "Electric cars now make up a growing share of new car sales.",
+        "es": "Los coches eléctricos representan hoy una parte creciente de las ventas de coches nuevos.",
+        "de": "Elektroautos machen heute einen wachsenden Anteil der Neuwagenverkäufe aus."
+      }
+    },
+    {
+      "id": "r-341",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "La tortue d'Hermann, menacée en France, bénéficie de programmes de protection dans le Var et en Corse.",
+        "en": "Hermann's tortoise, threatened in France, benefits from protection programmes in the Var and Corsica.",
+        "es": "La tortuga mediterránea, amenazada en Francia, se beneficia de programas de protección en el Var y Córcega.",
+        "de": "Die Griechische Landschildkröte, in Frankreich bedroht, profitiert von Schutzprogrammen im Var und auf Korsika."
+      }
+    },
+    {
+      "id": "r-342",
+      "category": "planete",
+      "type": "fact",
+      "text": {
+        "fr": "Le recyclage du verre peut se répéter à l'infini sans perte de qualité.",
+        "en": "Glass can be recycled endlessly without losing quality.",
+        "es": "El vidrio puede reciclarse infinitamente sin perder calidad.",
+        "de": "Glas lässt sich unendlich oft recyceln, ohne an Qualität zu verlieren."
+      }
     }
   ]
 }
