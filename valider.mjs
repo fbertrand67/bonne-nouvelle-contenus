@@ -3,7 +3,7 @@
 // fichier cassé ne soit jamais publié.
 import { readFileSync } from 'node:fs';
 
-const CATEGORIES = ['motivation', 'humour', 'bien-etre', 'developpement', 'curiosite', 'defi', 'planete', 'monde'];
+const CATEGORIES = ['motivation', 'humour', 'bien-etre', 'developpement', 'curiosite', 'defi', 'planete', 'monde', 'sagesse'];
 const TYPES = ['quote', 'fact', 'challenge', 'actu'];
 const LANGS = ['fr', 'en', 'es', 'de'];
 const DAY = /^\d{4}-\d{2}-\d{2}$/;
